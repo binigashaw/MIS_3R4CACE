@@ -1,0 +1,42 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:subcomponent_name",
+ "creation": "2024-12-26 18:35:33.475990",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "subcomponent_name",
+  "description"
+ ],
+ "fields": [
+  {
+   "bold": 1,
+   "fieldname": "subcomponent_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Subcomponent Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-12-26 18:58:43.996534",
+ "modified_by": "Administrator",
+ "module": "Mis 3R4Cace",
+ "name": "Subcomponent",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

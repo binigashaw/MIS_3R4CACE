@@ -1,0 +1,77 @@
+{
+ "allow_comments": 0,
+ "allow_delete": 0,
+ "allow_edit": 0,
+ "allow_incomplete": 0,
+ "allow_multiple": 0,
+ "allow_print": 0,
+ "anonymous": 0,
+ "apply_document_permissions": 1,
+ "banner_image": "",
+ "breadcrumbs": "",
+ "button_label": "Add",
+ "condition_json": "[]",
+ "creation": "2024-12-25 19:22:02.199644",
+ "doc_type": "Region",
+ "docstatus": 0,
+ "doctype": "Web Form",
+ "hide_footer": 0,
+ "hide_navbar": 0,
+ "idx": 0,
+ "is_standard": 1,
+ "list_columns": [
+  {
+   "fieldname": "region_name",
+   "fieldtype": "Data",
+   "label": "Region Name"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  }
+ ],
+ "list_title": "List Of Regions",
+ "login_required": 1,
+ "max_attachment_size": 0,
+ "modified": "2024-12-25 19:37:59.320908",
+ "modified_by": "Administrator",
+ "module": "Mis 3R4Cace",
+ "name": "region",
+ "owner": "Administrator",
+ "published": 1,
+ "route": "region",
+ "show_attachments": 1,
+ "show_list": 1,
+ "show_sidebar": 1,
+ "title": "Region",
+ "web_form_fields": [
+  {
+   "allow_read_on_all_link_options": 0,
+   "fieldname": "region_name",
+   "fieldtype": "Data",
+   "hidden": 0,
+   "label": "Region Name",
+   "max_length": 0,
+   "max_value": 0,
+   "precision": "",
+   "read_only": 0,
+   "reqd": 1,
+   "show_in_filter": 0
+  },
+  {
+   "allow_read_on_all_link_options": 0,
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "hidden": 0,
+   "label": "Description",
+   "max_length": 0,
+   "max_value": 0,
+   "precision": "",
+   "read_only": 0,
+   "reqd": 0,
+   "show_in_filter": 0
+  }
+ ],
+ "website_sidebar": ""
+}
