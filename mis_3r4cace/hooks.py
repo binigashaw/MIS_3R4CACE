@@ -2,6 +2,7 @@ app_name = "mis_3r4cace"
 app_title = "Mis 3R4Cace"
 app_publisher = "Binyam Abebaw"
 app_description = "3R MIS system"
+app_color = "grey"
 app_email = "binigashaw@gmail.com"
 app_license = "mit"
 
@@ -11,15 +12,15 @@ app_license = "mit"
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page
-# add_to_apps_screen = [
-# 	{
-# 		"name": "mis_3r4cace",
-# 		"logo": "/assets/mis_3r4cace/logo.png",
-# 		"title": "Mis 3R4Cace",
+add_to_apps_screen = [
+ 	{
+ 		"name": "mis_3r4cace",
+ 		"logo": "http://3r4cace.org:8001/files/3rlogod587a2.png",
+ 		"title": "Mis 3R4Cace"
 # 		"route": "/mis_3r4cace",
 # 		"has_permission": "mis_3r4cace.api.permission.has_app_permission"
-# 	}
-# ]
+ 	}
+ ]
 
 # Includes in <head>
 # ------------------
@@ -27,6 +28,10 @@ app_license = "mit"
 # include js, css files in header of desk.html
 # app_include_css = "/assets/mis_3r4cace/css/mis_3r4cace.css"
 # app_include_js = "/assets/mis_3r4cace/js/mis_3r4cace.js"
+app_include_js = [
+     "/assets/mis_3r4cace/js/map_defaults.js"
+    # ...
+]
 
 # include js, css files in header of web template
 # web_include_css = "/assets/mis_3r4cace/css/mis_3r4cace.css"

@@ -1,36 +1,35 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:component_name",
- "creation": "2024-12-26 18:22:53.241909",
+ "autoname": "field:sector",
+ "creation": "2024-12-27 16:58:50.023598",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "component_name",
+  "sector",
   "description"
  ],
  "fields": [
   {
-   "fieldname": "component_name",
+   "fieldname": "sector",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Component Name",
+   "label": "Sector",
    "reqd": 1,
    "unique": 1
   },
   {
    "fieldname": "description",
    "fieldtype": "Data",
-   "in_list_view": 1,
    "label": "Description"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-12-31 19:18:45.310847",
+ "modified": "2024-12-27 16:59:48.195918",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
- "name": "Project Component",
+ "name": "Project Sector",
  "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
@@ -50,5 +49,5 @@
  "sort_field": "creation",
  "sort_order": "DESC",
  "states": [],
- "title_field": "component_name"
+ "title_field": "sector"
 }
