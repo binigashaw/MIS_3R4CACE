@@ -26,35 +26,41 @@
   "image",
   "table_hglb",
   "image_zzqk",
-  "custom_beneficiary",
-  "custom_target",
-  "custom_individuals_targeted",
-  "custom_idp_targeted",
-  "custom_disabled_targeted",
-  "custom_column_break_c3zb1",
-  "custom_girl_targeted",
-  "custom_boys_targeted",
-  "custom_women_targeted",
-  "custom_men_targeted",
-  "custom_column_break_kzhf0",
-  "custom_girls_idp_targeted",
-  "custom_boys_idp_targeted",
-  "custom_women_idp_targeted",
-  "custom_men_idp_targeted",
-  "custom_reached",
-  "custom_individual_reached",
-  "custom_idp_reached",
-  "custom_disabled_reached",
-  "custom_column_break_bguvu",
-  "custom_girls_reached",
-  "custom_boys_reached",
-  "custom_women_reached",
-  "custom_men_reached",
-  "custom_column_break_xeymo",
-  "custom_girls_idp_reached",
-  "custom_boys_idp_reached",
-  "custom_women_idp_reached",
-  "custom_men_idp_reached"
+  "beneficiary_tab",
+  "targeted_section",
+  "individual_targeted",
+  "boys_targeted",
+  "girls_idp_targeted",
+  "men_idp_targeted",
+  "column_break_hwin",
+  "idp_targeted",
+  "women_targeted",
+  "boys_idp_targeted",
+  "women_idp_targeted",
+  "column_break_jipj",
+  "disabled_targeted",
+  "girls_targeted",
+  "men_targeted",
+  "reached_section",
+  "individual_reached",
+  "girls_reached",
+  "men_reached",
+  "women_idp_reached",
+  "column_break_zctv",
+  "idp_reached",
+  "boys_reached",
+  "boys_idp_reached",
+  "men_idp_reached",
+  "column_break_ynwx",
+  "disabled_reached",
+  "women_reached",
+  "girls_idp_reached",
+  "status_tab",
+  "status",
+  "reason",
+  "additional_information",
+  "column_break_xivz",
+  "progress_status"
  ],
  "fields": [
   {
@@ -177,173 +183,6 @@
    "label": "Image"
   },
   {
-   "fieldname": "custom_beneficiary",
-   "fieldtype": "Tab Break",
-   "label": "Beneficiary"
-  },
-  {
-   "collapsible": 1,
-   "fieldname": "custom_target",
-   "fieldtype": "Section Break",
-   "label": "Target"
-  },
-  {
-   "bold": 1,
-   "fieldname": "custom_individuals_targeted",
-   "fieldtype": "Int",
-   "label": "Individuals Targeted",
-   "non_negative": 1
-  },
-  {
-   "fieldname": "custom_idp_targeted",
-   "fieldtype": "Int",
-   "label": "IDP Targeted",
-   "non_negative": 1
-  },
-  {
-   "fieldname": "custom_disabled_targeted",
-   "fieldtype": "Int",
-   "label": "Disabled Targeted",
-   "non_negative": 1
-  },
-  {
-   "fieldname": "custom_column_break_c3zb1",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "custom_girl_targeted",
-   "fieldtype": "Int",
-   "label": "Girls Targeted",
-   "non_negative": 1
-  },
-  {
-   "fieldname": "custom_boys_targeted",
-   "fieldtype": "Int",
-   "label": "Boys Targeted",
-   "non_negative": 1
-  },
-  {
-   "fieldname": "custom_women_targeted",
-   "fieldtype": "Int",
-   "label": "Women Targeted",
-   "non_negative": 1
-  },
-  {
-   "fieldname": "custom_men_targeted",
-   "fieldtype": "Int",
-   "label": "Men Targeted",
-   "non_negative": 1
-  },
-  {
-   "fieldname": "custom_column_break_kzhf0",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "custom_girls_idp_targeted",
-   "fieldtype": "Int",
-   "label": "Girls IDP Targeted",
-   "non_negative": 1
-  },
-  {
-   "fieldname": "custom_boys_idp_targeted",
-   "fieldtype": "Int",
-   "label": "Boys IDP Targeted",
-   "non_negative": 1
-  },
-  {
-   "fieldname": "custom_women_idp_targeted",
-   "fieldtype": "Int",
-   "label": "Women IDP Targeted",
-   "non_negative": 1
-  },
-  {
-   "fieldname": "custom_men_idp_targeted",
-   "fieldtype": "Int",
-   "label": "Men IDP Targeted",
-   "non_negative": 1
-  },
-  {
-   "bold": 1,
-   "collapsible": 1,
-   "fieldname": "custom_reached",
-   "fieldtype": "Section Break",
-   "label": "Reached"
-  },
-  {
-   "fieldname": "custom_individual_reached",
-   "fieldtype": "Int",
-   "label": "Individual Reached",
-   "non_negative": 1
-  },
-  {
-   "fieldname": "custom_idp_reached",
-   "fieldtype": "Int",
-   "label": "IDP Reached",
-   "non_negative": 1
-  },
-  {
-   "fieldname": "custom_disabled_reached",
-   "fieldtype": "Int",
-   "label": "Disabled Reached",
-   "non_negative": 1
-  },
-  {
-   "fieldname": "custom_column_break_bguvu",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "custom_girls_reached",
-   "fieldtype": "Int",
-   "label": "Girls Reached",
-   "non_negative": 1
-  },
-  {
-   "fieldname": "custom_boys_reached",
-   "fieldtype": "Int",
-   "label": "Boys Reached",
-   "non_negative": 1
-  },
-  {
-   "fieldname": "custom_women_reached",
-   "fieldtype": "Int",
-   "label": "Women Reached",
-   "non_negative": 1
-  },
-  {
-   "fieldname": "custom_men_reached",
-   "fieldtype": "Int",
-   "label": "Men Reached",
-   "non_negative": 1
-  },
-  {
-   "fieldname": "custom_column_break_xeymo",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "custom_girls_idp_reached",
-   "fieldtype": "Int",
-   "label": "Girls IDP Reached",
-   "non_negative": 1
-  },
-  {
-   "fieldname": "custom_boys_idp_reached",
-   "fieldtype": "Int",
-   "label": "Boys IDP Reached",
-   "non_negative": 1
-  },
-  {
-   "fieldname": "custom_women_idp_reached",
-   "fieldtype": "Int",
-   "label": "Women IDP Reached",
-   "non_negative": 1
-  },
-  {
-   "fieldname": "custom_men_idp_reached",
-   "fieldtype": "Int",
-   "label": "Men IDP Reached",
-   "non_negative": 1
-  },
-  {
    "fieldname": "table_hglb",
    "fieldtype": "Table",
    "options": "Project Image"
@@ -353,11 +192,186 @@
    "fieldtype": "Image",
    "in_preview": 1,
    "options": "Project Image\n"
+  },
+  {
+   "fieldname": "beneficiary_tab",
+   "fieldtype": "Tab Break",
+   "label": "Beneficiary"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "targeted_section",
+   "fieldtype": "Section Break",
+   "label": "Targeted"
+  },
+  {
+   "fieldname": "individual_targeted",
+   "fieldtype": "Int",
+   "label": "Individual Targeted"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "reached_section",
+   "fieldtype": "Section Break",
+   "label": "Reached"
+  },
+  {
+   "fieldname": "individual_reached",
+   "fieldtype": "Int",
+   "label": "Individual Reached"
+  },
+  {
+   "fieldname": "girls_reached",
+   "fieldtype": "Int",
+   "label": "Girls Reached"
+  },
+  {
+   "fieldname": "men_reached",
+   "fieldtype": "Int",
+   "label": "Men Reached"
+  },
+  {
+   "fieldname": "women_idp_reached",
+   "fieldtype": "Int",
+   "label": "Women IDP Reached"
+  },
+  {
+   "fieldname": "column_break_zctv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "idp_reached",
+   "fieldtype": "Int",
+   "label": "IDP Reached"
+  },
+  {
+   "fieldname": "boys_reached",
+   "fieldtype": "Int",
+   "label": "Boys Reached"
+  },
+  {
+   "fieldname": "boys_idp_reached",
+   "fieldtype": "Int",
+   "label": "Boys IDP Reached"
+  },
+  {
+   "fieldname": "men_idp_reached",
+   "fieldtype": "Int",
+   "label": "Men IDP Reached"
+  },
+  {
+   "fieldname": "column_break_ynwx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "disabled_reached",
+   "fieldtype": "Int",
+   "label": "Disabled Reached"
+  },
+  {
+   "fieldname": "women_reached",
+   "fieldtype": "Int",
+   "label": "Women Reached"
+  },
+  {
+   "fieldname": "girls_idp_reached",
+   "fieldtype": "Int",
+   "label": "Girls IDP Reached"
+  },
+  {
+   "fieldname": "boys_targeted",
+   "fieldtype": "Int",
+   "label": "Boys Targeted"
+  },
+  {
+   "fieldname": "girls_idp_targeted",
+   "fieldtype": "Int",
+   "label": "Girls IDP Targeted"
+  },
+  {
+   "fieldname": "men_idp_targeted",
+   "fieldtype": "Int",
+   "label": "Men IDP Targeted"
+  },
+  {
+   "fieldname": "column_break_hwin",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "idp_targeted",
+   "fieldtype": "Int",
+   "label": "IDP Targeted"
+  },
+  {
+   "fieldname": "women_targeted",
+   "fieldtype": "Int",
+   "label": "Women Targeted"
+  },
+  {
+   "fieldname": "boys_idp_targeted",
+   "fieldtype": "Int",
+   "label": "Boys IDP Targeted"
+  },
+  {
+   "fieldname": "women_idp_targeted",
+   "fieldtype": "Int",
+   "label": "Women IDP Targeted"
+  },
+  {
+   "fieldname": "column_break_jipj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "disabled_targeted",
+   "fieldtype": "Int",
+   "label": "Disabled Targeted"
+  },
+  {
+   "fieldname": "girls_targeted",
+   "fieldtype": "Int",
+   "label": "Girls Targeted"
+  },
+  {
+   "fieldname": "men_targeted",
+   "fieldtype": "Int",
+   "label": "Men Targeted"
+  },
+  {
+   "fieldname": "status_tab",
+   "fieldtype": "Tab Break",
+   "label": "Status"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Pipeline\nOngoing -on track\nOngoing -delayed\nCompleted\nDropped"
+  },
+  {
+   "depends_on": "eval: doc.status === \"Ongoing -delayed\" || doc.status === \"Dropped\"",
+   "fieldname": "reason",
+   "fieldtype": "Select",
+   "label": "Reason",
+   "options": "Financial/Procurement\nLegal\nWorkforce/legal\nSecurity\nNatural/human-induced disasters\nOthers"
+  },
+  {
+   "fieldname": "additional_information",
+   "fieldtype": "Small Text",
+   "label": "Additional Information"
+  },
+  {
+   "fieldname": "column_break_xivz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "progress_status",
+   "fieldtype": "Percent",
+   "label": "Progress Status"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-01-13 18:55:18.915754",
+ "modified": "2025-01-28 14:09:43.064430",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Sub-Project",

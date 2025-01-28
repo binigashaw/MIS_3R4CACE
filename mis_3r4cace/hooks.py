@@ -12,15 +12,15 @@ app_license = "mit"
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page
-add_to_apps_screen = [
- 	{
- 		"name": "mis_3r4cace",
- 		"logo": "http://3r4cace.org:8001/files/3rlogod587a2.png",
- 		"title": "Mis 3R4Cace"
+#add_to_apps_screen = [
+# 	{
+#		"name": "mis_3r4cace",
+# 		"logo": "http://3r4cace.org:8001/files/3rlogod587a2.png",
+# 		"title": "Mis 3R4Cace"
 # 		"route": "/mis_3r4cace",
 # 		"has_permission": "mis_3r4cace.api.permission.has_app_permission"
- 	}
- ]
+# 	}
+# ]
 
 # Includes in <head>
 # ------------------
