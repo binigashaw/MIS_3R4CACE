@@ -58,9 +58,14 @@
   "status_tab",
   "status",
   "reason",
-  "additional_information",
+  "completed_date",
+  "award_date",
+  "site_handover_date",
   "column_break_xivz",
-  "progress_status"
+  "progress_status",
+  "additional_information",
+  "section_break_dhiz",
+  "table_iqfy"
  ],
  "fields": [
   {
@@ -352,7 +357,8 @@
    "fieldname": "reason",
    "fieldtype": "Select",
    "label": "Reason",
-   "options": "Financial/Procurement\nLegal\nWorkforce/legal\nSecurity\nNatural/human-induced disasters\nOthers"
+   "options": "Financial/Procurement\nLegal\nWorkforce/legal\nSecurity\nNatural/human-induced disasters\nOthers",
+   "placeholder": "Select Reason"
   },
   {
    "fieldname": "additional_information",
@@ -366,12 +372,37 @@
   {
    "fieldname": "progress_status",
    "fieldtype": "Percent",
-   "label": "Progress Status"
+   "label": "Current Progress Status"
+  },
+  {
+   "fieldname": "award_date",
+   "fieldtype": "Date",
+   "label": "Award Date"
+  },
+  {
+   "fieldname": "site_handover_date",
+   "fieldtype": "Date",
+   "label": "Site Handover Date"
+  },
+  {
+   "fieldname": "section_break_dhiz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_iqfy",
+   "fieldtype": "Table",
+   "options": "Subproject Progress"
+  },
+  {
+   "depends_on": "eval: doc.status === \"Completed\"",
+   "fieldname": "completed_date",
+   "fieldtype": "Date",
+   "label": "Completed Date"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-01-28 14:09:43.064430",
+ "modified": "2025-01-30 10:54:52.970761",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Sub-Project",
