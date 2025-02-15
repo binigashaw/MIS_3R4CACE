@@ -1,0 +1,54 @@
+{
+ "cards": [
+  {
+   "card": "Number Of Project"
+  },
+  {
+   "card": "Health"
+  },
+  {
+   "card": "Education"
+  },
+  {
+   "card": "WASH"
+  },
+  {
+   "card": "Completed"
+  },
+  {
+   "card": "Dropped"
+  },
+  {
+   "card": "Phase One"
+  },
+  {
+   "card": "Phase Two"
+  }
+ ],
+ "charts": [
+  {
+   "chart": "Component",
+   "width": "Half"
+  },
+  {
+   "chart": "By Status Type",
+   "width": "Half"
+  },
+  {
+   "chart": "Sub-Project Number",
+   "width": "Half"
+  }
+ ],
+ "creation": "2025-01-10 17:52:36.262109",
+ "dashboard_name": "Federal Dashboard",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 1,
+ "is_default": 1,
+ "is_standard": 1,
+ "modified": "2025-02-05 03:54:30.236424",
+ "modified_by": "Administrator",
+ "module": "Mis 3R4Cace",
+ "name": "Federal Dashboard",
+ "owner": "Administrator"
+}

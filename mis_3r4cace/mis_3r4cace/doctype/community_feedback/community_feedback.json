@@ -1,0 +1,127 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-02-15 13:49:52.593347",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "name1",
+  "phone",
+  "email",
+  "column_break_rafw",
+  "region",
+  "woreda",
+  "kebele",
+  "project_information",
+  "section_break_hvog",
+  "feedback",
+  "upload_image",
+  "column_break_kpij",
+  "location"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "placeholder": "Select date"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "column_break_rafw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "region",
+   "fieldtype": "Link",
+   "label": "Region",
+   "options": "Region",
+   "placeholder": "Select Region"
+  },
+  {
+   "fieldname": "woreda",
+   "fieldtype": "Link",
+   "label": "Woreda",
+   "link_filters": "[[\"Woreda\",\"region\",\"=\",\"eval: doc.region\"]]",
+   "options": "Woreda",
+   "placeholder": "Select Woreda"
+  },
+  {
+   "fieldname": "kebele",
+   "fieldtype": "Link",
+   "label": "Kebele",
+   "link_filters": "[[\"Kebele\",\"woreda\",\"=\",\"eval: doc.woreda\"]]",
+   "options": "Kebele",
+   "placeholder": "Select Kebele"
+  },
+  {
+   "fieldname": "project_information",
+   "fieldtype": "Data",
+   "label": "Project Information",
+   "placeholder": "Write project information"
+  },
+  {
+   "fieldname": "section_break_hvog",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "feedback",
+   "fieldtype": "Small Text",
+   "label": "Feedback",
+   "placeholder": "Write your feedback here"
+  },
+  {
+   "fieldname": "upload_image",
+   "fieldtype": "Attach Image",
+   "label": "Upload Image"
+  },
+  {
+   "fieldname": "column_break_kpij",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Geolocation",
+   "label": "Location"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-02-15 14:02:21.253757",
+ "modified_by": "Administrator",
+ "module": "Mis 3R4Cace",
+ "name": "Community Feedback",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

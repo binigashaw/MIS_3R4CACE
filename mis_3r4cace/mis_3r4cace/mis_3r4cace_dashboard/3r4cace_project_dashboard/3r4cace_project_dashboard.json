@@ -1,0 +1,62 @@
+{
+ "cards": [
+  {
+   "card": "Number Of Project"
+  },
+  {
+   "card": "Health"
+  },
+  {
+   "card": "Education"
+  },
+  {
+   "card": "WASH"
+  },
+  {
+   "card": "Completed"
+  },
+  {
+   "card": "Dropped"
+  },
+  {
+   "card": "Phase One"
+  },
+  {
+   "card": "Phase Two"
+  }
+ ],
+ "charts": [
+  {
+   "chart": "Component",
+   "width": "Half"
+  },
+  {
+   "chart": "By Status Type",
+   "width": "Half"
+  },
+  {
+   "chart": "Sub-Project In Region",
+   "width": "Half"
+  },
+  {
+   "chart": "Number Of Kebeles",
+   "width": "Half"
+  },
+  {
+   "chart": "Project End Heat Map",
+   "width": "Full"
+  }
+ ],
+ "creation": "2025-01-10 17:52:36.262109",
+ "dashboard_name": "3R4CACE PROJECT DASHBOARD",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 1,
+ "is_default": 1,
+ "is_standard": 1,
+ "modified": "2025-02-06 14:52:49.306930",
+ "modified_by": "Administrator",
+ "module": "Mis 3R4Cace",
+ "name": "3R4CACE PROJECT DASHBOARD",
+ "owner": "Administrator"
+}

@@ -1,0 +1,22 @@
+{
+ "color": "#29CD42",
+ "creation": "2025-01-02 19:21:49.866051",
+ "docstatus": 0,
+ "doctype": "Number Card",
+ "document_type": "Sub-Project",
+ "filters_json": "[[\"Sub-Project\",\"sector\",\"=\",\"Education\",false]]",
+ "function": "Count",
+ "idx": 6,
+ "is_public": 1,
+ "is_standard": 1,
+ "label": "Education",
+ "modified": "2025-02-05 03:24:55.852195",
+ "modified_by": "Administrator",
+ "module": "Mis 3R4Cace",
+ "name": "Education",
+ "owner": "Administrator",
+ "report_function": "Sum",
+ "show_percentage_stats": 0,
+ "stats_time_interval": "Daily",
+ "type": "Document Type"
+}

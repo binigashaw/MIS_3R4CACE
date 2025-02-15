@@ -1,0 +1,23 @@
+{
+ "color": "#ECAD4B",
+ "creation": "2025-01-02 19:20:30.970583",
+ "docstatus": 0,
+ "doctype": "Number Card",
+ "document_type": "Sub-Project",
+ "dynamic_filters_json": "[]",
+ "filters_json": "[]",
+ "function": "Count",
+ "idx": 7,
+ "is_public": 1,
+ "is_standard": 1,
+ "label": "Number Of Project",
+ "modified": "2025-02-05 03:24:30.369912",
+ "modified_by": "Administrator",
+ "module": "Mis 3R4Cace",
+ "name": "Number Of Project",
+ "owner": "Administrator",
+ "report_function": "Sum",
+ "show_percentage_stats": 0,
+ "stats_time_interval": "Daily",
+ "type": "Document Type"
+}

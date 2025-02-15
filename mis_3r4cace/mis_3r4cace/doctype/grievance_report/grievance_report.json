@@ -1,0 +1,156 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-02-14 20:55:07.002386",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "complainant_profile_section",
+  "name_of_complainant",
+  "gender",
+  "email",
+  "phone_number",
+  "communityidpnon_idp",
+  "column_break_pgva",
+  "region",
+  "woreda",
+  "kebele",
+  "how_to_communicate_back",
+  "detail_section",
+  "date_of_incidentaccident_occurred",
+  "address",
+  "date_of_submission_of_grievance",
+  "images",
+  "summary_of_grievance",
+  "column_break_isbh",
+  "location"
+ ],
+ "fields": [
+  {
+   "fieldname": "name_of_complainant",
+   "fieldtype": "Data",
+   "label": "Name of Complainant"
+  },
+  {
+   "fieldname": "region",
+   "fieldtype": "Link",
+   "label": "Region",
+   "options": "Region"
+  },
+  {
+   "fieldname": "kebele",
+   "fieldtype": "Link",
+   "label": "Kebele",
+   "link_filters": "[[\"Kebele\",\"woreda\",\"=\",\"eval: doc.woreda\"]]",
+   "options": "Kebele"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "how_to_communicate_back",
+   "fieldtype": "Select",
+   "label": "How To Communicate Back",
+   "options": "Phone\nEmail\nMobile"
+  },
+  {
+   "fieldname": "date_of_incidentaccident_occurred",
+   "fieldtype": "Date",
+   "label": "Date of incident/accident occurred"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "summary_of_grievance",
+   "fieldtype": "Small Text",
+   "label": "Summary of grievance"
+  },
+  {
+   "fieldname": "images",
+   "fieldtype": "Attach Image",
+   "label": "Images"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Male\nFemale"
+  },
+  {
+   "fieldname": "woreda",
+   "fieldtype": "Link",
+   "label": "Woreda",
+   "link_filters": "[[\"Woreda\",\"region\",\"=\",\"eval: doc.region\"]]",
+   "options": "Woreda"
+  },
+  {
+   "default": "+251",
+   "fieldname": "phone_number",
+   "fieldtype": "Phone",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "communityidpnon_idp",
+   "fieldtype": "Select",
+   "label": "Community(IDP/Non IDP)",
+   "options": "IDP\nNon IDP"
+  },
+  {
+   "fieldname": "date_of_submission_of_grievance",
+   "fieldtype": "Date",
+   "label": "Date of submission of grievance"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Geolocation",
+   "label": "Location"
+  },
+  {
+   "fieldname": "complainant_profile_section",
+   "fieldtype": "Section Break",
+   "label": "Complainant Profile"
+  },
+  {
+   "fieldname": "column_break_pgva",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "detail_section",
+   "fieldtype": "Section Break",
+   "label": "Detail"
+  },
+  {
+   "fieldname": "column_break_isbh",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-02-15 13:46:19.914628",
+ "modified_by": "Administrator",
+ "module": "Mis 3R4Cace",
+ "name": "Grievance Report",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
