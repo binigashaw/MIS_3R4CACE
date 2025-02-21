@@ -9,7 +9,6 @@
   "subproject_info_tab",
   "subproject_name",
   "region",
-  "zone",
   "woreda",
   "kebele",
   "site_name",
@@ -80,20 +79,11 @@
    "reqd": 1
   },
   {
-   "fieldname": "zone",
-   "fieldtype": "Link",
-   "label": "Zone",
-   "link_filters": "[[\"Zone\",\"region\",\"=\",\"eval: doc.region\"]]",
-   "options": "Zone",
-   "placeholder": "Select Zone",
-   "reqd": 1
-  },
-  {
    "fieldname": "woreda",
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Woreda",
-   "link_filters": "[[\"Woreda\",\"zone\",\"=\",\"eval: doc.zone\"]]",
+   "link_filters": "[[\"Woreda\",\"region\",\"=\",\"eval: doc.region\"]]",
    "options": "Woreda",
    "placeholder": "Select Woreda",
    "reqd": 1
@@ -409,7 +399,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-05 18:06:43.353767",
+ "modified": "2025-02-21 16:29:45.102424",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Sub-Project",

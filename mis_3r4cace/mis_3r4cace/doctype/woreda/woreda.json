@@ -7,7 +7,6 @@
  "engine": "InnoDB",
  "field_order": [
   "region",
-  "zone",
   "woreda",
   "description"
  ],
@@ -20,17 +19,6 @@
    "label": "Region",
    "options": "Region",
    "placeholder": "Select Region",
-   "reqd": 1
-  },
-  {
-   "fieldname": "zone",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "Zone",
-   "link_filters": "[[\"Zone\",\"region\",\"=\",\"eval: doc.region\"]]",
-   "options": "Zone",
-   "placeholder": "Select Zone",
    "reqd": 1
   },
   {
@@ -49,7 +37,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-12-26 14:04:31.321039",
+ "modified": "2025-02-21 16:56:53.819808",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Woreda",
