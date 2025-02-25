@@ -130,6 +130,7 @@
    "fieldname": "subproject_name",
    "fieldtype": "Data",
    "label": "Subproject Name",
+   "placeholder": "Write subproject name",
    "reqd": 1,
    "unique": 1
   },
@@ -166,7 +167,7 @@
    "label": "Sub-Component",
    "link_filters": "[[\"Subcomponent\",\"component\",\"=\",\"eval: doc.component\"]]",
    "options": "Subcomponent",
-   "placeholder": "Select sub-project component"
+   "placeholder": "Select sub-project subcomponent"
   },
   {
    "fieldname": "phase",
@@ -399,7 +400,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-21 16:29:45.102424",
+ "modified": "2025-02-24 11:57:15.417376",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Sub-Project",

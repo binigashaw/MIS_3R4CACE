@@ -8,10 +8,10 @@
  "field_order": [
   "register_kebele_section",
   "region",
-  "zone",
   "woreda",
   "kebele",
-  "description"
+  "description",
+  "kebele_population"
  ],
  "fields": [
   {
@@ -25,23 +25,12 @@
    "reqd": 1
   },
   {
-   "fieldname": "zone",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "Zone",
-   "link_filters": "[[\"Zone\",\"region\",\"=\",\"eval: doc.region\"]]",
-   "options": "Zone",
-   "placeholder": "Select Zone",
-   "reqd": 1
-  },
-  {
    "fieldname": "woreda",
    "fieldtype": "Link",
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Woreda",
-   "link_filters": "[[\"Woreda\",\"zone\",\"=\",\"eval: doc.zone\"]]",
+   "link_filters": "[[\"Woreda\",\"region\",\"=\",\"eval: doc.region\"]]",
    "options": "Woreda",
    "placeholder": "Select Woreda",
    "reqd": 1
@@ -51,23 +40,31 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Kebele",
+   "placeholder": "Write kebele name",
    "reqd": 1,
    "unique": 1
   },
   {
    "fieldname": "description",
    "fieldtype": "Data",
-   "label": "Description"
+   "label": "Description",
+   "placeholder": "Write any additional description"
   },
   {
    "fieldname": "register_kebele_section",
    "fieldtype": "Section Break",
    "label": "Register Kebele"
+  },
+  {
+   "fieldname": "kebele_population",
+   "fieldtype": "Int",
+   "label": "Kebele Population",
+   "placeholder": "Total population of kebele"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-12-26 14:03:41.266386",
+ "modified": "2025-02-24 11:47:03.387755",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Kebele",

@@ -15,6 +15,7 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Component Name",
+   "placeholder": "Write component name",
    "reqd": 1,
    "unique": 1
   },
@@ -27,7 +28,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-12-31 19:18:45.310847",
+ "modified": "2025-02-24 11:50:16.260856",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Project Component",

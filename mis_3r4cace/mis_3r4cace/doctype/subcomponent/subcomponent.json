@@ -18,6 +18,7 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Subcomponent Name",
+   "placeholder": "Write subcomponent name",
    "reqd": 1,
    "unique": 1
   },
@@ -37,7 +38,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-12-31 19:18:25.982200",
+ "modified": "2025-02-24 11:50:43.141629",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Subcomponent",
