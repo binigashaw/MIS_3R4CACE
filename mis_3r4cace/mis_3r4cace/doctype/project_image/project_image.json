@@ -17,16 +17,19 @@
    "fieldtype": "Section Break"
   },
   {
+   "bold": 1,
    "fieldname": "pro_image",
    "fieldtype": "Attach Image",
    "label": "Pro Image"
   },
   {
+   "bold": 1,
    "fieldname": "image_description",
    "fieldtype": "Data",
    "label": "Image Description"
   },
   {
+   "bold": 1,
    "fieldname": "image_date",
    "fieldtype": "Date",
    "label": "Image Date"
@@ -35,12 +38,13 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-01-28 14:31:05.140959",
+ "modified": "2025-02-25 05:55:38.876838",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Project Image",
  "owner": "Administrator",
  "permissions": [],
+ "row_format": "Dynamic",
  "sort_field": "creation",
  "sort_order": "DESC",
  "states": []
