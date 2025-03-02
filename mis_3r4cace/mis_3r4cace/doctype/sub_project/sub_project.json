@@ -198,6 +198,7 @@
    "label": "Targeted"
   },
   {
+   "default": "0",
    "fieldname": "individual_targeted",
    "fieldtype": "Int",
    "label": "Individual Targeted"
@@ -209,6 +210,7 @@
    "label": "Reached"
   },
   {
+   "default": "0",
    "fieldname": "individual_reached",
    "fieldtype": "Int",
    "label": "Individual Reached"
@@ -426,7 +428,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-25 16:18:27.361330",
+ "modified": "2025-02-27 17:30:34.340152",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Sub-Project",

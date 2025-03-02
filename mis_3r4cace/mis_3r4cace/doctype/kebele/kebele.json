@@ -11,7 +11,13 @@
   "woreda",
   "kebele",
   "description",
-  "kebele_population"
+  "column_break_nozi",
+  "kebele_population",
+  "number_of_female",
+  "number_of_male",
+  "number_of_idp",
+  "number_of_household",
+  "female_headed_hh"
  ],
  "fields": [
   {
@@ -60,11 +66,40 @@
    "fieldtype": "Int",
    "label": "Kebele Population",
    "placeholder": "Total population of kebele"
+  },
+  {
+   "fieldname": "column_break_nozi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "number_of_female",
+   "fieldtype": "Int",
+   "label": "Number of Female"
+  },
+  {
+   "fieldname": "number_of_male",
+   "fieldtype": "Int",
+   "label": "Number of Male"
+  },
+  {
+   "fieldname": "number_of_idp",
+   "fieldtype": "Int",
+   "label": "Number of IDP"
+  },
+  {
+   "fieldname": "number_of_household",
+   "fieldtype": "Int",
+   "label": "Number of Household"
+  },
+  {
+   "fieldname": "female_headed_hh",
+   "fieldtype": "Int",
+   "label": "Female Headed HH"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-24 11:47:03.387755",
+ "modified": "2025-03-02 05:07:03.366125",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Kebele",
@@ -84,6 +119,7 @@
    "write": 1
   }
  ],
+ "row_format": "Dynamic",
  "sort_field": "creation",
  "sort_order": "DESC",
  "states": [],

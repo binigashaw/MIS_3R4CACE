@@ -1,0 +1,59 @@
+{
+ "cards": [
+  {
+   "card": "# Beneficiary Reached"
+  },
+  {
+   "card": "# Female Beneficiary Reached"
+  },
+  {
+   "card": "# IDP Beneficiary Reached"
+  },
+  {
+   "card": "Total Beneficiary in Amhara"
+  },
+  {
+   "card": "Total Beneficiary in Afar"
+  },
+  {
+   "card": "Total Beneficiary in Oromia"
+  },
+  {
+   "card": "Total Beneficiary in Benishangul-Gumz"
+  },
+  {
+   "card": "Total Beneficiary in Tigray"
+  }
+ ],
+ "chart_options": "[\"#d1d8dd\"]",
+ "charts": [
+  {
+   "chart": "Beneficiary By Sector",
+   "width": "Half"
+  },
+  {
+   "chart": "Beneficiary By Region",
+   "width": "Half"
+  },
+  {
+   "chart": "Female Beneficiary By Region",
+   "width": "Half"
+  },
+  {
+   "chart": "IDP Beneficiary By Region",
+   "width": "Half"
+  }
+ ],
+ "creation": "2025-03-02 05:54:39.528694",
+ "dashboard_name": "Beneficiary Dashboard",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2025-03-02 06:57:05.789716",
+ "modified_by": "Administrator",
+ "module": "Mis 3R4Cace",
+ "name": "Beneficiary Dashboard",
+ "owner": "Administrator"
+}
