@@ -17,9 +17,9 @@
   "sector",
   "phase",
   "section_break_vera",
-  "location",
-  "section_break_peon",
   "description",
+  "column_break_dqsk",
+  "location",
   "location_tab",
   "section_break_wqra",
   "latitude",
@@ -137,13 +137,9 @@
    "placeholder": "Please write any additional information about the subproject."
   },
   {
-   "fieldname": "section_break_peon",
-   "fieldtype": "Section Break"
-  },
-  {
    "fieldname": "location_tab",
    "fieldtype": "Tab Break",
-   "label": "Location"
+   "label": "Location Map"
   },
   {
    "fieldname": "subproject_info_tab",
@@ -424,11 +420,15 @@
   {
    "fieldname": "section_break_vera",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_dqsk",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-03-04 03:02:40.580785",
+ "modified": "2025-03-04 03:12:28.928339",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Sub-Project",
