@@ -20,6 +20,8 @@
   "description",
   "column_break_dqsk",
   "location",
+  "section_break_lcpm",
+  "supproject_location",
   "location_tab",
   "section_break_wqra",
   "latitude",
@@ -424,11 +426,20 @@
   {
    "fieldname": "column_break_dqsk",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_lcpm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "supproject_location",
+   "fieldtype": "Geolocation",
+   "label": "Supproject Location"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-03-04 03:12:28.928339",
+ "modified": "2025-03-04 03:22:50.148360",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Sub-Project",
