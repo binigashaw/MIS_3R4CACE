@@ -98,8 +98,14 @@
   }
  ],
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2025-03-02 05:07:03.366125",
+ "links": [
+  {
+   "link_doctype": "Sub-Project",
+   "link_fieldname": "Kebele",
+   "table_fieldname": "kebele"
+  }
+ ],
+ "modified": "2025-03-04 03:38:39.995090",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Kebele",

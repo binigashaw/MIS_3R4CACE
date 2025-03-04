@@ -16,17 +16,16 @@
   "subcomponent",
   "sector",
   "phase",
+  "budget",
   "section_break_vera",
   "description",
-  "column_break_dqsk",
-  "location",
-  "section_break_lcpm",
-  "supproject_location",
   "location_tab",
   "section_break_wqra",
+  "location",
+  "section_break_ljlw",
   "latitude",
   "longitude",
-  "column_break_svwx",
+  "column_break_krwb",
   "address",
   "image",
   "table_hglb",
@@ -106,7 +105,8 @@
    "link_filters": "[[\"Kebele\",\"woreda\",\"=\",\"eval: doc.woreda\"]]",
    "options": "Kebele",
    "placeholder": "Select Kebele",
-   "reqd": 1
+   "reqd": 1,
+   "search_index": 1
   },
   {
    "fieldname": "sector",
@@ -411,10 +411,6 @@
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "column_break_svwx",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "location",
    "fieldtype": "Geolocation",
    "label": "Location"
@@ -424,22 +420,22 @@
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "column_break_dqsk",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "section_break_lcpm",
+   "fieldname": "section_break_ljlw",
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "supproject_location",
-   "fieldtype": "Geolocation",
-   "label": "Supproject Location"
+   "fieldname": "column_break_krwb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "budget",
+   "fieldtype": "Int",
+   "label": "Budget (USD)"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-03-04 03:22:50.148360",
+ "modified": "2025-03-04 18:30:19.661278",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Sub-Project",
