@@ -16,11 +16,11 @@
   "subcomponent",
   "sector",
   "phase",
+  "section_break_vera",
+  "location",
   "section_break_peon",
   "description",
   "location_tab",
-  "section_break_juzm",
-  "location",
   "section_break_wqra",
   "latitude",
   "longitude",
@@ -114,10 +114,6 @@
    "label": "Sector",
    "options": "Project Sector",
    "placeholder": "Select Sector"
-  },
-  {
-   "fieldname": "section_break_juzm",
-   "fieldtype": "Section Break"
   },
   {
    "fieldname": "subproject_name",
@@ -424,11 +420,15 @@
    "fieldname": "location",
    "fieldtype": "Geolocation",
    "label": "Location"
+  },
+  {
+   "fieldname": "section_break_vera",
+   "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-27 17:30:34.340152",
+ "modified": "2025-03-04 03:02:40.580785",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Sub-Project",
