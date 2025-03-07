@@ -430,12 +430,12 @@
   {
    "fieldname": "budget",
    "fieldtype": "Int",
-   "label": "Budget (USD)"
+   "label": "Budget (ETB)"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-03-04 18:30:19.661278",
+ "modified": "2025-03-06 12:37:05.749844",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Sub-Project",
