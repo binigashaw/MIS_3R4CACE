@@ -48,7 +48,7 @@
    "label": "Kebele",
    "placeholder": "Write kebele name",
    "reqd": 1,
-   "unique": 1
+   "unique": 0
   },
   {
    "fieldname": "description",
@@ -105,7 +105,7 @@
    "table_fieldname": "kebele"
   }
  ],
- "modified": "2025-03-04 03:38:39.995090",
+ "modified": "2025-03-10 05:40:56.737243",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Kebele",
