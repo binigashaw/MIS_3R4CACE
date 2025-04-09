@@ -15,7 +15,7 @@
   "component",
   "subcomponent",
   "sector",
-  "phase",
+  "cycle",
   "budget",
   "section_break_vera",
   "description",
@@ -87,6 +87,7 @@
    "fieldname": "woreda",
    "fieldtype": "Link",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Woreda",
    "link_filters": "[[\"Woreda\",\"region\",\"=\",\"eval: doc.region\"]]",
    "options": "Woreda",
@@ -101,6 +102,7 @@
    "fieldname": "kebele",
    "fieldtype": "Link",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Kebele",
    "link_filters": "[[\"Kebele\",\"woreda\",\"=\",\"eval: doc.woreda\"]]",
    "options": "Kebele",
@@ -159,12 +161,6 @@
    "placeholder": "Select sub-project subcomponent"
   },
   {
-   "fieldname": "phase",
-   "fieldtype": "Select",
-   "label": "Phase",
-   "options": "Phase One\nPhase Two"
-  },
-  {
    "fieldname": "image",
    "fieldtype": "Tab Break",
    "label": "Image"
@@ -184,6 +180,7 @@
   {
    "fieldname": "beneficiary_tab",
    "fieldtype": "Tab Break",
+   "hidden": 1,
    "label": "Beneficiary"
   },
   {
@@ -434,11 +431,17 @@
    "fieldname": "budget",
    "fieldtype": "Int",
    "label": "Budget (ETB)"
+  },
+  {
+   "fieldname": "cycle",
+   "fieldtype": "Select",
+   "label": "Cycle",
+   "options": "Cycle One\nCycle Two"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-04-03 10:45:03.260140",
+ "modified": "2025-04-09 15:34:53.524634",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Sub-Project",

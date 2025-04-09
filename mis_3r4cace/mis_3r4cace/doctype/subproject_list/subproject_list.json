@@ -1,0 +1,35 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-04-08 21:14:27.379797",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "subproject"
+ ],
+ "fields": [
+  {
+   "fieldname": "subproject",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Subproject",
+   "options": "Sub-Project",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-04-08 21:15:08.411032",
+ "modified_by": "Administrator",
+ "module": "Mis 3R4Cace",
+ "name": "subproject list",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
