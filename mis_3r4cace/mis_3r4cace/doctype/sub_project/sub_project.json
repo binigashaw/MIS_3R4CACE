@@ -80,6 +80,7 @@
    "in_standard_filter": 1,
    "label": "Region",
    "options": "Region",
+   "permlevel": 1,
    "placeholder": "Select Region",
    "reqd": 1
   },
@@ -91,6 +92,7 @@
    "label": "Woreda",
    "link_filters": "[[\"Woreda\",\"region\",\"=\",\"eval: doc.region\"]]",
    "options": "Woreda",
+   "permlevel": 1,
    "placeholder": "Select Woreda",
    "reqd": 1
   },
@@ -106,6 +108,7 @@
    "label": "Kebele",
    "link_filters": "[[\"Kebele\",\"woreda\",\"=\",\"eval: doc.woreda\"]]",
    "options": "Kebele",
+   "permlevel": 1,
    "placeholder": "Select Kebele",
    "reqd": 1,
    "search_index": 1
@@ -117,12 +120,14 @@
    "in_standard_filter": 1,
    "label": "Sector",
    "options": "Project Sector",
+   "permlevel": 1,
    "placeholder": "Select Sector"
   },
   {
    "fieldname": "subproject_name",
    "fieldtype": "Data",
    "label": "Subproject Name",
+   "permlevel": 1,
    "placeholder": "Write subproject name",
    "reqd": 1,
    "unique": 1
@@ -132,6 +137,7 @@
    "fieldtype": "Link",
    "label": "Component",
    "options": "Project Component",
+   "permlevel": 1,
    "placeholder": "Select sub-project component"
   },
   {
@@ -158,6 +164,7 @@
    "label": "Sub-Component",
    "link_filters": "[[\"Subcomponent\",\"component\",\"=\",\"eval: doc.component\"]]",
    "options": "Subcomponent",
+   "permlevel": 1,
    "placeholder": "Select sub-project subcomponent"
   },
   {
@@ -429,19 +436,20 @@
   },
   {
    "fieldname": "budget",
-   "fieldtype": "Int",
+   "fieldtype": "Float",
    "label": "Budget (ETB)"
   },
   {
    "fieldname": "cycle",
    "fieldtype": "Select",
    "label": "Cycle",
-   "options": "Cycle One\nCycle Two"
+   "options": "Cycle One\nCycle Two",
+   "permlevel": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-04-10 12:49:03.007103",
+ "modified": "2025-04-23 08:49:55.060795",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Sub-Project",

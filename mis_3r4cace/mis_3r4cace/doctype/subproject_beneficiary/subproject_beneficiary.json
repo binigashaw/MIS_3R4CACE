@@ -9,7 +9,27 @@
   "woreda",
   "kebele",
   "column_break_lmyq",
-  "subproject"
+  "subproject",
+  "population_information_section",
+  "kebele_population",
+  "column_break_tljr",
+  "number_of_female",
+  "column_break_vxza",
+  "number_of_idp",
+  "beneficiary_reached_section",
+  "individual_reached",
+  "girls_reached",
+  "men_reached",
+  "women_idp_reached",
+  "column_break_vwjs",
+  "idp_reached",
+  "boys_reached",
+  "boys_idp_reached",
+  "men_idp_reached",
+  "column_break_gkal",
+  "disabled_reached",
+  "women_reached",
+  "girls_idp_reached"
  ],
  "fields": [
   {
@@ -22,12 +42,14 @@
    "fieldname": "woreda",
    "fieldtype": "Link",
    "label": "Woreda",
+   "link_filters": "[[\"Woreda\",\"region\",\"=\",\"eval: doc.region\"]]",
    "options": "Woreda"
   },
   {
    "fieldname": "kebele",
    "fieldtype": "Link",
    "label": "Kebele",
+   "link_filters": "[[\"Kebele\",\"woreda\",\"=\",\"eval: doc.woreda\"]]",
    "options": "Kebele"
   },
   {
@@ -39,12 +61,115 @@
    "fieldtype": "Table MultiSelect",
    "label": "Subproject",
    "options": "subproject list"
+  },
+  {
+   "fieldname": "beneficiary_reached_section",
+   "fieldtype": "Section Break",
+   "label": "Beneficiary Reached"
+  },
+  {
+   "fieldname": "individual_reached",
+   "fieldtype": "Int",
+   "label": "Individual Reached"
+  },
+  {
+   "fieldname": "girls_reached",
+   "fieldtype": "Int",
+   "label": "Girls Reached"
+  },
+  {
+   "fieldname": "men_reached",
+   "fieldtype": "Int",
+   "label": "Men Reached"
+  },
+  {
+   "fieldname": "women_idp_reached",
+   "fieldtype": "Int",
+   "label": "Women IDP Reached"
+  },
+  {
+   "fieldname": "column_break_vwjs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "idp_reached",
+   "fieldtype": "Int",
+   "label": "IDP Reached"
+  },
+  {
+   "fieldname": "boys_reached",
+   "fieldtype": "Int",
+   "label": "Boys Reached"
+  },
+  {
+   "fieldname": "boys_idp_reached",
+   "fieldtype": "Int",
+   "label": "Boys IDP Reached"
+  },
+  {
+   "fieldname": "men_idp_reached",
+   "fieldtype": "Int",
+   "label": "Men IDP Reached"
+  },
+  {
+   "fieldname": "column_break_gkal",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "disabled_reached",
+   "fieldtype": "Int",
+   "label": "Disabled Reached"
+  },
+  {
+   "fieldname": "women_reached",
+   "fieldtype": "Int",
+   "label": "Women Reached"
+  },
+  {
+   "fieldname": "girls_idp_reached",
+   "fieldtype": "Int",
+   "label": "Girls IDP Reached"
+  },
+  {
+   "fieldname": "population_information_section",
+   "fieldtype": "Section Break",
+   "label": "Population information",
+   "options": "kebele"
+  },
+  {
+   "fetch_from": "kebele.kebele_population",
+   "fieldname": "kebele_population",
+   "fieldtype": "Int",
+   "label": "Kebele Population",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_tljr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "kebele.number_of_female",
+   "fieldname": "number_of_female",
+   "fieldtype": "Int",
+   "label": "Number of Female",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_vxza",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "kebele.number_of_idp",
+   "fieldname": "number_of_idp",
+   "fieldtype": "Int",
+   "label": "Number of IDP",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-04-09 18:02:16.121166",
+ "modified": "2025-04-16 09:52:55.694665",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Subproject Beneficiary",
