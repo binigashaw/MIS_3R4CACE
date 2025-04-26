@@ -48,7 +48,7 @@
    "label": "Kebele",
    "placeholder": "Write kebele name",
    "reqd": 1,
-   "unique": 0
+   "unique": 1
   },
   {
    "fieldname": "description",
@@ -63,9 +63,10 @@
   },
   {
    "fieldname": "kebele_population",
-   "fieldtype": "Int",
+   "fieldtype": "Float",
    "label": "Kebele Population",
-   "placeholder": "Total population of kebele"
+   "placeholder": "Total population of kebele",
+   "precision": "0"
   },
   {
    "fieldname": "column_break_nozi",
@@ -73,28 +74,33 @@
   },
   {
    "fieldname": "number_of_female",
-   "fieldtype": "Int",
-   "label": "Number of Female"
+   "fieldtype": "Float",
+   "label": "Number of Female",
+   "precision": "0"
   },
   {
    "fieldname": "number_of_male",
-   "fieldtype": "Int",
-   "label": "Number of Male"
+   "fieldtype": "Float",
+   "label": "Number of Male",
+   "precision": "0"
   },
   {
    "fieldname": "number_of_idp",
-   "fieldtype": "Int",
-   "label": "Number of IDP"
+   "fieldtype": "Float",
+   "label": "Number of IDP",
+   "precision": "0"
   },
   {
    "fieldname": "number_of_household",
-   "fieldtype": "Int",
-   "label": "Number of Household"
+   "fieldtype": "Float",
+   "label": "Number of Household",
+   "precision": "0"
   },
   {
    "fieldname": "female_headed_hh",
-   "fieldtype": "Int",
-   "label": "Female Headed HH"
+   "fieldtype": "Float",
+   "label": "Female Headed HH",
+   "precision": "0"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -105,7 +111,7 @@
    "table_fieldname": "kebele"
   }
  ],
- "modified": "2025-03-10 05:40:56.737243",
+ "modified": "2025-04-26 18:55:58.248584",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Kebele",

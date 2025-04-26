@@ -31,6 +31,12 @@
   "table_hglb",
   "image_zzqk",
   "beneficiary_tab",
+  "section_break_lupj",
+  "kebele_population",
+  "column_break_eqxt",
+  "number_of_female_in_kebele",
+  "column_break_rdkj",
+  "number_of_idp_in_kebele",
   "targeted_section",
   "individual_targeted",
   "boys_targeted",
@@ -187,7 +193,6 @@
   {
    "fieldname": "beneficiary_tab",
    "fieldtype": "Tab Break",
-   "hidden": 1,
    "label": "Beneficiary"
   },
   {
@@ -199,8 +204,9 @@
   {
    "default": "0",
    "fieldname": "individual_targeted",
-   "fieldtype": "Int",
-   "label": "Individual Targeted"
+   "fieldtype": "Float",
+   "label": "Individual Targeted",
+   "precision": "0"
   },
   {
    "collapsible": 1,
@@ -211,23 +217,27 @@
   {
    "default": "0",
    "fieldname": "individual_reached",
-   "fieldtype": "Int",
-   "label": "Individual Reached"
+   "fieldtype": "Float",
+   "label": "Individual Reached",
+   "precision": "0"
   },
   {
    "fieldname": "girls_reached",
-   "fieldtype": "Int",
-   "label": "Girls Reached"
+   "fieldtype": "Float",
+   "label": "Girls Reached",
+   "precision": "0"
   },
   {
    "fieldname": "men_reached",
-   "fieldtype": "Int",
-   "label": "Men Reached"
+   "fieldtype": "Float",
+   "label": "Men Reached",
+   "precision": "0"
   },
   {
    "fieldname": "women_idp_reached",
-   "fieldtype": "Int",
-   "label": "Women IDP Reached"
+   "fieldtype": "Float",
+   "label": "Women IDP Reached",
+   "precision": "0"
   },
   {
    "fieldname": "column_break_zctv",
@@ -235,23 +245,27 @@
   },
   {
    "fieldname": "idp_reached",
-   "fieldtype": "Int",
-   "label": "IDP Reached"
+   "fieldtype": "Float",
+   "label": "IDP Reached",
+   "precision": "0"
   },
   {
    "fieldname": "boys_reached",
-   "fieldtype": "Int",
-   "label": "Boys Reached"
+   "fieldtype": "Float",
+   "label": "Boys Reached",
+   "precision": "0"
   },
   {
    "fieldname": "boys_idp_reached",
-   "fieldtype": "Int",
-   "label": "Boys IDP Reached"
+   "fieldtype": "Float",
+   "label": "Boys IDP Reached",
+   "precision": "0"
   },
   {
    "fieldname": "men_idp_reached",
-   "fieldtype": "Int",
-   "label": "Men IDP Reached"
+   "fieldtype": "Float",
+   "label": "Men IDP Reached",
+   "precision": "0"
   },
   {
    "fieldname": "column_break_ynwx",
@@ -259,33 +273,39 @@
   },
   {
    "fieldname": "disabled_reached",
-   "fieldtype": "Int",
-   "label": "Disabled Reached"
+   "fieldtype": "Float",
+   "label": "Disabled Reached",
+   "precision": "0"
   },
   {
    "fieldname": "women_reached",
-   "fieldtype": "Int",
-   "label": "Women Reached"
+   "fieldtype": "Float",
+   "label": "Women Reached",
+   "precision": "0"
   },
   {
    "fieldname": "girls_idp_reached",
-   "fieldtype": "Int",
-   "label": "Girls IDP Reached"
+   "fieldtype": "Float",
+   "label": "Girls IDP Reached",
+   "precision": "0"
   },
   {
    "fieldname": "boys_targeted",
-   "fieldtype": "Int",
-   "label": "Boys Targeted"
+   "fieldtype": "Float",
+   "label": "Boys Targeted",
+   "precision": "0"
   },
   {
    "fieldname": "girls_idp_targeted",
-   "fieldtype": "Int",
-   "label": "Girls IDP Targeted"
+   "fieldtype": "Float",
+   "label": "Girls IDP Targeted",
+   "precision": "0"
   },
   {
    "fieldname": "men_idp_targeted",
-   "fieldtype": "Int",
-   "label": "Men IDP Targeted"
+   "fieldtype": "Float",
+   "label": "Men IDP Targeted",
+   "precision": "0"
   },
   {
    "fieldname": "column_break_hwin",
@@ -293,23 +313,27 @@
   },
   {
    "fieldname": "idp_targeted",
-   "fieldtype": "Int",
-   "label": "IDP Targeted"
+   "fieldtype": "Float",
+   "label": "IDP Targeted",
+   "precision": "0"
   },
   {
    "fieldname": "women_targeted",
-   "fieldtype": "Int",
-   "label": "Women Targeted"
+   "fieldtype": "Float",
+   "label": "Women Targeted",
+   "precision": "0"
   },
   {
    "fieldname": "boys_idp_targeted",
-   "fieldtype": "Int",
-   "label": "Boys IDP Targeted"
+   "fieldtype": "Float",
+   "label": "Boys IDP Targeted",
+   "precision": "0"
   },
   {
    "fieldname": "women_idp_targeted",
-   "fieldtype": "Int",
-   "label": "Women IDP Targeted"
+   "fieldtype": "Float",
+   "label": "Women IDP Targeted",
+   "precision": "0"
   },
   {
    "fieldname": "column_break_jipj",
@@ -317,18 +341,21 @@
   },
   {
    "fieldname": "disabled_targeted",
-   "fieldtype": "Int",
-   "label": "Disabled Targeted"
+   "fieldtype": "Float",
+   "label": "Disabled Targeted",
+   "precision": "0"
   },
   {
    "fieldname": "girls_targeted",
-   "fieldtype": "Int",
-   "label": "Girls Targeted"
+   "fieldtype": "Float",
+   "label": "Girls Targeted",
+   "precision": "0"
   },
   {
    "fieldname": "men_targeted",
-   "fieldtype": "Int",
-   "label": "Men Targeted"
+   "fieldtype": "Float",
+   "label": "Men Targeted",
+   "precision": "0"
   },
   {
    "fieldname": "status_tab",
@@ -437,7 +464,8 @@
   {
    "fieldname": "budget",
    "fieldtype": "Float",
-   "label": "Budget (ETB)"
+   "label": "Budget (ETB)",
+   "precision": "2"
   },
   {
    "fieldname": "cycle",
@@ -445,11 +473,52 @@
    "label": "Cycle",
    "options": "Cycle One\nCycle Two",
    "permlevel": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "section_break_lupj",
+   "fieldtype": "Section Break",
+   "label": "Kebele Population Information ",
+   "print_hide": 1,
+   "read_only": 1,
+   "report_hide": 1
+  },
+  {
+   "fetch_from": "kebele.kebele_population",
+   "fieldname": "kebele_population",
+   "fieldtype": "Float",
+   "label": "Kebele Population ",
+   "precision": "0",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_eqxt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "kebele.number_of_female",
+   "fieldname": "number_of_female_in_kebele",
+   "fieldtype": "Float",
+   "label": "Number of Female in Kebele",
+   "precision": "0",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_rdkj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "kebele.number_of_idp",
+   "fieldname": "number_of_idp_in_kebele",
+   "fieldtype": "Float",
+   "label": "Number of IDP in kebele",
+   "precision": "0",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-04-23 08:49:55.060795",
+ "modified": "2025-04-26 18:54:36.175636",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Sub-Project",
