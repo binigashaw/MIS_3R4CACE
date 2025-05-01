@@ -366,7 +366,7 @@
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "Pipeline\nProcurement Initiated\nProcurement completed\nOngoing -on track\nOngoing -delayed\nCompleted\nDropped"
+   "options": "Pipeline\nBid Initiated\nBid completed\nOngoing -on track\nOngoing -delayed\nCompleted\nDropped"
   },
   {
    "depends_on": "eval: doc.status === \"Ongoing -delayed\" || doc.status === \"Dropped\"",
@@ -518,7 +518,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-04-26 18:54:36.175636",
+ "modified": "2025-05-02 01:04:05.162482",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Sub-Project",
