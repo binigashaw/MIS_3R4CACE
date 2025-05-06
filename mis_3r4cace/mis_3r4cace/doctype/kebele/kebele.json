@@ -107,11 +107,31 @@
  "links": [
   {
    "link_doctype": "Sub-Project",
-   "link_fieldname": "Kebele",
+   "link_fieldname": "kebele",
    "table_fieldname": "kebele"
+  },
+  {
+   "group": "Committee ",
+   "link_doctype": "KDC Member",
+   "link_fieldname": "kebele"
+  },
+  {
+   "group": "Committee ",
+   "link_doctype": "NRC Member",
+   "link_fieldname": "kebele"
+  },
+  {
+   "group": "Committee ",
+   "link_doctype": "GRC Member",
+   "link_fieldname": "kebele"
+  },
+  {
+   "group": "Committee ",
+   "link_doctype": "CMC Member",
+   "link_fieldname": "kebele"
   }
  ],
- "modified": "2025-04-26 18:55:58.248584",
+ "modified": "2025-05-06 18:08:56.613201",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Kebele",

@@ -1,0 +1,125 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{kebele}-KDC-{####}",
+ "creation": "2025-05-06 17:35:27.129048",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "kebele_information_section",
+  "region",
+  "column_break_rgfd",
+  "woreda",
+  "column_break_lpau",
+  "kebele",
+  "member_information_section",
+  "full_name",
+  "sex",
+  "column_break_mngc",
+  "role",
+  "phone"
+ ],
+ "fields": [
+  {
+   "fieldname": "kebele_information_section",
+   "fieldtype": "Section Break",
+   "label": "Kebele Information "
+  },
+  {
+   "fieldname": "region",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Region",
+   "options": "Region",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_rgfd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "woreda",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Woreda",
+   "link_filters": "[[\"Woreda\",\"region\",\"=\",\"eval: doc.region\"]]",
+   "options": "Woreda",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_lpau",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "kebele",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Kebele",
+   "link_filters": "[[\"Kebele\",\"woreda\",\"=\",\"eval: doc.woreda\"]]",
+   "options": "Kebele",
+   "reqd": 1
+  },
+  {
+   "fieldname": "member_information_section",
+   "fieldtype": "Section Break",
+   "label": "Member Information"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Full Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "column_break_mngc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sex",
+   "fieldtype": "Link",
+   "label": "Sex",
+   "options": "Gender",
+   "reqd": 1
+  },
+  {
+   "fieldname": "role",
+   "fieldtype": "Select",
+   "label": "Role",
+   "options": "\nChair\nCo-Chair\nMember",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-05-06 17:58:43.036408",
+ "modified_by": "Administrator",
+ "module": "Mis 3R4Cace",
+ "name": "KDC Member",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

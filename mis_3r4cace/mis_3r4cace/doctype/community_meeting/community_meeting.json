@@ -1,0 +1,155 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{kebele}-{type_of_community_meeting}-{####}",
+ "creation": "2025-05-06 19:25:00.752509",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "kebele_information_section",
+  "region",
+  "column_break_rgfd",
+  "woreda",
+  "column_break_lpau",
+  "kebele",
+  "section_break_vfhp",
+  "meeting_date",
+  "type_of_community_meeting",
+  "number_of_participating_households",
+  "column_break_voio",
+  "number_of_female_headed_households",
+  "number_of_male_headed_households",
+  "number_of_participating_idp_headed_households",
+  "meeting_attachments_section",
+  "meeting_minute",
+  "column_break_tbig",
+  "meeting_attendance"
+ ],
+ "fields": [
+  {
+   "fieldname": "kebele_information_section",
+   "fieldtype": "Section Break",
+   "label": "Kebele Information "
+  },
+  {
+   "fieldname": "region",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Region",
+   "options": "Region",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_rgfd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "woreda",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Woreda",
+   "link_filters": "[[\"Woreda\",\"region\",\"=\",\"eval: doc.region\"]]",
+   "options": "Woreda",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_lpau",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "kebele",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Kebele",
+   "link_filters": "[[\"Kebele\",\"woreda\",\"=\",\"eval: doc.woreda\"]]",
+   "options": "Kebele",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_vfhp",
+   "fieldtype": "Section Break",
+   "label": "Meeting Detail"
+  },
+  {
+   "fieldname": "meeting_date",
+   "fieldtype": "Date",
+   "label": "Meeting Date"
+  },
+  {
+   "fieldname": "type_of_community_meeting",
+   "fieldtype": "Select",
+   "label": "Type of Community Meeting",
+   "options": "\nValidation Meeting\nConsultative Meeting\nReplaced of NRC members\nReplaced of GRC members\nReplaced of CMC members\nDialogue\nOther"
+  },
+  {
+   "fieldname": "number_of_participating_households",
+   "fieldtype": "Int",
+   "label": "Number of Participating Households"
+  },
+  {
+   "fieldname": "column_break_voio",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "number_of_female_headed_households",
+   "fieldtype": "Int",
+   "label": "Number of Female Headed Households"
+  },
+  {
+   "fieldname": "number_of_male_headed_households",
+   "fieldtype": "Int",
+   "label": "Number of Male Headed Households"
+  },
+  {
+   "fieldname": "number_of_participating_idp_headed_households",
+   "fieldtype": "Int",
+   "label": "Number of Participating IDP Headed Households"
+  },
+  {
+   "fieldname": "meeting_attachments_section",
+   "fieldtype": "Section Break",
+   "label": "Meeting Attachments "
+  },
+  {
+   "fieldname": "meeting_minute",
+   "fieldtype": "Attach",
+   "label": "Meeting Minute"
+  },
+  {
+   "fieldname": "column_break_tbig",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "meeting_attendance",
+   "fieldtype": "Attach",
+   "label": "Meeting Attendance"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-05-06 19:42:02.134214",
+ "modified_by": "Administrator",
+ "module": "Mis 3R4Cace",
+ "name": "Community Meeting",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

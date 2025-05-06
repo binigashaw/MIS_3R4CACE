@@ -1,0 +1,181 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:subproject",
+ "creation": "2025-05-02 16:00:00.806622",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "region",
+  "woreda",
+  "kebele",
+  "column_break_lmyq",
+  "subproject",
+  "sector",
+  "risk_classification_section",
+  "schedule_1",
+  "column_break_opbj",
+  "schedule_2",
+  "column_break_pffs",
+  "schedule_3",
+  "instruments_prepared_section",
+  "raparap",
+  "column_break_mzpq",
+  "pesiaesia",
+  "column_break_xaqr",
+  "esmp",
+  "column_break_xorz",
+  "approval",
+  "attach_certificate_section",
+  "certificate"
+ ],
+ "fields": [
+  {
+   "fieldname": "region",
+   "fieldtype": "Link",
+   "label": "Region",
+   "options": "Region"
+  },
+  {
+   "fieldname": "woreda",
+   "fieldtype": "Link",
+   "label": "Woreda",
+   "link_filters": "[[\"Woreda\",\"region\",\"=\",\"eval: doc.region\"]]",
+   "options": "Woreda"
+  },
+  {
+   "fieldname": "kebele",
+   "fieldtype": "Link",
+   "label": "Kebele",
+   "link_filters": "[[\"Kebele\",\"woreda\",\"=\",\"eval: doc.woreda\"]]",
+   "options": "Kebele"
+  },
+  {
+   "fieldname": "column_break_lmyq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "subproject",
+   "fieldtype": "Link",
+   "label": "Subproject",
+   "options": "Sub-Project",
+   "unique": 1
+  },
+  {
+   "fieldname": "risk_classification_section",
+   "fieldtype": "Section Break",
+   "label": "Risk classification"
+  },
+  {
+   "default": "0",
+   "fieldname": "schedule_1",
+   "fieldtype": "Check",
+   "label": "Schedule 1"
+  },
+  {
+   "fieldname": "column_break_opbj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "schedule_2",
+   "fieldtype": "Check",
+   "label": "Schedule 2"
+  },
+  {
+   "fieldname": "column_break_pffs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "schedule_3",
+   "fieldtype": "Check",
+   "label": "Schedule 3"
+  },
+  {
+   "fieldname": "instruments_prepared_section",
+   "fieldtype": "Section Break",
+   "label": "Instruments prepared"
+  },
+  {
+   "default": "0",
+   "fieldname": "raparap",
+   "fieldtype": "Check",
+   "label": "RAP/ARAP"
+  },
+  {
+   "fieldname": "column_break_mzpq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "pesiaesia",
+   "fieldtype": "Check",
+   "label": "PESIA/ESIA"
+  },
+  {
+   "fieldname": "column_break_xaqr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "esmp",
+   "fieldtype": "Check",
+   "label": "ESMP"
+  },
+  {
+   "fieldname": "column_break_xorz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "approval",
+   "fieldtype": "Check",
+   "label": "Approval"
+  },
+  {
+   "fieldname": "attach_certificate_section",
+   "fieldtype": "Section Break",
+   "label": "Attach Certificate"
+  },
+  {
+   "fieldname": "certificate",
+   "fieldtype": "Attach",
+   "label": "Certificate"
+  },
+  {
+   "fetch_from": "subproject.sector",
+   "fieldname": "sector",
+   "fieldtype": "Data",
+   "label": "Sector",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-05-02 16:44:07.431513",
+ "modified_by": "Administrator",
+ "module": "Mis 3R4Cace",
+ "name": "ESRM Data",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
