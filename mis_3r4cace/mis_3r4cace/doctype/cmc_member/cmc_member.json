@@ -15,9 +15,10 @@
   "member_information_section",
   "full_name",
   "sex",
-  "column_break_mngc",
   "role",
-  "phone"
+  "column_break_mngc",
+  "phone",
+  "representative"
  ],
  "fields": [
   {
@@ -57,7 +58,8 @@
    "label": "Kebele",
    "link_filters": "[[\"Kebele\",\"woreda\",\"=\",\"eval: doc.woreda\"]]",
    "options": "Kebele",
-   "reqd": 1
+   "reqd": 1,
+   "search_index": 1
   },
   {
    "fieldname": "member_information_section",
@@ -93,12 +95,18 @@
    "fieldname": "phone",
    "fieldtype": "Data",
    "label": "Phone"
+  },
+  {
+   "fieldname": "representative",
+   "fieldtype": "Select",
+   "label": "Representative",
+   "options": "\nWomen\nYouth\nHEW\nIDP\nOther"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-05-06 18:02:46.326395",
+ "modified": "2025-05-19 14:18:15.357999",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "CMC Member",

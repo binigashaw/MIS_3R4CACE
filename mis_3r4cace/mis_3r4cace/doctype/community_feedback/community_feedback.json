@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{region}-{kebele}-Feedback-{####}",
  "creation": "2025-02-15 13:49:52.593347",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -103,10 +104,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-04-26 18:18:04.510420",
+ "modified": "2025-05-07 19:12:42.399505",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Community Feedback",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

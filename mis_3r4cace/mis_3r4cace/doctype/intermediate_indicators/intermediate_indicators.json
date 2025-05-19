@@ -1,0 +1,138 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:indicator_name",
+ "creation": "2025-05-14 14:46:52.060547",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project_development_objective",
+  "indicator_name",
+  "pbc",
+  "baseline",
+  "target_1",
+  "target_2",
+  "target_3",
+  "target_4",
+  "end_target",
+  "column_break_plej",
+  "action_status",
+  "indicator_group",
+  "unit",
+  "note"
+ ],
+ "fields": [
+  {
+   "fieldname": "indicator_name",
+   "fieldtype": "Data",
+   "label": "IR Indicator Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "baseline",
+   "fieldtype": "Float",
+   "label": "Baseline",
+   "precision": "0"
+  },
+  {
+   "fieldname": "target_1",
+   "fieldtype": "Float",
+   "label": "Target Year 1",
+   "precision": "0"
+  },
+  {
+   "fieldname": "target_2",
+   "fieldtype": "Float",
+   "label": "Target Year 2",
+   "precision": "0"
+  },
+  {
+   "fieldname": "target_3",
+   "fieldtype": "Float",
+   "label": "Target Year 3",
+   "precision": "0"
+  },
+  {
+   "fieldname": "target_4",
+   "fieldtype": "Float",
+   "label": "Target Year 4",
+   "precision": "0"
+  },
+  {
+   "fieldname": "end_target",
+   "fieldtype": "Float",
+   "label": "End Target",
+   "precision": "0"
+  },
+  {
+   "fieldname": "column_break_plej",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "pbc",
+   "fieldtype": "Check",
+   "label": "PBC"
+  },
+  {
+   "fieldname": "action_status",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Action Status",
+   "options": "New\nRevised\nContinued"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Small Text",
+   "label": "Note"
+  },
+  {
+   "fieldname": "indicator_group",
+   "fieldtype": "Link",
+   "label": "Indicator Group",
+   "options": "Intermediate Indicators"
+  },
+  {
+   "fieldname": "unit",
+   "fieldtype": "Select",
+   "label": "Measurement",
+   "options": "Number\nPercentage"
+  },
+  {
+   "fieldname": "project_development_objective",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Project Development Objective",
+   "options": "Result Framework"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-05-19 12:14:00.860551",
+ "modified_by": "Administrator",
+ "module": "Mis 3R4Cace",
+ "name": "Intermediate Indicators",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "indicator_name"
+}

@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{region}-{kebele}-Grievance-{####}",
  "creation": "2025-02-14 20:55:07.002386",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -131,10 +132,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-04-02 18:49:27.197318",
+ "modified": "2025-05-07 19:14:57.103992",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Grievance Report",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

@@ -16,5 +16,10 @@ frappe.ui.form.on('Subproject Beneficiary', {
                 }
             };
         });
+    },
+    validate: function(frm) {
+        if (frm.doc.individual_reached > frm.doc.kebele_population) {
+            frappe.throw(__('Beneficiaries cannot exceed the Kebele population.'));
+        }
     }
 });

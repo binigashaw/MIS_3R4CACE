@@ -1,0 +1,140 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:indicator_name",
+ "creation": "2025-05-13 14:12:29.037962",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project_development_objective",
+  "indicator_name",
+  "pbc",
+  "baseline",
+  "target_1",
+  "target_2",
+  "target_3",
+  "target_4",
+  "column_break_sjbz",
+  "end_target",
+  "disaggregation",
+  "objective_group",
+  "unit",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "indicator_name",
+   "fieldtype": "Data",
+   "label": "PDO Indicator Name",
+   "unique": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "pbc",
+   "fieldtype": "Check",
+   "label": "PBC"
+  },
+  {
+   "fieldname": "baseline",
+   "fieldtype": "Float",
+   "label": "Baseline",
+   "precision": "0"
+  },
+  {
+   "fieldname": "target_1",
+   "fieldtype": "Float",
+   "label": "Target Year 1",
+   "precision": "0"
+  },
+  {
+   "fieldname": "target_2",
+   "fieldtype": "Float",
+   "label": "Target Year 2",
+   "precision": "0"
+  },
+  {
+   "fieldname": "target_3",
+   "fieldtype": "Float",
+   "label": "Target Year 3",
+   "precision": "0"
+  },
+  {
+   "fieldname": "target_4",
+   "fieldtype": "Float",
+   "label": "Target Year 4",
+   "precision": "0"
+  },
+  {
+   "fieldname": "column_break_sjbz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "end_target",
+   "fieldtype": "Float",
+   "label": "End Target",
+   "precision": "0"
+  },
+  {
+   "fieldname": "disaggregation",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_standard_filter": 1,
+   "label": "Disaggregation",
+   "options": "Total\nFemale\nDisplaced"
+  },
+  {
+   "fieldname": "objective_group",
+   "fieldtype": "Link",
+   "label": "Objective Group",
+   "options": "PDO Indicators"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "project_development_objective",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_standard_filter": 1,
+   "label": "Project Development Objective",
+   "options": "Result Framework"
+  },
+  {
+   "fieldname": "unit",
+   "fieldtype": "Select",
+   "label": "Measurement",
+   "options": "Number\nPercentage"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-05-19 12:10:56.088990",
+ "modified_by": "Administrator",
+ "module": "Mis 3R4Cace",
+ "name": "PDO Indicators",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "indicator_name"
+}

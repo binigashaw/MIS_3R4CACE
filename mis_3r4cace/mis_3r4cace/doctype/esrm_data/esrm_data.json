@@ -12,6 +12,10 @@
   "column_break_lmyq",
   "subproject",
   "sector",
+  "e_and_s_screening_documents_section",
+  "eligibility_checklist_document",
+  "column_break_qdiz",
+  "further_screening_document",
   "risk_classification_section",
   "schedule_1",
   "column_break_opbj",
@@ -19,36 +23,43 @@
   "column_break_pffs",
   "schedule_3",
   "instruments_prepared_section",
+  "column_break_yhfx",
   "raparap",
+  "attach_rap_document",
   "column_break_mzpq",
   "pesiaesia",
+  "attach_pesia_document",
   "column_break_xaqr",
   "esmp",
+  "attach_esmp_document",
   "column_break_xorz",
   "approval",
-  "attach_certificate_section",
-  "certificate"
+  "certificate",
+  "workflow_state"
  ],
  "fields": [
   {
    "fieldname": "region",
    "fieldtype": "Link",
    "label": "Region",
-   "options": "Region"
+   "options": "Region",
+   "reqd": 1
   },
   {
    "fieldname": "woreda",
    "fieldtype": "Link",
    "label": "Woreda",
    "link_filters": "[[\"Woreda\",\"region\",\"=\",\"eval: doc.region\"]]",
-   "options": "Woreda"
+   "options": "Woreda",
+   "reqd": 1
   },
   {
    "fieldname": "kebele",
    "fieldtype": "Link",
    "label": "Kebele",
    "link_filters": "[[\"Kebele\",\"woreda\",\"=\",\"eval: doc.woreda\"]]",
-   "options": "Kebele"
+   "options": "Kebele",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_lmyq",
@@ -58,7 +69,9 @@
    "fieldname": "subproject",
    "fieldtype": "Link",
    "label": "Subproject",
+   "link_filters": "[[\"subproject\",\"kebele\",\"=\",\"eval: doc.kebele\"]]",
    "options": "Sub-Project",
+   "reqd": 1,
    "unique": 1
   },
   {
@@ -99,6 +112,7 @@
   },
   {
    "default": "0",
+   "depends_on": "eval:doc.schedule_2 || doc.schedule_1;",
    "fieldname": "raparap",
    "fieldtype": "Check",
    "label": "RAP/ARAP"
@@ -109,6 +123,7 @@
   },
   {
    "default": "0",
+   "depends_on": "eval:doc.schedule_2 || doc.schedule_1;",
    "fieldname": "pesiaesia",
    "fieldtype": "Check",
    "label": "PESIA/ESIA"
@@ -119,6 +134,7 @@
   },
   {
    "default": "0",
+   "depends_on": "eval:doc.schedule_2 || doc.schedule_1;",
    "fieldname": "esmp",
    "fieldtype": "Check",
    "label": "ESMP"
@@ -134,11 +150,6 @@
    "label": "Approval"
   },
   {
-   "fieldname": "attach_certificate_section",
-   "fieldtype": "Section Break",
-   "label": "Attach Certificate"
-  },
-  {
    "fieldname": "certificate",
    "fieldtype": "Attach",
    "label": "Certificate"
@@ -149,12 +160,65 @@
    "fieldtype": "Data",
    "label": "Sector",
    "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.schedule_2 || doc.schedule_1;",
+   "fieldname": "attach_rap_document",
+   "fieldtype": "Attach",
+   "label": "Attach RAP Document"
+  },
+  {
+   "depends_on": "eval:doc.schedule_2 || doc.schedule_1;",
+   "fieldname": "attach_pesia_document",
+   "fieldtype": "Attach",
+   "label": "Attach PESIA Document"
+  },
+  {
+   "depends_on": "eval:doc.schedule_2 || doc.schedule_1;",
+   "fieldname": "attach_esmp_document",
+   "fieldtype": "Attach",
+   "label": "Attach ESMP Document"
+  },
+  {
+   "fieldname": "e_and_s_screening_documents_section",
+   "fieldtype": "Section Break",
+   "label": "E and S Screening Documents"
+  },
+  {
+   "fieldname": "eligibility_checklist_document",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Eligibility Checklist Document",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_qdiz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "further_screening_document",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Further Screening Document",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_yhfx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "workflow_state",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Workflow state"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-05-02 16:44:07.431513",
+ "modified": "2025-05-19 17:13:19.020323",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "ESRM Data",

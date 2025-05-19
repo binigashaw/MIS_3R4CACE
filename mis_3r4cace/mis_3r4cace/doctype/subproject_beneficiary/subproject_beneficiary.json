@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{region}-{woreda}-{kebele}",
  "creation": "2025-04-09 17:59:06.087931",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -35,12 +36,16 @@
   {
    "fieldname": "region",
    "fieldtype": "Link",
+   "in_filter": 1,
+   "in_standard_filter": 1,
    "label": "Region",
    "options": "Region"
   },
   {
    "fieldname": "woreda",
    "fieldtype": "Link",
+   "in_filter": 1,
+   "in_standard_filter": 1,
    "label": "Woreda",
    "link_filters": "[[\"Woreda\",\"region\",\"=\",\"eval: doc.region\"]]",
    "options": "Woreda"
@@ -48,6 +53,8 @@
   {
    "fieldname": "kebele",
    "fieldtype": "Link",
+   "in_filter": 1,
+   "in_standard_filter": 1,
    "label": "Kebele",
    "link_filters": "[[\"Kebele\",\"woreda\",\"=\",\"eval: doc.woreda\"]]",
    "options": "Kebele"
@@ -75,6 +82,7 @@
   {
    "fieldname": "girls_reached",
    "fieldtype": "Int",
+   "hidden": 1,
    "label": "Girls Reached"
   },
   {
@@ -85,6 +93,7 @@
   {
    "fieldname": "women_idp_reached",
    "fieldtype": "Int",
+   "hidden": 1,
    "label": "Women IDP Reached"
   },
   {
@@ -99,16 +108,19 @@
   {
    "fieldname": "boys_reached",
    "fieldtype": "Int",
+   "hidden": 1,
    "label": "Boys Reached"
   },
   {
    "fieldname": "boys_idp_reached",
    "fieldtype": "Int",
+   "hidden": 1,
    "label": "Boys IDP Reached"
   },
   {
    "fieldname": "men_idp_reached",
    "fieldtype": "Int",
+   "hidden": 1,
    "label": "Men IDP Reached"
   },
   {
@@ -118,6 +130,7 @@
   {
    "fieldname": "disabled_reached",
    "fieldtype": "Int",
+   "hidden": 1,
    "label": "Disabled Reached"
   },
   {
@@ -128,6 +141,7 @@
   {
    "fieldname": "girls_idp_reached",
    "fieldtype": "Int",
+   "hidden": 1,
    "label": "Girls IDP Reached"
   },
   {
@@ -169,10 +183,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-04-16 09:52:55.694665",
+ "modified": "2025-05-19 15:40:16.513012",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Subproject Beneficiary",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
