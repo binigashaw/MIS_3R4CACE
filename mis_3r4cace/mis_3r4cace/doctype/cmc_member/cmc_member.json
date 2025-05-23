@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{kebele}-KDC-{####}",
+ "autoname": "format:{kebele}-CMC-{####}",
  "creation": "2025-05-06 18:02:46.326395",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -12,13 +12,14 @@
   "woreda",
   "column_break_lpau",
   "kebele",
-  "member_information_section",
-  "full_name",
-  "sex",
-  "role",
-  "column_break_mngc",
-  "phone",
-  "representative"
+  "section_break_sdgu",
+  "male",
+  "column_break_geuu",
+  "female",
+  "column_break_rohs",
+  "total",
+  "section_break_elym",
+  "table_koyi"
  ],
  "fields": [
   {
@@ -30,6 +31,7 @@
    "fieldname": "region",
    "fieldtype": "Link",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Region",
    "options": "Region",
    "reqd": 1
@@ -42,6 +44,7 @@
    "fieldname": "woreda",
    "fieldtype": "Link",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Woreda",
    "link_filters": "[[\"Woreda\",\"region\",\"=\",\"eval: doc.region\"]]",
    "options": "Woreda",
@@ -55,6 +58,7 @@
    "fieldname": "kebele",
    "fieldtype": "Link",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Kebele",
    "link_filters": "[[\"Kebele\",\"woreda\",\"=\",\"eval: doc.woreda\"]]",
    "options": "Kebele",
@@ -62,51 +66,55 @@
    "search_index": 1
   },
   {
-   "fieldname": "member_information_section",
+   "fieldname": "section_break_elym",
    "fieldtype": "Section Break",
-   "label": "Member Information"
+   "label": "CMC Members List"
   },
   {
-   "fieldname": "full_name",
-   "fieldtype": "Data",
+   "fieldname": "table_koyi",
+   "fieldtype": "Table",
+   "label": "CMC Members",
+   "options": "Community Member"
+  },
+  {
+   "fieldname": "section_break_sdgu",
+   "fieldtype": "Section Break",
+   "label": "Gender Composition"
+  },
+  {
+   "fieldname": "male",
+   "fieldtype": "Int",
    "in_list_view": 1,
-   "label": "Full Name",
-   "reqd": 1
+   "label": "Male",
+   "read_only": 1
   },
   {
-   "fieldname": "sex",
-   "fieldtype": "Link",
-   "label": "Sex",
-   "options": "Gender",
-   "reqd": 1
-  },
-  {
-   "fieldname": "column_break_mngc",
+   "fieldname": "column_break_geuu",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "role",
-   "fieldtype": "Select",
-   "label": "Role",
-   "options": "\nChair\nCo-Chair\nMember",
-   "reqd": 1
+   "fieldname": "female",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Female",
+   "read_only": 1
   },
   {
-   "fieldname": "phone",
-   "fieldtype": "Data",
-   "label": "Phone"
+   "fieldname": "column_break_rohs",
+   "fieldtype": "Column Break"
   },
   {
-   "fieldname": "representative",
-   "fieldtype": "Select",
-   "label": "Representative",
-   "options": "\nWomen\nYouth\nHEW\nIDP\nOther"
+   "fieldname": "total",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Total",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-05-19 14:18:15.357999",
+ "modified": "2025-05-23 16:53:49.845350",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "CMC Member",
