@@ -110,11 +110,13 @@
   {
    "fieldname": "meeting_attachments_section",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Meeting Attachments "
   },
   {
    "fieldname": "meeting_minute",
    "fieldtype": "Attach",
+   "hidden": 1,
    "label": "Meeting Minute"
   },
   {
@@ -124,6 +126,7 @@
   {
    "fieldname": "meeting_attendance",
    "fieldtype": "Attach",
+   "hidden": 1,
    "label": "Meeting Attendance"
   },
   {
@@ -139,7 +142,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-05-19 14:21:20.464452",
+ "modified": "2025-05-23 17:44:00.951179",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Community Meeting",
