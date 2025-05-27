@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:item_name",
  "creation": "2025-05-27 06:04:38.898137",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -17,7 +18,8 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "Item Name"
+   "label": "Item Name",
+   "unique": 1
   },
   {
    "fieldname": "number_of_item",
@@ -41,10 +43,11 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-05-27 06:16:12.874595",
+ "modified": "2025-05-27 06:53:10.163688",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Item List",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [],
  "row_format": "Dynamic",

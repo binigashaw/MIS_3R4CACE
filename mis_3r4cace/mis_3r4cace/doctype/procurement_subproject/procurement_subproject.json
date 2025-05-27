@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{region}-SubPro-{#####}",
  "creation": "2025-05-27 05:58:29.204868",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -477,10 +478,11 @@
    "link_fieldname": "subproject"
   }
  ],
- "modified": "2025-05-27 06:38:19.883826",
+ "modified": "2025-05-27 06:51:45.248321",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Procurement Subproject",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
@@ -499,6 +501,5 @@
  "row_format": "Dynamic",
  "sort_field": "creation",
  "sort_order": "DESC",
- "states": [],
- "title_field": "subproject_name"
+ "states": []
 }
