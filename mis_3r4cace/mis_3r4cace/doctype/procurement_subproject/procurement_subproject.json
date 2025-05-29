@@ -116,7 +116,6 @@
    "link_filters": "[[\"Kebele\",\"woreda\",\"=\",\"eval: doc.woreda\"]]",
    "options": "Kebele",
    "placeholder": "Select Kebele",
-   "reqd": 1,
    "search_index": 1
   },
   {
@@ -478,7 +477,7 @@
    "link_fieldname": "subproject"
   }
  ],
- "modified": "2025-05-27 06:51:45.248321",
+ "modified": "2025-05-29 09:19:34.007121",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Procurement Subproject",
