@@ -16,6 +16,7 @@
   {
    "fieldname": "progress_status",
    "fieldtype": "Percent",
+   "in_list_view": 1,
    "label": "Progress Status"
   },
   {
@@ -25,6 +26,7 @@
   {
    "fieldname": "month",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Month",
    "options": "January\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember"
   },
@@ -35,6 +37,7 @@
   {
    "fieldname": "year",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Year",
    "options": "2023\n2024\n2025\n2026\n2027\n2028"
   }
@@ -42,12 +45,13 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-01-30 10:19:59.149803",
+ "modified": "2025-06-02 05:33:37.763958",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Subproject Progress",
  "owner": "Administrator",
  "permissions": [],
+ "row_format": "Dynamic",
  "sort_field": "creation",
  "sort_order": "DESC",
  "states": []
