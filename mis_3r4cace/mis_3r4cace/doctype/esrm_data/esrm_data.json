@@ -11,6 +11,7 @@
   "kebele",
   "column_break_lmyq",
   "subproject",
+  "subproject_name",
   "sector",
   "e_and_s_screening_documents_section",
   "eligibility_checklist_document",
@@ -217,12 +218,18 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Workflow state"
+  },
+  {
+   "fetch_from": "subproject.subproject_name",
+   "fieldname": "subproject_name",
+   "fieldtype": "Data",
+   "label": "Subproject Name"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-05-23 10:39:04.958832",
+ "modified": "2025-06-27 09:08:32.546104",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "ESRM Data",
