@@ -1,0 +1,129 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{region}-{woreda}-{kebele}-{report_month}-{year}",
+ "creation": "2025-08-07 11:21:53.130902",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "year",
+  "report_month",
+  "name_of_indicator",
+  "region",
+  "woreda",
+  "kebele",
+  "column_break_twvr",
+  "service_provider",
+  "female",
+  "male",
+  "total"
+ ],
+ "fields": [
+  {
+   "fieldname": "region",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Region",
+   "options": "Region"
+  },
+  {
+   "fieldname": "woreda",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Woreda",
+   "link_filters": "[[\"Woreda\",\"region\",\"=\",\"eval: doc.region\"]]",
+   "options": "Woreda"
+  },
+  {
+   "fieldname": "kebele",
+   "fieldtype": "Link",
+   "label": "Kebele",
+   "link_filters": "[[\"Kebele\",\"woreda\",\"=\",\"eval: doc.woreda\"]]",
+   "options": "Kebele"
+  },
+  {
+   "fieldname": "service_provider",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Service Provider",
+   "options": "Service Provider"
+  },
+  {
+   "fieldname": "report_month",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Report Month",
+   "options": "January\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember"
+  },
+  {
+   "default": "2025/2026",
+   "fieldname": "year",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Fiscal Year",
+   "options": "2023/2024\n2024/2025\n2025/2026\n2026/2027\n2027/2028\n2028/2029"
+  },
+  {
+   "fieldname": "female",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Female"
+  },
+  {
+   "fieldname": "male",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Male"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "name_of_indicator",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Name Of Indicator",
+   "link_filters": "[[\"Name Of Indicator\",\"fiscal_year\",\"=\",\"eval: doc.year\"]]",
+   "options": "Indicator Report"
+  },
+  {
+   "fieldname": "column_break_twvr",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-08-09 19:53:13.856095",
+ "modified_by": "Administrator",
+ "module": "Mis 3R4Cace",
+ "name": "Indicator Progress Report",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

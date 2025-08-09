@@ -1,0 +1,99 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{activity_id}-{budget_year}",
+ "creation": "2025-08-05 10:59:49.555698",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "activity_id",
+  "activity_category",
+  "responsible",
+  "budget",
+  "budget_year",
+  "column_break_tdln",
+  "activity_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "activity_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Activity ID"
+  },
+  {
+   "fieldname": "activity_category",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Activity Category ",
+   "options": "Activity Category"
+  },
+  {
+   "fieldname": "activity_name",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Activity Name"
+  },
+  {
+   "fieldname": "responsible",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Responsible",
+   "options": "Comp 2 Organization"
+  },
+  {
+   "fieldname": "budget",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Budget",
+   "precision": "2"
+  },
+  {
+   "fieldname": "budget_year",
+   "fieldtype": "Select",
+   "label": "Budget Year",
+   "options": "2025/2026\n2026/2027\n2027/2028\n2028/2029"
+  },
+  {
+   "fieldname": "column_break_tdln",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "group": "Activity Report",
+   "link_doctype": "Activity Report",
+   "link_fieldname": "name_of_activity"
+  }
+ ],
+ "modified": "2025-08-09 17:46:59.909761",
+ "modified_by": "Administrator",
+ "module": "Mis 3R4Cace",
+ "name": "Activities",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "activity_id"
+}
