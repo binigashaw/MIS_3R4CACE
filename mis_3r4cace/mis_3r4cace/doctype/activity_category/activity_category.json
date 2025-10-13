@@ -13,19 +13,21 @@
   {
    "fieldname": "category_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Category Name",
    "unique": 1
   },
   {
    "fieldname": "category_description",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Category Description"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-08-04 14:25:38.831657",
+ "modified": "2025-10-04 12:09:28.322219",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Activity Category",

@@ -6,7 +6,7 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "indicator_group",
+  "subcomponent",
   "name_of_indicator",
   "female",
   "male",
@@ -15,19 +15,12 @@
  ],
  "fields": [
   {
-   "fieldname": "indicator_group",
-   "fieldtype": "Link",
-   "in_standard_filter": 1,
-   "label": "Indicator Group",
-   "options": "Indicatory Category"
-  },
-  {
    "fieldname": "name_of_indicator",
    "fieldtype": "Link",
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Name of Indicator",
-   "link_filters": "[[\"Name of Indicator\",\"indicator_group\",\"=\",\"eval: doc.indicator_group\"]]",
+   "link_filters": "[[\"name_of_indicator\",\"subcomponent\",\"=\",\"eval: doc.subcomponent\"]]",
    "options": "Comp 2 Indicator",
    "unique": 1
   },
@@ -60,6 +53,13 @@
    "in_standard_filter": 1,
    "label": "Fiscal Year",
    "options": "2023/2024\n2024/2025\n2025/2026\n2026/2027\n2027/2028\n2028/2029"
+  },
+  {
+   "fieldname": "subcomponent",
+   "fieldtype": "Link",
+   "label": "Subcomponent",
+   "link_filters": "[[\"Subcomponent\",\"component\",\"=\",\"Component 2\"]]",
+   "options": "Subcomponent"
   }
  ],
  "grid_page_length": 50,
@@ -71,7 +71,7 @@
    "link_fieldname": "name_of_indicator"
   }
  ],
- "modified": "2025-08-09 19:14:41.689241",
+ "modified": "2025-10-08 08:21:48.309586",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Indicator Report",

@@ -9,6 +9,7 @@
  "field_order": [
   "name_of_activity",
   "small_text_dqhc",
+  "activity_category",
   "region",
   "woreda",
   "kebele",
@@ -16,10 +17,26 @@
   "column_break_ntnb",
   "report_month",
   "year",
+  "activity_report_detail",
+  "budget_utilized",
+  "consultancy_status",
+  "goods_status",
+  "section_break_sjcf",
   "male",
+  "column_break_wxjg",
   "female",
+  "column_break_qsyx",
   "total",
-  "activity_report_detail"
+  "section_break_bvrq",
+  "training_start_date",
+  "column_break_rfof",
+  "training_end_date",
+  "column_break_cxin",
+  "training_city_and_place",
+  "section_break_lovz",
+  "table_kbat",
+  "section_break_pxre",
+  "table_tcsr"
  ],
  "fields": [
   {
@@ -93,7 +110,8 @@
    "in_standard_filter": 1,
    "label": "Activity ID",
    "options": "Activities",
-   "reqd": 1
+   "reqd": 1,
+   "search_index": 1
   },
   {
    "fetch_from": "name_of_activity.activity_name",
@@ -110,12 +128,106 @@
    "fieldname": "activity_report_detail",
    "fieldtype": "Small Text",
    "label": "Activity Report Detail"
+  },
+  {
+   "fetch_from": "name_of_activity.activity_category",
+   "fieldname": "activity_category",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_standard_filter": 1,
+   "label": "Activity Category ",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval: doc.activity_category === \"Training and Workshops\" || doc.activity_category === \"Operating\"",
+   "fieldname": "section_break_sjcf",
+   "fieldtype": "Section Break",
+   "label": "# of Participant"
+  },
+  {
+   "fieldname": "column_break_wxjg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_qsyx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_lovz",
+   "fieldtype": "Section Break",
+   "label": "Attachment Section"
+  },
+  {
+   "fieldname": "table_kbat",
+   "fieldtype": "Table",
+   "options": "Activity Attachment"
+  },
+  {
+   "depends_on": "eval: doc.activity_category === \"Consultancy\";",
+   "fieldname": "consultancy_status",
+   "fieldtype": "Select",
+   "label": "Consultancy Status",
+   "options": "\nContract Signed\nDraft Strategy Submitted\nStrategy Approved\nTraining delivered"
+  },
+  {
+   "depends_on": "eval: doc.activity_category === \"Goods\";",
+   "fieldname": "goods_status",
+   "fieldtype": "Select",
+   "label": "Goods Status",
+   "options": "\nNot Started\nIn Progress\nCompleted\nDelivered"
+  },
+  {
+   "fieldname": "budget_utilized",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Budget Utilized"
+  },
+  {
+   "fieldname": "section_break_bvrq",
+   "fieldtype": "Section Break",
+   "label": "Training/Workshop Date"
+  },
+  {
+   "depends_on": "eval: doc.activity_category === \"Training and Workshops\"",
+   "fieldname": "training_start_date",
+   "fieldtype": "Date",
+   "label": "Training Start Date"
+  },
+  {
+   "fieldname": "column_break_rfof",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval: doc.activity_category === \"Training and Workshops\"",
+   "fieldname": "training_end_date",
+   "fieldtype": "Date",
+   "label": "Training End Date"
+  },
+  {
+   "fieldname": "column_break_cxin",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval: doc.activity_category === \"Training and Workshops\"",
+   "fieldname": "training_city_and_place",
+   "fieldtype": "Data",
+   "label": "Training City and Place"
+  },
+  {
+   "fieldname": "section_break_pxre",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval: doc.activity_category === \"Goods\"",
+   "fieldname": "table_tcsr",
+   "fieldtype": "Table",
+   "options": "Goods list"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-08-08 16:03:33.021755",
+ "modified": "2025-10-09 23:48:48.258368",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Activity Report",

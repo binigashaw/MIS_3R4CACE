@@ -6,13 +6,18 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "activity_id",
+  "component",
+  "subcomponent",
+  "subcomponent_description",
+  "column_break_tdln",
   "activity_category",
+  "activity_id",
+  "activity_name",
+  "column_break_esaw",
   "responsible",
   "budget",
-  "budget_year",
-  "column_break_tdln",
-  "activity_name"
+  "budget_utilized",
+  "budget_year"
  ],
  "fields": [
   {
@@ -38,11 +43,11 @@
   },
   {
    "fieldname": "responsible",
-   "fieldtype": "Link",
-   "in_list_view": 1,
+   "fieldtype": "Table MultiSelect",
+   "in_filter": 1,
    "in_standard_filter": 1,
    "label": "Responsible",
-   "options": "Comp 2 Organization"
+   "options": "Responsible Body"
   },
   {
    "fieldname": "budget",
@@ -54,12 +59,47 @@
   {
    "fieldname": "budget_year",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Budget Year",
    "options": "2025/2026\n2026/2027\n2027/2028\n2028/2029"
   },
   {
    "fieldname": "column_break_tdln",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "component",
+   "fieldtype": "Link",
+   "label": "Component",
+   "link_filters": "[[\"Project Component\",\"name\",\"!=\",\"Component 1\"]]",
+   "options": "Project Component"
+  },
+  {
+   "fieldname": "subcomponent",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Subcomponent",
+   "link_filters": "[[\"subcomponent\",\"component\",\"=\",\"eval: doc.component\"]]",
+   "options": "Subcomponent"
+  },
+  {
+   "fetch_from": "subcomponent.description",
+   "fieldname": "subcomponent_description",
+   "fieldtype": "Small Text",
+   "label": "Subcomponent Description",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_esaw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "budget_utilized",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Budget Utilized"
   }
  ],
  "grid_page_length": 50,
@@ -71,7 +111,7 @@
    "link_fieldname": "name_of_activity"
   }
  ],
- "modified": "2025-08-09 17:46:59.909761",
+ "modified": "2025-10-04 12:16:38.095200",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Activities",

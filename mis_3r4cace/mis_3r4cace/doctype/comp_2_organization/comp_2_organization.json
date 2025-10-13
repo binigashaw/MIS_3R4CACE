@@ -4,28 +4,46 @@
  "autoname": "field:organization_name",
  "creation": "2025-08-04 15:03:29.900394",
  "doctype": "DocType",
+ "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "column_break_qqww",
   "organization_name",
-  "organization_description"
+  "organization_description",
+  "group"
  ],
  "fields": [
   {
    "fieldname": "organization_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Organization Name",
    "unique": 1
   },
   {
    "fieldname": "organization_description",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Organization Description"
+  },
+  {
+   "fieldname": "column_break_qqww",
+   "fieldtype": "Column Break",
+   "options": "National\nFederal\nRegional\nWoreda\nOther"
+  },
+  {
+   "fieldname": "group",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Group",
+   "options": "Federal\nRegional\nWoreda\nOther"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-08-04 15:04:59.955280",
+ "modified": "2025-10-04 11:57:45.772017",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Comp 2 Organization",

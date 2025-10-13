@@ -6,17 +6,10 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "indicator_group",
+  "subcomponent",
   "name_of_indicator"
  ],
  "fields": [
-  {
-   "fieldname": "indicator_group",
-   "fieldtype": "Link",
-   "in_standard_filter": 1,
-   "label": "Indicator Group",
-   "options": "Indicatory Category"
-  },
   {
    "fieldname": "name_of_indicator",
    "fieldtype": "Data",
@@ -24,18 +17,25 @@
    "in_standard_filter": 1,
    "label": "Name of Indicator",
    "unique": 1
+  },
+  {
+   "fieldname": "subcomponent",
+   "fieldtype": "Link",
+   "label": "Subcomponent",
+   "link_filters": "[[\"Subcomponent\",\"component\",\"=\",\"Component 2\"]]",
+   "options": "Subcomponent"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [
   {
-   "group": "Progress Report",
-   "link_doctype": "Indicator Progress Report",
+   "group": "Indicator Report",
+   "link_doctype": "Indicator Report",
    "link_fieldname": "name_of_indicator"
   }
  ],
- "modified": "2025-08-09 19:11:20.811697",
+ "modified": "2025-10-08 11:53:59.514686",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Comp 2 Indicator",
