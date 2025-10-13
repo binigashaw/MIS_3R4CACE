@@ -471,7 +471,7 @@
    "fieldname": "cycle",
    "fieldtype": "Select",
    "label": "Cycle",
-   "options": "Cycle One\nCycle Two",
+   "options": "Cycle One\nCycle Two\nCycle Three",
    "permlevel": 1
   },
   {
@@ -524,7 +524,7 @@
    "link_fieldname": "subproject"
   }
  ],
- "modified": "2025-05-19 15:41:45.854532",
+ "modified": "2025-10-13 11:14:39.280538",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Sub-Project",

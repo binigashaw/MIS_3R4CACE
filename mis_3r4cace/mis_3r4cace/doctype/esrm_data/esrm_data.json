@@ -13,6 +13,7 @@
   "subproject",
   "subproject_name",
   "sector",
+  "cycle",
   "e_and_s_screening_documents_section",
   "eligibility_checklist_document",
   "column_break_qdiz",
@@ -160,6 +161,8 @@
    "fetch_from": "subproject.sector",
    "fieldname": "sector",
    "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Sector",
    "read_only": 1
   },
@@ -224,12 +227,20 @@
    "fieldname": "subproject_name",
    "fieldtype": "Data",
    "label": "Subproject Name"
+  },
+  {
+   "fetch_from": "subproject.cycle",
+   "fieldname": "cycle",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Cycle"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-06-27 09:08:32.546104",
+ "modified": "2025-10-13 11:13:24.656411",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "ESRM Data",
