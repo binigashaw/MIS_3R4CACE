@@ -18,6 +18,8 @@
   "eligibility_checklist_document",
   "column_break_qdiz",
   "further_screening_document",
+  "column_break_jxwg",
+  "land_ownership_certificate",
   "risk_classification_section",
   "schedule_1",
   "column_break_opbj",
@@ -43,6 +45,8 @@
   {
    "fieldname": "region",
    "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Region",
    "options": "Region",
    "reqd": 1
@@ -235,12 +239,21 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Cycle"
+  },
+  {
+   "fieldname": "column_break_jxwg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "land_ownership_certificate",
+   "fieldtype": "Attach",
+   "label": "Land Ownership Certificate"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-10-13 11:13:24.656411",
+ "modified": "2025-10-28 11:33:27.260386",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "ESRM Data",

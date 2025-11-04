@@ -73,10 +73,12 @@
   "site_handover_date",
   "column_break_xivz",
   "progress_status",
+  "total_budget_utilized",
   "expected_end_date",
   "additional_information",
   "section_break_dhiz",
-  "table_iqfy"
+  "table_iqfy",
+  "subproject_budget_utilized"
  ],
  "fields": [
   {
@@ -514,6 +516,17 @@
    "label": "Number of IDP in kebele",
    "precision": "0",
    "read_only": 1
+  },
+  {
+   "fieldname": "subproject_budget_utilized",
+   "fieldtype": "Table",
+   "label": "Subproject Budget Utilized",
+   "options": "Subproject Finance"
+  },
+  {
+   "fieldname": "total_budget_utilized",
+   "fieldtype": "Float",
+   "label": "Total Budget utilized"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -524,7 +537,7 @@
    "link_fieldname": "subproject"
   }
  ],
- "modified": "2025-10-13 11:14:39.280538",
+ "modified": "2025-11-04 10:31:30.533264",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Sub-Project",

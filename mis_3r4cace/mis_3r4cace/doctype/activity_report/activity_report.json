@@ -14,6 +14,7 @@
   "woreda",
   "kebele",
   "service_provider",
+  "group",
   "column_break_ntnb",
   "report_month",
   "year",
@@ -133,7 +134,7 @@
    "fetch_from": "name_of_activity.activity_category",
    "fieldname": "activity_category",
    "fieldtype": "Data",
-   "hidden": 1,
+   "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Activity Category ",
    "read_only": 1
@@ -222,12 +223,20 @@
    "fieldname": "table_tcsr",
    "fieldtype": "Table",
    "options": "Goods list"
+  },
+  {
+   "fetch_from": "service_provider.group",
+   "fieldname": "group",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Group",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-10-09 23:48:48.258368",
+ "modified": "2025-10-28 14:42:42.050268",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Activity Report",
