@@ -1,0 +1,88 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-06 10:02:19.331380",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "region",
+  "woreda",
+  "vsla_group",
+  "member_name",
+  "column_break_eamg",
+  "loan_repaid_amount",
+  "date_of_repaid",
+  "remark"
+ ],
+ "fields": [
+  {
+   "fieldname": "region",
+   "fieldtype": "Link",
+   "label": "Region",
+   "options": "Region"
+  },
+  {
+   "fieldname": "woreda",
+   "fieldtype": "Link",
+   "label": "Woreda",
+   "options": "Woreda"
+  },
+  {
+   "fieldname": "vsla_group",
+   "fieldtype": "Link",
+   "label": "VSLA Group",
+   "options": "VSLA Group"
+  },
+  {
+   "fieldname": "member_name",
+   "fieldtype": "Link",
+   "label": "Member Name",
+   "options": "VSLA Member"
+  },
+  {
+   "fieldname": "column_break_eamg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "loan_repaid_amount",
+   "fieldtype": "Float",
+   "label": "Loan Repaid Amount"
+  },
+  {
+   "fieldname": "date_of_repaid",
+   "fieldtype": "Date",
+   "label": "Date of Repaid"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Data",
+   "label": "Remark"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-11-06 10:07:26.905336",
+ "modified_by": "Administrator",
+ "module": "Mis 3R4Cace",
+ "name": "VSLA Loan Repaid",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

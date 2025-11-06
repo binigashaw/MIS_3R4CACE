@@ -1,0 +1,112 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-11-06 09:57:39.675792",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "vsla_group_name",
+  "title_of_the_training",
+  "date_of_training",
+  "trainer_name",
+  "attendance_sheet",
+  "place_of_training_column",
+  "region",
+  "woreda",
+  "kebele",
+  "place_of_training",
+  "section_break_mlsn",
+  "table_gwsn"
+ ],
+ "fields": [
+  {
+   "fieldname": "vsla_group_name",
+   "fieldtype": "Link",
+   "label": "VSLA Group Name",
+   "options": "VSLA Group"
+  },
+  {
+   "fieldname": "title_of_the_training",
+   "fieldtype": "Data",
+   "label": "Title of the Meeting"
+  },
+  {
+   "fieldname": "date_of_training",
+   "fieldtype": "Date",
+   "label": "Date Of Meeting"
+  },
+  {
+   "fieldname": "trainer_name",
+   "fieldtype": "Data",
+   "label": "Meeting Chair"
+  },
+  {
+   "fieldname": "attendance_sheet",
+   "fieldtype": "Attach",
+   "label": "Attendance Sheet"
+  },
+  {
+   "fieldname": "place_of_training_column",
+   "fieldtype": "Column Break",
+   "label": "Place Of Meeting"
+  },
+  {
+   "fieldname": "region",
+   "fieldtype": "Link",
+   "label": "Region",
+   "options": "Region"
+  },
+  {
+   "fieldname": "woreda",
+   "fieldtype": "Link",
+   "label": "Woreda",
+   "options": "Woreda"
+  },
+  {
+   "fieldname": "kebele",
+   "fieldtype": "Link",
+   "label": "Kebele",
+   "options": "Kebele"
+  },
+  {
+   "fieldname": "place_of_training",
+   "fieldtype": "Data",
+   "label": "Place of Meeting"
+  },
+  {
+   "fieldname": "section_break_mlsn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_gwsn",
+   "fieldtype": "Table",
+   "options": "Training Member"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-11-06 09:59:31.030649",
+ "modified_by": "Administrator",
+ "module": "Mis 3R4Cace",
+ "name": "VSLA Meeting",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
