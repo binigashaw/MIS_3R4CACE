@@ -1,11 +1,12 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{full_name}-{####}",
  "creation": "2025-11-06 09:16:53.153147",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "name1",
+  "full_name",
   "share",
   "value_of_loans_outstanding",
   "loan_repayment_status",
@@ -14,38 +15,48 @@
   "member_status",
   "saving",
   "loan",
-  "date_registered"
+  "date_registered",
+  "section_break_sbwo",
+  "region",
+  "column_break_nvnp",
+  "woreda",
+  "column_break_cuyn",
+  "kebele"
  ],
  "fields": [
   {
-   "fieldname": "name1",
-   "fieldtype": "Data",
-   "label": "Name"
-  },
-  {
    "fieldname": "share",
    "fieldtype": "Int",
-   "label": "Share"
+   "in_list_view": 1,
+   "label": "Initial Contribution"
   },
   {
    "fieldname": "value_of_loans_outstanding",
-   "fieldtype": "Int",
-   "label": "Value of loans Outstanding"
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Value of outstanding loans ",
+   "read_only": 1
   },
   {
    "fieldname": "loan_repayment_status",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Loan Repayment status"
   },
   {
    "fieldname": "vsla_group",
    "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "VSLA Group",
-   "options": "VSLA Group"
+   "options": "VSLA Group",
+   "reqd": 1
   },
   {
    "fieldname": "member_status",
    "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Member Status",
    "options": "Active\nDropout"
   },
@@ -56,26 +67,72 @@
   {
    "fieldname": "saving",
    "fieldtype": "Float",
-   "label": "Saving"
+   "in_list_view": 1,
+   "label": "Saving",
+   "read_only": 1
   },
   {
    "fieldname": "loan",
    "fieldtype": "Float",
+   "in_list_view": 1,
    "label": "Loan"
   },
   {
    "fieldname": "date_registered",
    "fieldtype": "Date",
    "label": "Date Registered"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "section_break_sbwo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "vsla_group.region",
+   "fieldname": "region",
+   "fieldtype": "Link",
+   "label": "Region",
+   "options": "Region",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_nvnp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "vsla_group.woreda",
+   "fieldname": "woreda",
+   "fieldtype": "Link",
+   "label": "Woreda",
+   "options": "Woreda",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_cuyn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "vsla_group.kebele",
+   "fieldname": "kebele",
+   "fieldtype": "Link",
+   "label": "Kebele",
+   "options": "Kebele",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-06 09:34:37.526951",
+ "modified": "2025-11-17 18:16:05.996726",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "VSLA Member",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
@@ -94,5 +151,6 @@
  "row_format": "Dynamic",
  "sort_field": "creation",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "full_name"
 }

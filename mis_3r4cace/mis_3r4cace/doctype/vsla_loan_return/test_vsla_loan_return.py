@@ -12,18 +12,18 @@ EXTRA_TEST_RECORD_DEPENDENCIES = []  # eg. ["User"]
 IGNORE_TEST_RECORD_DEPENDENCIES = []  # eg. ["User"]
 
 
-class UnitTestVSLALoanRepaid(UnitTestCase):
+class UnitTestVSLALoanReturn(UnitTestCase):
 	"""
-	Unit tests for VSLALoanRepaid.
+	Unit tests for VSLALoanReturn.
 	Use this class for testing individual functions and methods.
 	"""
 
 	pass
 
 
-class IntegrationTestVSLALoanRepaid(IntegrationTestCase):
+class IntegrationTestVSLALoanReturn(IntegrationTestCase):
 	"""
-	Integration tests for VSLALoanRepaid.
+	Integration tests for VSLALoanReturn.
 	Use this class for testing interactions between multiple components.
 	"""
 

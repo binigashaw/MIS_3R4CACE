@@ -7,9 +7,10 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "indicator_category",
+  "name_of_indicator",
   "year",
   "report_month",
-  "name_of_indicator",
   "region",
   "woreda",
   "kebele",
@@ -91,18 +92,24 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Name Of Indicator",
-   "link_filters": "[[\"Name Of Indicator\",\"fiscal_year\",\"=\",\"eval: doc.year\"]]",
+   "link_filters": "[[\"Indicator Report\",\"indicator_category\",\"=\",\"eval: doc.indicator_category\"],[\"Indicator Report\",\"fiscal_year\",\"=\",\"2025/2026\"]]",
    "options": "Indicator Report"
   },
   {
    "fieldname": "column_break_twvr",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "indicator_category",
+   "fieldtype": "Link",
+   "label": "Indicator Category",
+   "options": "Indicatory Category"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-10-09 06:05:09.763561",
+ "modified": "2025-11-17 17:14:35.138003",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Indicator Progress Report",

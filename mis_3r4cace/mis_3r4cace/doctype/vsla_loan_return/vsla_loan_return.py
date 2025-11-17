@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class VSLALoanRepaid(Document):
+class VSLALoanReturn(Document):
 	pass

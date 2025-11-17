@@ -6,7 +6,7 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "subcomponent",
+  "indicator_category",
   "name_of_indicator",
   "female",
   "male",
@@ -20,7 +20,7 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Name of Indicator",
-   "link_filters": "[[\"name_of_indicator\",\"subcomponent\",\"=\",\"eval: doc.subcomponent\"]]",
+   "link_filters": "[[\"name_of_indicator\",\"indicator_category\",\"=\",\"eval: doc.indicator_category\"]]",
    "options": "Comp 2 Indicator",
    "unique": 1
   },
@@ -55,11 +55,12 @@
    "options": "2023/2024\n2024/2025\n2025/2026\n2026/2027\n2027/2028\n2028/2029"
   },
   {
-   "fieldname": "subcomponent",
+   "fieldname": "indicator_category",
    "fieldtype": "Link",
-   "label": "Subcomponent",
-   "link_filters": "[[\"Subcomponent\",\"component\",\"=\",\"Component 2\"]]",
-   "options": "Subcomponent"
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Indicator Category",
+   "options": "Indicatory Category"
   }
  ],
  "grid_page_length": 50,
@@ -71,7 +72,7 @@
    "link_fieldname": "name_of_indicator"
   }
  ],
- "modified": "2025-10-08 08:21:48.309586",
+ "modified": "2025-11-17 16:52:54.066784",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Indicator Report",

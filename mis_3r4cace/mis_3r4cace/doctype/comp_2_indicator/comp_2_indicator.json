@@ -6,7 +6,7 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "subcomponent",
+  "indicator_category",
   "name_of_indicator"
  ],
  "fields": [
@@ -19,11 +19,10 @@
    "unique": 1
   },
   {
-   "fieldname": "subcomponent",
+   "fieldname": "indicator_category",
    "fieldtype": "Link",
-   "label": "Subcomponent",
-   "link_filters": "[[\"Subcomponent\",\"component\",\"=\",\"Component 2\"]]",
-   "options": "Subcomponent"
+   "label": "Indicator Category",
+   "options": "Indicatory Category"
   }
  ],
  "grid_page_length": 50,
@@ -35,7 +34,7 @@
    "link_fieldname": "name_of_indicator"
   }
  ],
- "modified": "2025-10-08 11:53:59.514686",
+ "modified": "2025-11-17 16:49:12.574576",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Comp 2 Indicator",

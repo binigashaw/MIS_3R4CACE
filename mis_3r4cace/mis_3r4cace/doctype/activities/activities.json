@@ -57,6 +57,7 @@
    "precision": "2"
   },
   {
+   "default": "2025/2026",
    "fieldname": "budget_year",
    "fieldtype": "Select",
    "in_list_view": 1,
@@ -110,7 +111,7 @@
    "link_fieldname": "name_of_activity"
   }
  ],
- "modified": "2025-10-23 09:27:51.544517",
+ "modified": "2025-11-17 17:21:17.690360",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Activities",

@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{group_name}-{region}-{#####}",
  "creation": "2025-11-06 09:12:28.899241",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -8,6 +9,7 @@
   "region",
   "woreda",
   "kebele",
+  "column_break_gqxu",
   "group_name",
   "group_formed_date",
   "saving_rate"
@@ -16,44 +18,69 @@
   {
    "fieldname": "region",
    "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Region",
-   "options": "Region"
+   "options": "Region",
+   "reqd": 1
   },
   {
    "fieldname": "woreda",
    "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Woreda",
-   "options": "Woreda"
+   "link_filters": "[[\"Woreda\",\"region\",\"=\",\"eval: doc.region\"]]",
+   "options": "Woreda",
+   "reqd": 1
   },
   {
    "fieldname": "kebele",
    "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Kebele",
-   "options": "Kebele"
+   "link_filters": "[[\"Kebele\",\"woreda\",\"=\",\"eval: doc.woreda\"]]",
+   "options": "Kebele",
+   "reqd": 1
   },
   {
    "fieldname": "group_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Group Name"
   },
   {
    "fieldname": "group_formed_date",
    "fieldtype": "Date",
+   "in_list_view": 1,
    "label": "Group Formed Date"
   },
   {
    "fieldname": "saving_rate",
-   "fieldtype": "Percent",
-   "label": "Saving Rate"
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Saving Amount",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "column_break_gqxu",
+   "fieldtype": "Column Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2025-11-06 09:30:37.469419",
+ "links": [
+  {
+   "link_doctype": "VSLA Member",
+   "link_fieldname": "vsla_group"
+  }
+ ],
+ "modified": "2025-11-17 18:16:26.133582",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "VSLA Group",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
@@ -72,5 +99,6 @@
  "row_format": "Dynamic",
  "sort_field": "creation",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "group_name"
 }

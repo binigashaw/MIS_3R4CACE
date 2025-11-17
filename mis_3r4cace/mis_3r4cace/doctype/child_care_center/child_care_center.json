@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:Child Care Center - {#####)",
  "creation": "2025-11-06 10:18:59.708130",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -19,34 +20,47 @@
   {
    "fieldname": "child_care_center_name",
    "fieldtype": "Data",
-   "label": "Child Care Center Name"
+   "in_list_view": 1,
+   "label": "Child Care Center Name",
+   "reqd": 1
   },
   {
    "fieldname": "region",
    "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Region",
    "options": "Region"
   },
   {
    "fieldname": "woreda",
    "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Woreda",
+   "link_filters": "[[\"Woreda\",\"region\",\"=\",\"eval: doc.region\"]]",
    "options": "Woreda"
   },
   {
    "fieldname": "kebele",
    "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Kebele",
+   "link_filters": "[[\"Kebele\",\"woreda\",\"=\",\"eval: doc.woreda\"]]",
    "options": "Kebele"
   },
   {
    "fieldname": "place_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Place Name"
   },
   {
    "fieldname": "type_of_child_care_center",
    "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Type of Child care center",
    "options": "TVET Center\nCommunity-Based Center\nShelter/Safehouse\nPrivate Company Childcare\nOther"
   },
@@ -67,10 +81,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-06 10:39:03.148309",
+ "modified": "2025-11-17 20:11:14.567427",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Child Care Center",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

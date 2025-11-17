@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{member_name}-Saving-{#####}",
  "creation": "2025-11-06 10:08:27.922272",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -18,26 +19,37 @@
   {
    "fieldname": "region",
    "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Region",
    "options": "Region"
   },
   {
    "fieldname": "woreda",
    "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Woreda",
+   "link_filters": "[[\"Woreda\",\"region\",\"=\",\"eval: doc.region\"]]",
    "options": "Woreda"
   },
   {
    "fieldname": "vsla_group",
    "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "VSLA Group",
+   "link_filters": "[[\"vsla_group\",\"woreda\",\"=\",\"eval: doc.woreda\"]]",
    "options": "VSLA Group"
   },
   {
    "fieldname": "member_name",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Member Name",
-   "options": "VSLA Member"
+   "link_filters": "[[\"member_name\",\"vsla_group\",\"=\",\"eval: doc.vsla_group\"]]",
+   "options": "VSLA Member",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_eamg",
@@ -46,11 +58,13 @@
   {
    "fieldname": "loan_repaid_amount",
    "fieldtype": "Float",
+   "in_list_view": 1,
    "label": "Saving Amount"
   },
   {
    "fieldname": "date_of_repaid",
    "fieldtype": "Date",
+   "in_list_view": 1,
    "label": "Date of Saving"
   },
   {
@@ -62,10 +76,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-06 10:08:53.048893",
+ "modified": "2025-11-17 20:07:48.757059",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "VSLA Member Saving",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
