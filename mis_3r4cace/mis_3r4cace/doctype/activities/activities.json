@@ -15,6 +15,7 @@
   "activity_name",
   "column_break_esaw",
   "responsible",
+  "budget_year_target",
   "budget",
   "budget_utilized",
   "budget_year"
@@ -100,6 +101,11 @@
    "hidden": 1,
    "in_list_view": 1,
    "label": "Budget Utilized"
+  },
+  {
+   "fieldname": "budget_year_target",
+   "fieldtype": "Int",
+   "label": "Budget Year Target"
   }
  ],
  "grid_page_length": 50,
@@ -111,7 +117,7 @@
    "link_fieldname": "name_of_activity"
   }
  ],
- "modified": "2025-11-17 17:21:17.690360",
+ "modified": "2025-11-25 10:41:15.143346",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Activities",
