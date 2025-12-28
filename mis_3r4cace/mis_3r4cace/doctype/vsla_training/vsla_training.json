@@ -11,6 +11,8 @@
   "date_of_training",
   "trainer_name",
   "attendance_sheet",
+  "start_date",
+  "end_date",
   "place_of_training_column",
   "region",
   "woreda",
@@ -92,12 +94,22 @@
    "fieldname": "table_gwsn",
    "fieldtype": "Table",
    "options": "Training Member"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-17 20:02:00.832891",
+ "modified": "2025-12-18 09:51:20.324237",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "VSLA Training",
