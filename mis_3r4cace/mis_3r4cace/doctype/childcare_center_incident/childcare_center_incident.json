@@ -1,0 +1,101 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-30 23:37:47.087582",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "incident_log_section",
+  "child_care_center",
+  "date_of_incident",
+  "name_of_staff_reported",
+  "details_of_incident_section",
+  "location_of_incident",
+  "type_of_incident",
+  "incident_detail",
+  "witness_name",
+  "witness_phone"
+ ],
+ "fields": [
+  {
+   "fieldname": "child_care_center",
+   "fieldtype": "Link",
+   "label": "Child Care Center",
+   "options": "Child Care Center"
+  },
+  {
+   "fieldname": "date_of_incident",
+   "fieldtype": "Datetime",
+   "label": "Date of incident"
+  },
+  {
+   "fieldname": "name_of_staff_reported",
+   "fieldtype": "Data",
+   "label": "Name of Staff reported"
+  },
+  {
+   "fieldname": "details_of_incident_section",
+   "fieldtype": "Section Break",
+   "label": "Details of Incident"
+  },
+  {
+   "fieldname": "location_of_incident",
+   "fieldtype": "Select",
+   "label": "Location of Incident",
+   "options": "Play Area\nWashroom\nSleep Area\nOutside Center\nOther"
+  },
+  {
+   "fieldname": "type_of_incident",
+   "fieldtype": "Select",
+   "label": "Type of Incident",
+   "options": "Fall\nInjury (Cut/Scrape)\nBite\nHit\nSudden Illness\nProtection Concern\nOther"
+  },
+  {
+   "fieldname": "incident_detail",
+   "fieldtype": "Small Text",
+   "label": "Incident Detail"
+  },
+  {
+   "fieldname": "witness_name",
+   "fieldtype": "Data",
+   "label": "Witness Name"
+  },
+  {
+   "fieldname": "witness_phone",
+   "fieldtype": "Data",
+   "label": "Witness Phone"
+  },
+  {
+   "fieldname": "incident_log_section",
+   "fieldtype": "Section Break",
+   "label": "Incident Log"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-30 23:45:11.191422",
+ "modified_by": "Administrator",
+ "module": "Mis 3R4Cace",
+ "name": "Childcare Center Incident",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

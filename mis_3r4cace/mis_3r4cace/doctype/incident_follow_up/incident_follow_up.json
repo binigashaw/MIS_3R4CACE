@@ -1,0 +1,88 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-30 23:47:40.590250",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "first_aid_provided",
+  "required_medical_attention",
+  "parent_contact_time",
+  "parent_contact_name",
+  "action_to_prevent_recurrence",
+  "serious_incident_report",
+  "staff_name",
+  "supervisor_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "first_aid_provided",
+   "fieldtype": "Data",
+   "label": "First Aid provided by staff"
+  },
+  {
+   "fieldname": "required_medical_attention",
+   "fieldtype": "Select",
+   "label": "Required Medical attention",
+   "options": "No\nYes, contacted local clinic\nYes, required transport to hospital"
+  },
+  {
+   "fieldname": "parent_contact_time",
+   "fieldtype": "Data",
+   "label": "Parent Contact Time"
+  },
+  {
+   "fieldname": "parent_contact_name",
+   "fieldtype": "Data",
+   "label": "Parent Contact Name"
+  },
+  {
+   "fieldname": "action_to_prevent_recurrence",
+   "fieldtype": "Data",
+   "label": "Action to prevent recurrence"
+  },
+  {
+   "fieldname": "serious_incident_report",
+   "fieldtype": "Select",
+   "label": "Serious incident report",
+   "options": "NO, minor incident, closed\nYES, no GRM\nYES, GRM activated"
+  },
+  {
+   "fieldname": "staff_name",
+   "fieldtype": "Data",
+   "label": "Staff Name"
+  },
+  {
+   "fieldname": "supervisor_name",
+   "fieldtype": "Data",
+   "label": "Supervisor Name"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-30 23:59:19.522239",
+ "modified_by": "Administrator",
+ "module": "Mis 3R4Cace",
+ "name": "Incident Follow-Up",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

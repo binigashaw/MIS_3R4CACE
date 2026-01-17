@@ -1,0 +1,369 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "autoincrement",
+ "creation": "2026-01-16 11:34:01.730142",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "report_region_and_month_section",
+  "report_region_and_woreda_column",
+  "region",
+  "woreda",
+  "column_break_sedo",
+  "month",
+  "year",
+  "section_break_xacv",
+  "number_of_adult_survivor_column",
+  "female",
+  "column_break_azsb",
+  "male",
+  "column_break_aodv",
+  "total",
+  "section_break_xvmh",
+  "pep_kits_female",
+  "section_break_pnvb",
+  "iarh_kits_female",
+  "column_break_uxku",
+  "iarh_kits_male",
+  "column_break_flhv",
+  "iarh_kits_total",
+  "section_break_muvj",
+  "dignity_kits_female",
+  "column_break_kjad",
+  "dignity_kits_male",
+  "column_break_nwes",
+  "dignity_kits_total",
+  "section_break_autd",
+  "medical_supplies_female",
+  "column_break_vuot",
+  "medical_supplies_male",
+  "column_break_tuou",
+  "medical_supplies_total",
+  "section_break_cspf",
+  "adult_survivors_female",
+  "adult_survivors_male",
+  "adult_survivors_total",
+  "column_break_ccox",
+  "child_survivors_female",
+  "child_survivors_male",
+  "child_survivors_total",
+  "section_break_cmzl",
+  "number_of_desktop_computer",
+  "section_break_ytib",
+  "health_desktop_computer",
+  "section_break_hltp",
+  "justice_number_of_desktop",
+  "section_break_lkbb",
+  "police_desktop",
+  "section_break_zvsj",
+  "woreda_desktop",
+  "section_break_uzef",
+  "wpiu_with_laptop"
+ ],
+ "fields": [
+  {
+   "fieldname": "report_region_and_month_section",
+   "fieldtype": "Section Break",
+   "label": "Report Region and Month"
+  },
+  {
+   "fieldname": "report_region_and_woreda_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "region",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Region",
+   "options": "Region"
+  },
+  {
+   "fieldname": "woreda",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Woreda",
+   "link_filters": "[[\"Woreda\",\"region\",\"=\",\"eval: doc.region\"]]",
+   "options": "Woreda"
+  },
+  {
+   "fieldname": "column_break_sedo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "month",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Month",
+   "options": "January\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember"
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Select",
+   "label": "Year",
+   "options": "2025\n2026\n2027\n2028"
+  },
+  {
+   "fieldname": "section_break_xacv",
+   "fieldtype": "Section Break",
+   "label": "Number of survivors benefiting from mobile GBV services"
+  },
+  {
+   "fieldname": "number_of_adult_survivor_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "female",
+   "fieldtype": "Int",
+   "label": "Female"
+  },
+  {
+   "fieldname": "column_break_azsb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "male",
+   "fieldtype": "Int",
+   "label": "Male"
+  },
+  {
+   "fieldname": "column_break_aodv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Int",
+   "label": "Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_xvmh",
+   "fieldtype": "Section Break",
+   "label": "Number of VSLA groups equipped with VESLA kits"
+  },
+  {
+   "fieldname": "pep_kits_female",
+   "fieldtype": "Int",
+   "label": "Number of groups"
+  },
+  {
+   "fieldname": "section_break_pnvb",
+   "fieldtype": "Section Break",
+   "label": "Number of beneficiaries provide with start\u2011up kits (up to 95K ETB)"
+  },
+  {
+   "fieldname": "iarh_kits_female",
+   "fieldtype": "Int",
+   "label": "Female"
+  },
+  {
+   "fieldname": "column_break_uxku",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "iarh_kits_male",
+   "fieldtype": "Int",
+   "label": "Male"
+  },
+  {
+   "fieldname": "column_break_flhv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "iarh_kits_total",
+   "fieldtype": "Int",
+   "label": "Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_muvj",
+   "fieldtype": "Section Break",
+   "label": "Number of beneficiaries accessing shaded market spaces services to enable women to run small businesses"
+  },
+  {
+   "fieldname": "dignity_kits_female",
+   "fieldtype": "Int",
+   "label": "Female"
+  },
+  {
+   "fieldname": "column_break_kjad",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "dignity_kits_male",
+   "fieldtype": "Int",
+   "label": "Male"
+  },
+  {
+   "fieldname": "column_break_nwes",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "dignity_kits_total",
+   "fieldtype": "Int",
+   "label": "Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_autd",
+   "fieldtype": "Section Break",
+   "label": "Number of survivors accessing service rooms and child\u2011friendly investigation rooms"
+  },
+  {
+   "fieldname": "column_break_vuot",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "medical_supplies_male",
+   "fieldtype": "Int",
+   "label": "Male"
+  },
+  {
+   "fieldname": "column_break_tuou",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "medical_supplies_total",
+   "fieldtype": "Int",
+   "label": "Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_cspf",
+   "fieldtype": "Section Break",
+   "label": "Number of survivors accessing service rooms and child\u2011friendly investigation rooms"
+  },
+  {
+   "fieldname": "adult_survivors_female",
+   "fieldtype": "Int",
+   "label": "Adult Survivors Female"
+  },
+  {
+   "fieldname": "adult_survivors_male",
+   "fieldtype": "Int",
+   "label": "Adult Survivors Male"
+  },
+  {
+   "fieldname": "adult_survivors_total",
+   "fieldtype": "Int",
+   "label": "Adult Survivors Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ccox",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "child_survivors_female",
+   "fieldtype": "Int",
+   "label": "Child Survivors Female"
+  },
+  {
+   "fieldname": "child_survivors_male",
+   "fieldtype": "Int",
+   "label": "Child Survivors Male"
+  },
+  {
+   "fieldname": "child_survivors_total",
+   "fieldtype": "Int",
+   "label": "Child Survivors Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_cmzl",
+   "fieldtype": "Section Break",
+   "label": "Equipped OSC with desktop computer and printer"
+  },
+  {
+   "fieldname": "number_of_desktop_computer",
+   "fieldtype": "Int",
+   "label": "Number of desktop computer and printer distributed"
+  },
+  {
+   "fieldname": "section_break_ytib",
+   "fieldtype": "Section Break",
+   "label": "Equipped woreda health office with desktop computer and printer"
+  },
+  {
+   "fieldname": "health_desktop_computer",
+   "fieldtype": "Int",
+   "label": "Number of desktop computer and printer distributed"
+  },
+  {
+   "fieldname": "section_break_hltp",
+   "fieldtype": "Section Break",
+   "label": "Equipped woreda justice office with desktop computer and printer"
+  },
+  {
+   "fieldname": "justice_number_of_desktop",
+   "fieldtype": "Int",
+   "label": "Number of desktop computer and printer distributed"
+  },
+  {
+   "fieldname": "section_break_lkbb",
+   "fieldtype": "Section Break",
+   "label": "Equipped woreda justice office with desktop computer and printer"
+  },
+  {
+   "fieldname": "police_desktop",
+   "fieldtype": "Int",
+   "label": "Number of desktop computer and printer distributed"
+  },
+  {
+   "fieldname": "section_break_zvsj",
+   "fieldtype": "Section Break",
+   "label": "Equipped woreda WoWA office with desktop computer and printer"
+  },
+  {
+   "fieldname": "woreda_desktop",
+   "fieldtype": "Int",
+   "label": "Number of desktop computer and printer distributed"
+  },
+  {
+   "fieldname": "section_break_uzef",
+   "fieldtype": "Section Break",
+   "label": "Equipped WoWA /WPIU with laptop"
+  },
+  {
+   "fieldname": "wpiu_with_laptop",
+   "fieldtype": "Int",
+   "label": "Number of laptop computer distributed"
+  },
+  {
+   "fieldname": "medical_supplies_female",
+   "fieldtype": "Int",
+   "label": "Female"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-17 05:01:10.030070",
+ "modified_by": "Administrator",
+ "module": "Mis 3R4Cace",
+ "name": "WoWC or WPIU",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

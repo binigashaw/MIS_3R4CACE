@@ -1,0 +1,270 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "autoincrement",
+ "creation": "2026-01-16 11:16:59.835674",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "report_region_and_month_section",
+  "report_region_and_woreda_column",
+  "region",
+  "woreda",
+  "column_break_sedo",
+  "month",
+  "year",
+  "section_break_xacv",
+  "number_of_adult_survivor_column",
+  "female",
+  "column_break_azsb",
+  "male",
+  "column_break_aodv",
+  "total",
+  "section_break_xvmh",
+  "pep_kits_female",
+  "column_break_rskc",
+  "pep_kits_male",
+  "column_break_srel",
+  "pep_kits_total",
+  "section_break_pnvb",
+  "iarh_kits_female",
+  "column_break_uxku",
+  "iarh_kits_male",
+  "column_break_flhv",
+  "iarh_kits_total",
+  "section_break_muvj",
+  "dignity_kits_female",
+  "column_break_kjad",
+  "dignity_kits_male",
+  "column_break_nwes",
+  "dignity_kits_total",
+  "section_break_autd",
+  "medical_supplies_female",
+  "column_break_vuot",
+  "medical_supplies_male",
+  "column_break_tuou",
+  "medical_supplies_total"
+ ],
+ "fields": [
+  {
+   "fieldname": "report_region_and_month_section",
+   "fieldtype": "Section Break",
+   "label": "Report Region and Month"
+  },
+  {
+   "fieldname": "report_region_and_woreda_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "region",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Region",
+   "options": "Region"
+  },
+  {
+   "fieldname": "woreda",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Woreda",
+   "link_filters": "[[\"Woreda\",\"region\",\"=\",\"eval: doc.region\"]]",
+   "options": "Woreda"
+  },
+  {
+   "fieldname": "column_break_sedo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "month",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Month",
+   "options": "January\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember"
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Select",
+   "label": "Year",
+   "options": "2025\n2026\n2027\n2028"
+  },
+  {
+   "fieldname": "section_break_xacv",
+   "fieldtype": "Section Break",
+   "label": "Number of people receiving mental health services from existing or upgraded HFs with MHPSS blocks"
+  },
+  {
+   "fieldname": "number_of_adult_survivor_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "female",
+   "fieldtype": "Int",
+   "label": "Female"
+  },
+  {
+   "fieldname": "column_break_azsb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "male",
+   "fieldtype": "Int",
+   "label": "Male"
+  },
+  {
+   "fieldname": "column_break_aodv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Int",
+   "label": "Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_xvmh",
+   "fieldtype": "Section Break",
+   "label": "Number of people receiving PEP kits"
+  },
+  {
+   "fieldname": "pep_kits_female",
+   "fieldtype": "Int",
+   "label": "Female"
+  },
+  {
+   "fieldname": "column_break_rskc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pep_kits_male",
+   "fieldtype": "Int",
+   "label": "Male"
+  },
+  {
+   "fieldname": "column_break_srel",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pep_kits_total",
+   "fieldtype": "Int",
+   "label": "Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_pnvb",
+   "fieldtype": "Section Break",
+   "label": "Number of people receiving IARH kits and related SRH supplies"
+  },
+  {
+   "fieldname": "iarh_kits_female",
+   "fieldtype": "Int",
+   "label": "Female"
+  },
+  {
+   "fieldname": "column_break_uxku",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "iarh_kits_male",
+   "fieldtype": "Int",
+   "label": "Male"
+  },
+  {
+   "fieldname": "column_break_flhv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "iarh_kits_total",
+   "fieldtype": "Int",
+   "label": "Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_muvj",
+   "fieldtype": "Section Break",
+   "label": "Number of people receiving Dignity kits"
+  },
+  {
+   "fieldname": "dignity_kits_female",
+   "fieldtype": "Int",
+   "label": "Female"
+  },
+  {
+   "fieldname": "column_break_kjad",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "dignity_kits_male",
+   "fieldtype": "Int",
+   "label": "Male"
+  },
+  {
+   "fieldname": "column_break_nwes",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "dignity_kits_total",
+   "fieldtype": "Int",
+   "label": "Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_autd",
+   "fieldtype": "Section Break",
+   "label": "Number of people receiving essential drugs and medical supplies"
+  },
+  {
+   "fieldname": "column_break_vuot",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "medical_supplies_male",
+   "fieldtype": "Int",
+   "label": "Male"
+  },
+  {
+   "fieldname": "column_break_tuou",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "medical_supplies_total",
+   "fieldtype": "Int",
+   "label": "Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "medical_supplies_female",
+   "fieldtype": "Int",
+   "label": "Female"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-16 16:47:41.264840",
+ "modified_by": "Administrator",
+ "module": "Mis 3R4Cace",
+ "name": "Hospital and HF",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

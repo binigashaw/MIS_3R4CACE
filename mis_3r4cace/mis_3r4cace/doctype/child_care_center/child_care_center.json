@@ -1,20 +1,32 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:Child Care Center - {#####)",
+ "autoname": "format: {region}-Child Center -{#####}",
  "creation": "2025-11-06 10:18:59.708130",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "basic_information_for_child_care_center_section",
   "child_care_center_name",
   "region",
   "woreda",
   "kebele",
-  "column_break_kfep",
   "place_name",
+  "date_of_establishment",
+  "childcare_child_capacity",
+  "total_staff_hired",
+  "total_child",
+  "column_break_kfep",
   "type_of_child_care_center",
-  "section_break_vtqu",
-  "table_bbte"
+  "location",
+  "section_break_ydgh",
+  "service_type_and_target_group_column",
+  "primary_target_groups",
+  "facility_ownership",
+  "column_break_qtyy",
+  "allocated_budget",
+  "utilized",
+  "balance"
  ],
  "fields": [
   {
@@ -62,26 +74,97 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Type of Child care center",
-   "options": "TVET Center\nCommunity-Based Center\nShelter/Safehouse\nPrivate Company Childcare\nOther"
+   "options": "Center-based childcare\nTVET/Polytech center\nWorkplaces\nWGSS\nOSC\nSH\nWoreda Women affairs\nNGOs\nPrivate sectors\nOther"
   },
   {
    "fieldname": "column_break_kfep",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "section_break_vtqu",
+   "fieldname": "date_of_establishment",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date of establishment"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Geolocation",
+   "label": "Location"
+  },
+  {
+   "fieldname": "childcare_child_capacity",
+   "fieldtype": "Int",
+   "label": "Childcare child capacity"
+  },
+  {
+   "fieldname": "total_staff_hired",
+   "fieldtype": "Int",
+   "label": "Total staff hired"
+  },
+  {
+   "fieldname": "section_break_ydgh",
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "table_bbte",
-   "fieldtype": "Table",
-   "options": "Child List"
+   "fieldname": "primary_target_groups",
+   "fieldtype": "Select",
+   "label": "Primary target groups",
+   "options": "IDPs\nHost communities\nCamp/shelter\nAll"
+  },
+  {
+   "fieldname": "facility_ownership",
+   "fieldtype": "Select",
+   "label": "Facility Ownership",
+   "options": "Gov\u2019t owned\nNGO\nCommunity-donated"
+  },
+  {
+   "fieldname": "allocated_budget",
+   "fieldtype": "Float",
+   "label": "Allocated budget"
+  },
+  {
+   "fieldname": "utilized",
+   "fieldtype": "Float",
+   "label": "Utilized"
+  },
+  {
+   "fieldname": "balance",
+   "fieldtype": "Float",
+   "label": "Balance",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_child",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Total Child"
+  },
+  {
+   "fieldname": "column_break_qtyy",
+   "fieldtype": "Column Break",
+   "label": "Recurrent budget for lunches and snacks and other perishables"
+  },
+  {
+   "fieldname": "service_type_and_target_group_column",
+   "fieldtype": "Column Break",
+   "label": "Service Type and Target Group"
+  },
+  {
+   "fieldname": "basic_information_for_child_care_center_section",
+   "fieldtype": "Section Break",
+   "label": "Basic information for child care center "
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2025-11-17 20:11:14.567427",
+ "links": [
+  {
+   "group": "Child",
+   "link_doctype": "Child Intake",
+   "link_fieldname": "child_center"
+  }
+ ],
+ "modified": "2026-01-16 13:02:13.569531",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Child Care Center",

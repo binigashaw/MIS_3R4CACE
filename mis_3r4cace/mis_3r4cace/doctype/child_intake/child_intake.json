@@ -1,0 +1,177 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format: {child_center}-{#####}",
+ "creation": "2025-12-29 21:55:48.375288",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "child_information_section",
+  "child_center",
+  "child_code",
+  "age_in_month",
+  "gender",
+  "nutritional_status",
+  "disability_status",
+  "other_disability_status",
+  "child_health_and_safety_information_section",
+  "known_allergies",
+  "any_long_term_chronic_health",
+  "medication_details",
+  "contextual_and_protection_information_section",
+  "residential_address",
+  "does_the_child_have_court_orders",
+  "vulnerability_status",
+  "primary_language_spoken",
+  "programmatic_and_baseline_data_section",
+  "childs_main_source_of_care_before_enrollment_column",
+  "select_cfkw"
+ ],
+ "fields": [
+  {
+   "fieldname": "child_information_section",
+   "fieldtype": "Section Break",
+   "label": "Child Information"
+  },
+  {
+   "fieldname": "child_center",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Child Center",
+   "options": "Child Care Center"
+  },
+  {
+   "fieldname": "child_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Child Code"
+  },
+  {
+   "fieldname": "age_in_month",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Age"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Gender",
+   "options": "Female\nMale"
+  },
+  {
+   "fieldname": "nutritional_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Nutritional Status",
+   "options": "Normal\nMild/Moderate Malnutrition\nSeverely Malnourished"
+  },
+  {
+   "fieldname": "disability_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Disability Status",
+   "options": "None\nHearing\nVisual\nPhysical\nOther (Specify)"
+  },
+  {
+   "fieldname": "other_disability_status",
+   "fieldtype": "Data",
+   "label": "Other Disability status",
+   "read_only": 1
+  },
+  {
+   "fieldname": "child_health_and_safety_information_section",
+   "fieldtype": "Section Break",
+   "label": "Child health and safety information"
+  },
+  {
+   "fieldname": "known_allergies",
+   "fieldtype": "Data",
+   "label": "Known allergies"
+  },
+  {
+   "fieldname": "any_long_term_chronic_health",
+   "fieldtype": "Data",
+   "label": "Any long-term chronic health"
+  },
+  {
+   "fieldname": "medication_details",
+   "fieldtype": "Data",
+   "label": "Medication details"
+  },
+  {
+   "fieldname": "contextual_and_protection_information_section",
+   "fieldtype": "Section Break",
+   "label": "Contextual and protection information"
+  },
+  {
+   "fieldname": "residential_address",
+   "fieldtype": "Data",
+   "label": "Residential Address"
+  },
+  {
+   "fieldname": "does_the_child_have_court_orders",
+   "fieldtype": "Select",
+   "label": "Does the child have court orders",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "vulnerability_status",
+   "fieldtype": "Select",
+   "label": "Vulnerability Status",
+   "options": "Orphan\nSingle Parent\nCaregiver is GBV survivor\nUnaccompanied minor\nNone"
+  },
+  {
+   "fieldname": "primary_language_spoken",
+   "fieldtype": "Select",
+   "label": "Primary Language Spoken",
+   "options": "Amharic\nTigrigna\nOromifa\nAf Afarigna\nOther"
+  },
+  {
+   "fieldname": "programmatic_and_baseline_data_section",
+   "fieldtype": "Section Break",
+   "label": "Programmatic and baseline data"
+  },
+  {
+   "fieldname": "childs_main_source_of_care_before_enrollment_column",
+   "fieldtype": "Column Break",
+   "options": "Mother/Father\nOlder sibling\nRelative\nInformal Paid\nNo care"
+  },
+  {
+   "fieldname": "select_cfkw",
+   "fieldtype": "Select",
+   "label": "Child's main source of care before enrollment?"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-31 00:28:25.408283",
+ "modified_by": "Administrator",
+ "module": "Mis 3R4Cace",
+ "name": "Child Intake",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
