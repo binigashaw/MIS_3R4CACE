@@ -41,7 +41,9 @@
    "fieldname": "loan_repayment_status",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Loan Repayment status"
+   "in_standard_filter": 1,
+   "label": "Loan Repayment status",
+   "options": "\nActive\nPaid Ahead\nPaid Off\nPast Due\n\n"
   },
   {
    "fieldname": "vsla_group",
@@ -128,7 +130,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-17 18:16:05.996726",
+ "modified": "2026-01-27 19:45:50.288660",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "VSLA Member",
