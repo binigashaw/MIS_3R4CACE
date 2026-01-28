@@ -38,7 +38,8 @@
   {
    "fieldname": "caregiver_profession",
    "fieldtype": "Select",
-   "label": "Caregiver profession"
+   "label": "Caregiver profession",
+   "options": "VSLA member\nVolunteer\nVulnerable"
   },
   {
    "fieldname": "agreement_to_participate_in_parenting",
@@ -50,7 +51,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-01-15 15:52:28.570077",
+ "modified": "2026-01-28 13:54:39.978291",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Caregiver Information",

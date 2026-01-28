@@ -143,13 +143,14 @@
   {
    "fieldname": "select_cfkw",
    "fieldtype": "Select",
-   "label": "Child's main source of care before enrollment?"
+   "label": "Child's main source of care before enrollment?",
+   "options": "Mother/Father\nOlder sibling\nRelative\nInformal Paid\nNo care"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-12-31 00:28:25.408283",
+ "modified": "2026-01-28 21:34:37.136259",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Child Intake",

@@ -7,10 +7,10 @@
  "engine": "InnoDB",
  "field_order": [
   "vsla_group_name",
+  "training_category",
   "title_of_the_training",
   "date_of_training",
-  "trainer_name",
-  "attendance_sheet",
+  "status",
   "start_date",
   "end_date",
   "place_of_training_column",
@@ -18,6 +18,7 @@
   "woreda",
   "kebele",
   "place_of_training",
+  "attendance_sheet",
   "section_break_mlsn",
   "table_gwsn"
  ],
@@ -31,9 +32,11 @@
    "options": "VSLA Group"
   },
   {
+   "depends_on": "eval: doc.training_category === \"Vocational Skills training\"",
    "fieldname": "title_of_the_training",
-   "fieldtype": "Data",
-   "label": "Title of the Training"
+   "fieldtype": "Select",
+   "label": "Vocational Training",
+   "options": "\nAgriculture\nLivestock\nFishery\nChildcare caregiver\nSewing/Tailoring\nHandicrafts\nFood processing/Cooking\nBaking\nPetty trade\nHairstyling\nCosmetology\nMilling/Flour processing\nCarpentry\nMechanic\nWelding\nCleaning\nDriving/Taxi\nElectrical\nOther\nDo not Know"
   },
   {
    "fieldname": "date_of_training",
@@ -77,11 +80,6 @@
    "label": "Place Of Training"
   },
   {
-   "fieldname": "trainer_name",
-   "fieldtype": "Data",
-   "label": "Trainer Name"
-  },
-  {
    "fieldname": "attendance_sheet",
    "fieldtype": "Attach",
    "label": "Attendance Sheet"
@@ -104,12 +102,26 @@
    "fieldname": "end_date",
    "fieldtype": "Date",
    "label": "End Date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Not yet begun\nIn progress\nCompleted"
+  },
+  {
+   "fieldname": "training_category",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Training Category",
+   "options": "Literacy training\nBusiness Skills training\nLife/Soft Skills training\nPersonal Initiative training\nVSLA membership training\nVocational Skills training"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-12-18 09:51:20.324237",
+ "modified": "2026-01-28 21:04:58.459693",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "VSLA Training",
