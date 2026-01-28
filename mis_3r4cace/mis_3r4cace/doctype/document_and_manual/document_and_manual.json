@@ -1,0 +1,56 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-01-28 21:58:41.876648",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "document_or_manual_title",
+  "document_or_manual_description",
+  "attach_document"
+ ],
+ "fields": [
+  {
+   "fieldname": "document_or_manual_title",
+   "fieldtype": "Data",
+   "label": "Document or manual title"
+  },
+  {
+   "fieldname": "document_or_manual_description",
+   "fieldtype": "Small Text",
+   "label": "Document or manual Description"
+  },
+  {
+   "fieldname": "attach_document",
+   "fieldtype": "Attach",
+   "label": "Attach document"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-28 22:00:18.698424",
+ "modified_by": "Administrator",
+ "module": "Mis 3R4Cace",
+ "name": "Document and Manual",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

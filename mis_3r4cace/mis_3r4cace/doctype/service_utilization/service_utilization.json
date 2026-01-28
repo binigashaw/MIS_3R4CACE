@@ -1,0 +1,129 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-01-28 21:44:59.748380",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "childcare_center",
+  "reporting_month",
+  "reporting_year",
+  "total_operational_days",
+  "column_break_wdoj",
+  "male_children_served",
+  "female_children_served",
+  "total_number_of_children_served",
+  "total_new_enrollments_this_month",
+  "average_daily_attendance",
+  "utilization_rate",
+  "enrollment_by_status_section",
+  "idp",
+  "column_break_yphi",
+  "host_community"
+ ],
+ "fields": [
+  {
+   "fieldname": "childcare_center",
+   "fieldtype": "Link",
+   "label": "Childcare Center",
+   "options": "Child Care Center"
+  },
+  {
+   "fieldname": "reporting_month",
+   "fieldtype": "Select",
+   "label": "Reporting Month"
+  },
+  {
+   "fieldname": "reporting_year",
+   "fieldtype": "Select",
+   "label": "Reporting Year"
+  },
+  {
+   "fieldname": "total_operational_days",
+   "fieldtype": "Int",
+   "label": "Total operational Days"
+  },
+  {
+   "fieldname": "column_break_wdoj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_number_of_children_served",
+   "fieldtype": "Int",
+   "label": "Total number of children served ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_new_enrollments_this_month",
+   "fieldtype": "Int",
+   "label": "Total new enrollments this month"
+  },
+  {
+   "fieldname": "average_daily_attendance",
+   "fieldtype": "Float",
+   "label": "Average daily attendance"
+  },
+  {
+   "fieldname": "utilization_rate",
+   "fieldtype": "Float",
+   "label": "Utilization rate",
+   "read_only": 1
+  },
+  {
+   "fieldname": "enrollment_by_status_section",
+   "fieldtype": "Section Break",
+   "label": "Enrollment by status"
+  },
+  {
+   "fieldname": "idp",
+   "fieldtype": "Int",
+   "label": "IDP"
+  },
+  {
+   "fieldname": "column_break_yphi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "host_community",
+   "fieldtype": "Int",
+   "label": "Host Community"
+  },
+  {
+   "fieldname": "male_children_served",
+   "fieldtype": "Int",
+   "label": "Male children served"
+  },
+  {
+   "fieldname": "female_children_served",
+   "fieldtype": "Int",
+   "label": "Female children served"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-28 21:55:13.535556",
+ "modified_by": "Administrator",
+ "module": "Mis 3R4Cace",
+ "name": "Service Utilization",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
