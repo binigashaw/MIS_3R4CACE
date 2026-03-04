@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "autoincrement",
  "creation": "2026-01-28 21:44:59.748380",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -25,24 +26,31 @@
   {
    "fieldname": "childcare_center",
    "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Childcare Center",
    "options": "Child Care Center"
   },
   {
    "fieldname": "reporting_month",
    "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Reporting Month",
    "options": "January\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember"
   },
   {
    "fieldname": "reporting_year",
    "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Reporting Year",
    "options": "2025\n2026\n2027\n2028\n2029"
   },
   {
    "fieldname": "total_operational_days",
    "fieldtype": "Int",
+   "in_list_view": 1,
    "label": "Total operational Days"
   },
   {
@@ -52,6 +60,7 @@
   {
    "fieldname": "total_number_of_children_served",
    "fieldtype": "Int",
+   "in_list_view": 1,
    "label": "Total number of children served ",
    "read_only": 1
   },
@@ -68,6 +77,7 @@
   {
    "fieldname": "utilization_rate",
    "fieldtype": "Float",
+   "in_list_view": 1,
    "label": "Utilization rate",
    "read_only": 1
   },
@@ -104,10 +114,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-01-28 22:11:49.484753",
+ "modified": "2026-03-04 11:29:41.852731",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Service Utilization",
+ "naming_rule": "Autoincrement",
  "owner": "Administrator",
  "permissions": [
   {
