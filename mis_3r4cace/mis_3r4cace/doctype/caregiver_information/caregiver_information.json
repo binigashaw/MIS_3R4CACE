@@ -1,60 +1,93 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "autoincrement",
  "creation": "2025-12-30 23:56:15.286213",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "column_break_tdrk",
+  "childcare_center",
   "caregiver_name",
   "gender",
   "caregiver_certification_status",
   "caregiver_profession",
-  "agreement_to_participate_in_parenting"
+  "agreement_to_participate_in_parenting",
+  "column_break_knve",
+  "region",
+  "woreda"
  ],
  "fields": [
   {
    "fieldname": "caregiver_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Care giver Name"
   },
   {
    "fieldname": "gender",
    "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Gender",
    "options": "Female\nMale"
   },
   {
    "fieldname": "caregiver_certification_status",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Caregiver certification status",
    "options": "Certified/completed the required training by the 3R\nCertified via external (non-project) training\nNon-Compliant (No Certification)"
   },
   {
-   "fieldname": "column_break_tdrk",
-   "fieldtype": "Column Break",
-   "options": "VSLA member\nVolunteer\nVulnerable"
-  },
-  {
    "fieldname": "caregiver_profession",
    "fieldtype": "Select",
-   "label": "Caregiver profession",
-   "options": "VSLA member\nVolunteer\nVulnerable"
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Caregiver Profile",
+   "options": "3R beneficiary\nNot a 3R beneficiary"
   },
   {
    "fieldname": "agreement_to_participate_in_parenting",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Agreement to participate in parenting",
    "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "childcare_center",
+   "fieldtype": "Link",
+   "label": "Childcare Center",
+   "options": "Child Care Center"
+  },
+  {
+   "fieldname": "column_break_knve",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "childcare_center.region",
+   "fieldname": "region",
+   "fieldtype": "Link",
+   "label": "Region",
+   "options": "Region",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "childcare_center.woreda",
+   "fieldname": "woreda",
+   "fieldtype": "Link",
+   "label": "Woreda",
+   "options": "Woreda",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-01-28 13:54:39.978291",
+ "modified": "2026-02-16 11:10:14.549367",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Caregiver Information",
+ "naming_rule": "Autoincrement",
  "owner": "Administrator",
  "permissions": [
   {

@@ -6,6 +6,9 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "region",
+  "woreda",
+  "kebele",
   "component",
   "subcomponent",
   "subcomponent_description",
@@ -18,6 +21,7 @@
   "budget_year_target",
   "budget",
   "budget_utilized",
+  "budget_balance",
   "budget_year"
  ],
  "fields": [
@@ -54,7 +58,7 @@
    "fieldname": "budget",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Budget",
+   "label": "Planned Budget",
    "precision": "2"
   },
   {
@@ -105,7 +109,35 @@
   {
    "fieldname": "budget_year_target",
    "fieldtype": "Int",
-   "label": "Budget Year Target"
+   "label": "Annual Target"
+  },
+  {
+   "fieldname": "region",
+   "fieldtype": "Link",
+   "label": "Region",
+   "options": "Region"
+  },
+  {
+   "fieldname": "woreda",
+   "fieldtype": "Link",
+   "label": "Woreda",
+   "link_filters": "[[\"Woreda\",\"region\",\"=\",\"eval: doc.region\"]]",
+   "options": "Woreda"
+  },
+  {
+   "fieldname": "kebele",
+   "fieldtype": "Link",
+   "label": "Kebele",
+   "link_filters": "[[\"Kebele\",\"woreda\",\"=\",\"eval: doc.woreda\"]]",
+   "options": "Kebele"
+  },
+  {
+   "fieldname": "budget_balance",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Budget Balance",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
@@ -117,7 +149,7 @@
    "link_fieldname": "name_of_activity"
   }
  ],
- "modified": "2025-11-25 10:41:15.143346",
+ "modified": "2026-02-16 09:39:29.145899",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Activities",

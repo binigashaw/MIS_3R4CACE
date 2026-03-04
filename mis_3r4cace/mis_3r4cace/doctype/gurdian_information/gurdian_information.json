@@ -9,14 +9,22 @@
   "guardianmother_name",
   "relation_to_child",
   "phone_number",
-  "family_status",
   "household_size_number",
   "household_residency",
+  "column_break_hdfo",
+  "family_status",
   "older_sibling_care_burden",
   "mother_type_of_labor_participation",
   "average_hours_per_month",
   "average_income_per_month",
-  "gurdian_consent"
+  "3r_beneficiary_type",
+  "vsla_group",
+  "guardian_consent_section",
+  "gurdian_consent",
+  "section_break_ykbt",
+  "region",
+  "column_break_eqds",
+  "woreda"
  ],
  "fields": [
   {
@@ -37,6 +45,7 @@
    "fieldname": "relation_to_child",
    "fieldtype": "Select",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Relation to child",
    "options": "Biological Mother\nLegal Guardian\nFoster Parent\nOther Relative"
   },
@@ -49,17 +58,20 @@
   {
    "fieldname": "family_status",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Family status",
    "options": "Host Community\nIDP\nOther Vulnerable Group"
   },
   {
    "fieldname": "household_size_number",
    "fieldtype": "Int",
+   "in_list_view": 1,
    "label": "Household size number"
   },
   {
    "fieldname": "household_residency",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Household residency",
    "options": "Permanent\nTemporary\nCamp/Settlement"
   },
@@ -72,6 +84,8 @@
   {
    "fieldname": "mother_type_of_labor_participation",
    "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Mother type of labor participation",
    "options": "Formal\nInformal\nUnemployed (Seeking)\nUnemployed (Not Seeking)"
   },
@@ -83,18 +97,67 @@
   {
    "fieldname": "average_income_per_month",
    "fieldtype": "Int",
+   "in_list_view": 1,
    "label": "Average income per month"
   },
   {
    "fieldname": "gurdian_consent",
    "fieldtype": "Attach",
    "label": "Gurdian Consent"
+  },
+  {
+   "fieldname": "3r_beneficiary_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "3R Beneficiary Type",
+   "options": "3R beneficiary\nNot a 3R beneficiary"
+  },
+  {
+   "fieldname": "column_break_hdfo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "guardian_consent_section",
+   "fieldtype": "Section Break",
+   "label": "Guardian Consent"
+  },
+  {
+   "fieldname": "section_break_ykbt",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "child.region",
+   "fieldname": "region",
+   "fieldtype": "Link",
+   "label": "Region",
+   "options": "Region",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_eqds",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "child.woreda",
+   "fieldname": "woreda",
+   "fieldtype": "Link",
+   "label": "Woreda",
+   "options": "Woreda",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval: doc.3r_beneficiary_type === \"3R beneficiary\"",
+   "fieldname": "vsla_group",
+   "fieldtype": "Link",
+   "label": "VSLA Group",
+   "link_filters": "[[\"vsla_group\",\"woreda\",\"=\",\"eval: doc.woreda\"]]",
+   "options": "VSLA Group"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-12-31 00:34:57.128793",
+ "modified": "2026-03-04 07:00:30.363482",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Gurdian Information",

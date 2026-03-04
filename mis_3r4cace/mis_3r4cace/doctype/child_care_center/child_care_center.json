@@ -162,9 +162,19 @@
    "group": "Child",
    "link_doctype": "Child Intake",
    "link_fieldname": "child_center"
+  },
+  {
+   "group": "Childcare center incident",
+   "link_doctype": "Childcare Center Incident",
+   "link_fieldname": "child_care_center"
+  },
+  {
+   "group": "Caregiver Information",
+   "link_doctype": "Caregiver Information",
+   "link_fieldname": "childcare_center"
   }
  ],
- "modified": "2026-01-16 13:02:13.569531",
+ "modified": "2026-03-04 06:36:18.210693",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Child Care Center",

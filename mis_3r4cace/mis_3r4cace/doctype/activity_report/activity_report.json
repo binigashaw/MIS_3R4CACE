@@ -43,6 +43,7 @@
   {
    "fieldname": "region",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Region",
    "options": "Region"
@@ -236,7 +237,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-10-28 14:42:42.050268",
+ "modified": "2026-02-16 09:50:21.451793",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Activity Report",

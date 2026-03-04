@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "autoincrement",
  "creation": "2025-12-30 23:37:47.087582",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -20,17 +21,22 @@
   {
    "fieldname": "child_care_center",
    "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Child Care Center",
    "options": "Child Care Center"
   },
   {
    "fieldname": "date_of_incident",
    "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Date of incident"
   },
   {
    "fieldname": "name_of_staff_reported",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Name of Staff reported"
   },
   {
@@ -47,6 +53,8 @@
   {
    "fieldname": "type_of_incident",
    "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Type of Incident",
    "options": "Fall\nInjury (Cut/Scrape)\nBite\nHit\nSudden Illness\nProtection Concern\nOther"
   },
@@ -73,11 +81,18 @@
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2025-12-30 23:45:11.191422",
+ "links": [
+  {
+   "group": "Incident Follow-up",
+   "link_doctype": "Incident Follow-Up",
+   "link_fieldname": "childcare_incident"
+  }
+ ],
+ "modified": "2026-03-04 06:29:56.682840",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Childcare Center Incident",
+ "naming_rule": "Autoincrement",
  "owner": "Administrator",
  "permissions": [
   {

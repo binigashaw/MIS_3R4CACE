@@ -12,6 +12,7 @@
   "loan_repayment_status",
   "vsla_group",
   "column_break_ygqt",
+  "vsla_member_role",
   "member_status",
   "saving",
   "loan",
@@ -125,12 +126,28 @@
    "label": "Kebele",
    "options": "Kebele",
    "read_only": 1
+  },
+  {
+   "fieldname": "vsla_member_role",
+   "fieldtype": "Select",
+   "label": "VSLA Member Role"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2026-01-27 19:51:26.898063",
+ "links": [
+  {
+   "group": "Member Saving",
+   "link_doctype": "VSLA Member Saving",
+   "link_fieldname": "member_name"
+  },
+  {
+   "group": "Member Loan Return",
+   "link_doctype": "VSLA Loan Return",
+   "link_fieldname": "member_name"
+  }
+ ],
+ "modified": "2026-03-04 06:46:27.158047",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "VSLA Member",

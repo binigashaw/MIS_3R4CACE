@@ -17,7 +17,13 @@
   "kebele",
   "place_of_training",
   "section_break_mlsn",
-  "table_gwsn"
+  "table_gwsn",
+  "section_break_nomf",
+  "balance_of_social_fund",
+  "column_break_aqkt",
+  "total_loan_repayment",
+  "column_break_vnln",
+  "loan_fund_balance"
  ],
  "fields": [
   {
@@ -31,6 +37,7 @@
   {
    "fieldname": "title_of_the_training",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Title of the Meeting"
   },
   {
@@ -56,21 +63,25 @@
    "label": "Place Of Meeting"
   },
   {
+   "fetch_from": "vsla_group_name.region",
    "fieldname": "region",
    "fieldtype": "Link",
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Region",
-   "options": "Region"
+   "options": "Region",
+   "read_only": 1
   },
   {
+   "fetch_from": "vsla_group_name.woreda",
    "fieldname": "woreda",
    "fieldtype": "Link",
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Woreda",
    "link_filters": "[[\"Woreda\",\"region\",\"=\",\"eval: doc.region\"]]",
-   "options": "Woreda"
+   "options": "Woreda",
+   "read_only": 1
   },
   {
    "fieldname": "kebele",
@@ -94,12 +105,43 @@
    "fieldname": "table_gwsn",
    "fieldtype": "Table",
    "options": "Training Member"
+  },
+  {
+   "fieldname": "section_break_nomf",
+   "fieldtype": "Section Break",
+   "label": "Meeting Report"
+  },
+  {
+   "fieldname": "balance_of_social_fund",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Balance of social fund"
+  },
+  {
+   "fieldname": "total_loan_repayment",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Loan Repayment "
+  },
+  {
+   "fieldname": "loan_fund_balance",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Loan Fund Balance"
+  },
+  {
+   "fieldname": "column_break_aqkt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_vnln",
+   "fieldtype": "Column Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-11-17 20:03:12.795482",
+ "modified": "2026-03-04 06:41:55.443007",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "VSLA Meeting",

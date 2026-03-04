@@ -1,10 +1,12 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "autoincrement",
  "creation": "2025-12-30 23:47:40.590250",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "childcare_incident",
   "first_aid_provided",
   "required_medical_attention",
   "parent_contact_time",
@@ -18,22 +20,26 @@
   {
    "fieldname": "first_aid_provided",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "First Aid provided by staff"
   },
   {
    "fieldname": "required_medical_attention",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Required Medical attention",
    "options": "No\nYes, contacted local clinic\nYes, required transport to hospital"
   },
   {
    "fieldname": "parent_contact_time",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Parent Contact Time"
   },
   {
    "fieldname": "parent_contact_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Parent Contact Name"
   },
   {
@@ -44,27 +50,38 @@
   {
    "fieldname": "serious_incident_report",
    "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Serious incident report",
    "options": "NO, minor incident, closed\nYES, no GRM\nYES, GRM activated"
   },
   {
    "fieldname": "staff_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Staff Name"
   },
   {
    "fieldname": "supervisor_name",
    "fieldtype": "Data",
    "label": "Supervisor Name"
+  },
+  {
+   "fieldname": "childcare_incident",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Childcare Incident",
+   "options": "Childcare Center Incident"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-12-30 23:59:19.522239",
+ "modified": "2026-03-04 06:29:11.900597",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Incident Follow-Up",
+ "naming_rule": "Autoincrement",
  "owner": "Administrator",
  "permissions": [
   {

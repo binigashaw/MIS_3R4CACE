@@ -72,11 +72,22 @@
  "index_web_pages_for_search": 1,
  "links": [
   {
+   "group": "VSLA Group",
    "link_doctype": "VSLA Member",
    "link_fieldname": "vsla_group"
+  },
+  {
+   "group": "VSLA Training",
+   "link_doctype": "VSLA Training",
+   "link_fieldname": "vsla_group_name"
+  },
+  {
+   "group": "VSLA Meeting",
+   "link_doctype": "VSLA Meeting",
+   "link_fieldname": "vsla_group_name"
   }
  ],
- "modified": "2026-01-28 20:17:39.475377",
+ "modified": "2026-03-04 06:40:57.324450",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "VSLA Group",

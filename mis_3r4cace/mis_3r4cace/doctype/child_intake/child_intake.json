@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format: {child_center}-{#####}",
+ "autoname": "format: {child_center}-{child_code}",
  "creation": "2025-12-29 21:55:48.375288",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -14,6 +14,10 @@
   "nutritional_status",
   "disability_status",
   "other_disability_status",
+  "column_break_udrt",
+  "region",
+  "woreda",
+  "kebele",
   "child_health_and_safety_information_section",
   "known_allergies",
   "any_long_term_chronic_health",
@@ -38,7 +42,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "Child Center",
+   "label": "Childcare Center",
    "options": "Child Care Center"
   },
   {
@@ -145,12 +149,43 @@
    "fieldtype": "Select",
    "label": "Child's main source of care before enrollment?",
    "options": "Mother/Father\nOlder sibling\nRelative\nInformal Paid\nNo care"
+  },
+  {
+   "fieldname": "column_break_udrt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "child_center.region",
+   "fieldname": "region",
+   "fieldtype": "Link",
+   "label": "Region",
+   "options": "Region"
+  },
+  {
+   "fieldname": "woreda",
+   "fieldtype": "Link",
+   "label": "Woreda",
+   "link_filters": "[[\"Woreda\",\"region\",\"=\",\"eval: doc.region\"]]",
+   "options": "Woreda"
+  },
+  {
+   "fieldname": "kebele",
+   "fieldtype": "Link",
+   "label": "Kebele",
+   "link_filters": "[[\"Kebele\",\"woreda\",\"=\",\"eval: doc.woreda\"]]",
+   "options": "Kebele"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2026-01-28 21:34:37.136259",
+ "links": [
+  {
+   "group": "Guardian Information",
+   "link_doctype": "Gurdian Information",
+   "link_fieldname": "child"
+  }
+ ],
+ "modified": "2026-03-04 06:22:58.230691",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Child Intake",

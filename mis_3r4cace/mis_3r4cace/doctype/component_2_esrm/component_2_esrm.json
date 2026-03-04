@@ -1,0 +1,264 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "autoincrement",
+ "creation": "2026-02-16 11:51:55.355740",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "region",
+  "woreda",
+  "kebele",
+  "column_break_lmyq",
+  "activity_category",
+  "activity",
+  "activity_name",
+  "e_and_s_screening_documents_section",
+  "eligibility_checklist_document",
+  "column_break_qdiz",
+  "further_screening_document",
+  "column_break_jxwg",
+  "land_ownership_certificate",
+  "risk_classification_section",
+  "schedule_1",
+  "column_break_opbj",
+  "schedule_2",
+  "column_break_pffs",
+  "schedule_3",
+  "instruments_prepared_section",
+  "column_break_yhfx",
+  "raparap",
+  "attach_rap_document",
+  "column_break_mzpq",
+  "pesiaesia",
+  "attach_pesia_document",
+  "column_break_xaqr",
+  "esmp",
+  "attach_esmp_document",
+  "column_break_xorz",
+  "approval",
+  "certificate",
+  "workflow_state"
+ ],
+ "fields": [
+  {
+   "fieldname": "region",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Region",
+   "options": "Region",
+   "reqd": 1
+  },
+  {
+   "fieldname": "woreda",
+   "fieldtype": "Link",
+   "label": "Woreda",
+   "link_filters": "[[\"Woreda\",\"region\",\"=\",\"eval: doc.region\"]]",
+   "options": "Woreda",
+   "reqd": 1
+  },
+  {
+   "fieldname": "kebele",
+   "fieldtype": "Link",
+   "label": "Kebele",
+   "link_filters": "[[\"Kebele\",\"woreda\",\"=\",\"eval: doc.woreda\"]]",
+   "options": "Kebele"
+  },
+  {
+   "fieldname": "column_break_lmyq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "e_and_s_screening_documents_section",
+   "fieldtype": "Section Break",
+   "label": "E and S Screening Documents"
+  },
+  {
+   "fieldname": "eligibility_checklist_document",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Eligibility Checklist Document",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_qdiz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "further_screening_document",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Further Screening Document",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_jxwg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "land_ownership_certificate",
+   "fieldtype": "Attach",
+   "label": "Land Ownership Certificate"
+  },
+  {
+   "fieldname": "risk_classification_section",
+   "fieldtype": "Section Break",
+   "label": "Risk classification"
+  },
+  {
+   "default": "0",
+   "fieldname": "schedule_1",
+   "fieldtype": "Check",
+   "label": "Schedule 1"
+  },
+  {
+   "fieldname": "column_break_opbj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "schedule_2",
+   "fieldtype": "Check",
+   "label": "Schedule 2"
+  },
+  {
+   "fieldname": "column_break_pffs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "schedule_3",
+   "fieldtype": "Check",
+   "label": "Schedule 3"
+  },
+  {
+   "fieldname": "instruments_prepared_section",
+   "fieldtype": "Section Break",
+   "label": "Instruments prepared"
+  },
+  {
+   "fieldname": "column_break_yhfx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.schedule_2 || doc.schedule_1;",
+   "fieldname": "raparap",
+   "fieldtype": "Check",
+   "label": "RAP/ARAP"
+  },
+  {
+   "depends_on": "eval:doc.schedule_2 || doc.schedule_1;",
+   "fieldname": "attach_rap_document",
+   "fieldtype": "Attach",
+   "label": "Attach RAP Document",
+   "mandatory_depends_on": "eval:doc.raparap;"
+  },
+  {
+   "fieldname": "column_break_mzpq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.schedule_2 || doc.schedule_1;",
+   "fieldname": "pesiaesia",
+   "fieldtype": "Check",
+   "label": "PESIA/ESIA"
+  },
+  {
+   "depends_on": "eval:doc.schedule_2 || doc.schedule_1;",
+   "fieldname": "attach_pesia_document",
+   "fieldtype": "Attach",
+   "label": "Attach PESIA Document",
+   "mandatory_depends_on": "eval:doc.pesiaesia;"
+  },
+  {
+   "fieldname": "column_break_xaqr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.schedule_2 || doc.schedule_1;",
+   "fieldname": "esmp",
+   "fieldtype": "Check",
+   "label": "ESMP"
+  },
+  {
+   "depends_on": "eval:doc.schedule_2 || doc.schedule_1;",
+   "fieldname": "attach_esmp_document",
+   "fieldtype": "Attach",
+   "label": "Attach ESMP Document",
+   "mandatory_depends_on": "eval:doc.esmp;"
+  },
+  {
+   "fieldname": "column_break_xorz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "approval",
+   "fieldtype": "Check",
+   "label": "Approval"
+  },
+  {
+   "fieldname": "certificate",
+   "fieldtype": "Attach",
+   "label": "Certificate",
+   "mandatory_depends_on": "eval:doc.approval;"
+  },
+  {
+   "fieldname": "workflow_state",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Workflow state"
+  },
+  {
+   "fieldname": "activity",
+   "fieldtype": "Link",
+   "label": "Activity ID",
+   "options": "Activities"
+  },
+  {
+   "fieldname": "activity_name",
+   "fieldtype": "Small Text",
+   "label": "Activity Name"
+  },
+  {
+   "fieldname": "activity_category",
+   "fieldtype": "Link",
+   "label": "Activity Category",
+   "options": "Activity Category",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-02-16 12:12:02.966778",
+ "modified_by": "Administrator",
+ "module": "Mis 3R4Cace",
+ "name": "Component 2 ESRM",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -94,7 +94,7 @@
    "fieldname": "women_idp_reached",
    "fieldtype": "Int",
    "hidden": 1,
-   "label": "Women IDP Reached"
+   "label": "Women IDP Reached(Including Returnees)"
   },
   {
    "fieldname": "column_break_vwjs",
@@ -103,7 +103,7 @@
   {
    "fieldname": "idp_reached",
    "fieldtype": "Int",
-   "label": "IDP Reached"
+   "label": "IDP Reached(Including Returnees)"
   },
   {
    "fieldname": "boys_reached",
@@ -115,13 +115,13 @@
    "fieldname": "boys_idp_reached",
    "fieldtype": "Int",
    "hidden": 1,
-   "label": "Boys IDP Reached"
+   "label": "Boys IDP Reached(Including Returnees)"
   },
   {
    "fieldname": "men_idp_reached",
    "fieldtype": "Int",
    "hidden": 1,
-   "label": "Men IDP Reached"
+   "label": "Men IDP Reached(Including Returnees)"
   },
   {
    "fieldname": "column_break_gkal",
@@ -142,7 +142,7 @@
    "fieldname": "girls_idp_reached",
    "fieldtype": "Int",
    "hidden": 1,
-   "label": "Girls IDP Reached"
+   "label": "Girls IDP Reached(Including Returnees)"
   },
   {
    "fieldname": "population_information_section",
@@ -176,14 +176,14 @@
    "fetch_from": "kebele.number_of_idp",
    "fieldname": "number_of_idp",
    "fieldtype": "Int",
-   "label": "Number of IDP",
+   "label": "Number of IDP(Including Returnees) ",
    "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-05-19 15:40:16.513012",
+ "modified": "2026-02-16 10:54:08.362425",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Subproject Beneficiary",

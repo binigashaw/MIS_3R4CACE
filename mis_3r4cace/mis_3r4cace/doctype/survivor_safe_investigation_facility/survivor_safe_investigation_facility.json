@@ -2,24 +2,35 @@
  "actions": [],
  "allow_rename": 1,
  "autoname": "autoincrement",
- "creation": "2026-01-16 11:16:59.835674",
+ "creation": "2026-02-16 11:47:43.201450",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "report_region_and_month_section",
   "report_region_and_woreda_column",
   "region",
   "woreda",
   "column_break_sedo",
   "month",
   "year",
+  "column_break_bflo",
   "section_break_xacv",
   "number_of_adult_survivor_column",
   "female",
-  "column_break_azsb",
   "male",
-  "column_break_aodv",
   "total",
+  "number_of_child_survivors_column",
+  "child_survivors_female",
+  "child_survivors_male",
+  "child_survivors_total",
+  "section_break_vmav",
+  "number_of_adult_survivors_column",
+  "upgrade_adult_female",
+  "upgraded_adult_male",
+  "upgraded_adult_total",
+  "column_break_rzxm",
+  "upgraded_child_survivor_female",
+  "upgraded_child_survivor_male",
+  "upgraded_child_survivor_total",
   "section_break_xvmh",
   "pep_kits_female",
   "column_break_rskc",
@@ -47,18 +58,15 @@
  ],
  "fields": [
   {
-   "fieldname": "report_region_and_month_section",
-   "fieldtype": "Section Break",
-   "label": "Report Region and Month"
-  },
-  {
    "fieldname": "report_region_and_woreda_column",
-   "fieldtype": "Column Break"
+   "fieldtype": "Column Break",
+   "label": "Report region and woreda"
   },
   {
    "fieldname": "region",
    "fieldtype": "Link",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Region",
    "options": "Region"
   },
@@ -73,7 +81,8 @@
   },
   {
    "fieldname": "column_break_sedo",
-   "fieldtype": "Column Break"
+   "fieldtype": "Column Break",
+   "label": "Report month and year"
   },
   {
    "fieldname": "month",
@@ -90,13 +99,18 @@
    "options": "2025\n2026\n2027\n2028"
   },
   {
+   "fieldname": "column_break_bflo",
+   "fieldtype": "Column Break"
+  },
+  {
    "fieldname": "section_break_xacv",
    "fieldtype": "Section Break",
-   "label": "Number of people receiving mental health services from existing or upgraded HFs with MHPSS blocks"
+   "label": "Number of people receiving service from newly construct new Survivor Safe Investigation facility"
   },
   {
    "fieldname": "number_of_adult_survivor_column",
-   "fieldtype": "Column Break"
+   "fieldtype": "Column Break",
+   "label": "Number of Adult Survivor"
   },
   {
    "fieldname": "female",
@@ -104,20 +118,80 @@
    "label": "Female"
   },
   {
-   "fieldname": "column_break_azsb",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "male",
    "fieldtype": "Int",
    "label": "Male"
   },
   {
-   "fieldname": "column_break_aodv",
-   "fieldtype": "Column Break"
+   "fieldname": "total",
+   "fieldtype": "Int",
+   "label": "Total",
+   "read_only": 1
   },
   {
-   "fieldname": "total",
+   "fieldname": "number_of_child_survivors_column",
+   "fieldtype": "Column Break",
+   "label": "Number of child survivors"
+  },
+  {
+   "fieldname": "child_survivors_female",
+   "fieldtype": "Int",
+   "label": "Female"
+  },
+  {
+   "fieldname": "child_survivors_male",
+   "fieldtype": "Int",
+   "label": "Male"
+  },
+  {
+   "fieldname": "child_survivors_total",
+   "fieldtype": "Int",
+   "label": "Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_vmav",
+   "fieldtype": "Section Break",
+   "label": "Number of people receiving service from upgraded existing Survivor Safe Investigation facility"
+  },
+  {
+   "fieldname": "number_of_adult_survivors_column",
+   "fieldtype": "Column Break",
+   "label": "Number of Adult Survivors"
+  },
+  {
+   "fieldname": "upgrade_adult_female",
+   "fieldtype": "Int",
+   "label": "Female"
+  },
+  {
+   "fieldname": "upgraded_adult_male",
+   "fieldtype": "Int",
+   "label": "Male"
+  },
+  {
+   "fieldname": "upgraded_adult_total",
+   "fieldtype": "Int",
+   "label": "Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_rzxm",
+   "fieldtype": "Column Break",
+   "label": "Number of child survivors"
+  },
+  {
+   "fieldname": "upgraded_child_survivor_female",
+   "fieldtype": "Int",
+   "label": "Female"
+  },
+  {
+   "fieldname": "upgraded_child_survivor_male",
+   "fieldtype": "Int",
+   "label": "Male"
+  },
+  {
+   "fieldname": "upgraded_child_survivor_total",
    "fieldtype": "Int",
    "label": "Total",
    "read_only": 1
@@ -215,6 +289,11 @@
    "label": "Number of people receiving essential drugs and medical supplies"
   },
   {
+   "fieldname": "medical_supplies_female",
+   "fieldtype": "Int",
+   "label": "Female"
+  },
+  {
    "fieldname": "column_break_vuot",
    "fieldtype": "Column Break"
   },
@@ -232,20 +311,15 @@
    "fieldtype": "Int",
    "label": "Total",
    "read_only": 1
-  },
-  {
-   "fieldname": "medical_supplies_female",
-   "fieldtype": "Int",
-   "label": "Female"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-01-16 16:47:41.264840",
+ "modified": "2026-02-16 11:48:15.943250",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
- "name": "Hospital and HF",
+ "name": "Survivor Safe Investigation facility",
  "naming_rule": "Autoincrement",
  "owner": "Administrator",
  "permissions": [
