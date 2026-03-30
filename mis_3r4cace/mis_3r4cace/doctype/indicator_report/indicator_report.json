@@ -1,6 +1,5 @@
 {
  "actions": [],
- "allow_import": 1,
  "allow_rename": 1,
  "autoname": "field:name_of_indicator",
  "creation": "2025-08-07 10:46:47.779862",
@@ -73,7 +72,7 @@
    "link_fieldname": "name_of_indicator"
   }
  ],
- "modified": "2026-03-30 09:18:03.772404",
+ "modified": "2026-03-30 10:55:05.514579",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Indicator Report",
