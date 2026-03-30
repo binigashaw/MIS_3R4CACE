@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "format:{activity_id}-{budget_year}",
  "creation": "2025-08-05 10:59:49.555698",
@@ -149,7 +150,7 @@
    "link_fieldname": "name_of_activity"
   }
  ],
- "modified": "2026-03-30 10:54:46.789022",
+ "modified": "2026-03-30 11:39:39.158895",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Activities",
