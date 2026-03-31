@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "autoincrement",
+ "autoname": "format:Training-{######}",
  "creation": "2025-11-06 09:38:22.423449",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -121,11 +121,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-30 18:12:26.838234",
+ "modified": "2026-03-31 10:50:19.224891",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "VSLA Training",
- "naming_rule": "Autoincrement",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

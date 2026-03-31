@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "autoincrement",
+ "autoname": "format:Intake-{#######}",
  "creation": "2025-12-29 21:55:48.375288",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -185,11 +185,11 @@
    "link_fieldname": "child"
   }
  ],
- "modified": "2026-03-30 18:15:57.945439",
+ "modified": "2026-03-31 10:53:23.873974",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Child Intake",
- "naming_rule": "Autoincrement",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

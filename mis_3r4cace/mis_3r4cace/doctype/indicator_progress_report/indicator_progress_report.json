@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "autoincrement",
+ "autoname": "format:IndProgr-{######}",
  "creation": "2025-08-07 11:21:53.130902",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -109,11 +109,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-30 18:06:17.550410",
+ "modified": "2026-03-31 10:41:11.258840",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Indicator Progress Report",
- "naming_rule": "Autoincrement",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "autoincrement",
+ "autoname": "format:Member-{######}",
  "creation": "2025-11-06 09:16:53.153147",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -147,11 +147,11 @@
    "link_fieldname": "member_name"
   }
  ],
- "modified": "2026-03-30 18:12:04.345291",
+ "modified": "2026-03-31 10:49:13.818738",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "VSLA Member",
- "naming_rule": "Autoincrement",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

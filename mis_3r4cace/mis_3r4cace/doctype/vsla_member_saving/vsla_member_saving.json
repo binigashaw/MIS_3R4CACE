@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "autoincrement",
+ "autoname": "format:Saving-{######}",
  "creation": "2025-11-06 10:08:27.922272",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -76,11 +76,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-30 18:13:09.532116",
+ "modified": "2026-03-31 10:52:08.037362",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "VSLA Member Saving",
- "naming_rule": "Autoincrement",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

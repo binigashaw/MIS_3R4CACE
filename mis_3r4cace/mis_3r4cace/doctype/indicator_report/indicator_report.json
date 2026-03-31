@@ -2,7 +2,7 @@
  "actions": [],
  "allow_import": 1,
  "allow_rename": 1,
- "autoname": "autoincrement",
+ "autoname": "format:Indicator-{#####}",
  "creation": "2025-08-07 10:46:47.779862",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -73,11 +73,11 @@
    "link_fieldname": "name_of_indicator"
   }
  ],
- "modified": "2026-03-30 18:05:37.635417",
+ "modified": "2026-03-31 10:20:05.459116",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Indicator Report",
- "naming_rule": "Autoincrement",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

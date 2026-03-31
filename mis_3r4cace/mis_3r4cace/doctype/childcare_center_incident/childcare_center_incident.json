@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "autoincrement",
+ "autoname": "format:Incident-{######}",
  "creation": "2025-12-30 23:37:47.087582",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -88,11 +88,11 @@
    "link_fieldname": "childcare_incident"
   }
  ],
- "modified": "2026-03-04 06:29:56.682840",
+ "modified": "2026-03-31 10:55:08.416668",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Childcare Center Incident",
- "naming_rule": "Autoincrement",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "autoincrement",
+ "autoname": "format:Childcare-{######}",
  "creation": "2025-11-06 10:18:59.708130",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -179,11 +179,11 @@
    "link_fieldname": "childcare_center"
   }
  ],
- "modified": "2026-03-30 18:15:22.417651",
+ "modified": "2026-03-31 10:52:46.793480",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Child Care Center",
- "naming_rule": "Autoincrement",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

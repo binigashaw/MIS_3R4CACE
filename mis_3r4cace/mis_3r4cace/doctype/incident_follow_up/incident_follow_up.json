@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "autoincrement",
+ "autoname": "format:FollowUp-{######}",
  "creation": "2025-12-30 23:47:40.590250",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -77,11 +77,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-04 06:29:11.900597",
+ "modified": "2026-03-31 10:57:16.070362",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Incident Follow-Up",
- "naming_rule": "Autoincrement",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
