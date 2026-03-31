@@ -2,7 +2,7 @@
  "actions": [],
  "allow_import": 1,
  "allow_rename": 1,
- "autoname": "format:Activity-{######)",
+ "autoname": "format:Activity-{######}",
  "creation": "2025-08-05 10:59:49.555698",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -151,7 +151,7 @@
    "link_fieldname": "name_of_activity"
   }
  ],
- "modified": "2026-03-31 10:33:24.599804",
+ "modified": "2026-03-31 11:09:47.109110",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Activities",
