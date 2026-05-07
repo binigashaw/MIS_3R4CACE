@@ -48,7 +48,8 @@
    "fieldname": "group_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Group Name"
+   "label": "Group Name",
+   "reqd": 1
   },
   {
    "fieldname": "group_formed_date",
@@ -87,11 +88,11 @@
    "link_fieldname": "vsla_group_name"
   }
  ],
- "modified": "2026-03-31 10:48:34.086993",
- "modified_by": "Administrator",
+ "modified": "2026-05-07 18:57:59.835375",
+ "modified_by": "3r4cace@gmail.com",
  "module": "Mis 3R4Cace",
  "name": "VSLA Group",
- "naming_rule": "Expression",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
