@@ -226,6 +226,7 @@
    "reqd": 1
   },
   {
+   "fetch_from": "activity.activity_name",
    "fieldname": "activity_name",
    "fieldtype": "Small Text",
    "label": "Activity Name"
@@ -249,7 +250,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-05-17 22:12:43.644382",
+ "modified": "2026-05-17 22:19:49.219183",
  "modified_by": "3r4cace@gmail.com",
  "module": "Mis 3R4Cace",
  "name": "Component 2 ESRM",
