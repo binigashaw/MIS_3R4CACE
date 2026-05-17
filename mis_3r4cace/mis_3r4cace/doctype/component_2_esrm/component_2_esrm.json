@@ -221,7 +221,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Activity ID",
-   "link_filters": "[[\"activity\",\"activity_category\",\"=\",\"eval: doc.activity_category\"]]",
+   "link_filters": "[[\"Activities\",\"activity_category\",\"=\",\"eval: doc.activity_category\"],[\"Activities\",\"region\",\"=\",\"eval: doc.region\"]]",
    "options": "Activities",
    "reqd": 1
   },
@@ -238,7 +238,6 @@
    "label": "Activity Category",
    "link_filters": "[[\"Activity Category\",\"category_name\",\"like\",\"%Works%\"]]",
    "options": "Activity Category",
-   "read_only": 1,
    "reqd": 1
   },
   {
@@ -250,7 +249,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-05-17 21:53:03.102807",
+ "modified": "2026-05-17 22:12:43.644382",
  "modified_by": "3r4cace@gmail.com",
  "module": "Mis 3R4Cace",
  "name": "Component 2 ESRM",
