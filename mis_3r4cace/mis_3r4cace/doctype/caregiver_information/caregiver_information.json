@@ -21,7 +21,8 @@
    "fieldname": "caregiver_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Care giver Name"
+   "label": "Care giver Name",
+   "reqd": 1
   },
   {
    "fieldname": "gender",
@@ -57,7 +58,8 @@
    "fieldname": "childcare_center",
    "fieldtype": "Link",
    "label": "Childcare Center",
-   "options": "Child Care Center"
+   "options": "Child Care Center",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_knve",
@@ -83,11 +85,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-31 10:58:01.967400",
- "modified_by": "Administrator",
+ "modified": "2026-05-17 19:33:35.422126",
+ "modified_by": "3r4cace@gmail.com",
  "module": "Mis 3R4Cace",
  "name": "Caregiver Information",
- "naming_rule": "Expression",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
@@ -105,7 +107,9 @@
  ],
  "row_format": "Dynamic",
  "rows_threshold_for_grid_search": 20,
+ "show_title_field_in_link": 1,
  "sort_field": "creation",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "caregiver_name"
 }

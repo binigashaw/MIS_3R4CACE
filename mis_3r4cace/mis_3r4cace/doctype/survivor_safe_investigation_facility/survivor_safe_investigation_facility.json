@@ -1,18 +1,17 @@
 {
  "actions": [],
- "allow_rename": 1,
  "autoname": "autoincrement",
  "creation": "2026-02-16 11:47:43.201450",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "regional_information_section",
   "report_region_and_woreda_column",
   "region",
   "woreda",
   "column_break_sedo",
   "month",
   "year",
-  "column_break_bflo",
   "section_break_xacv",
   "number_of_adult_survivor_column",
   "female",
@@ -68,7 +67,8 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Region",
-   "options": "Region"
+   "options": "Region",
+   "reqd": 1
   },
   {
    "fieldname": "woreda",
@@ -98,10 +98,6 @@
    "in_list_view": 1,
    "label": "Year",
    "options": "2025\n2026\n2027\n2028"
-  },
-  {
-   "fieldname": "column_break_bflo",
-   "fieldtype": "Column Break"
   },
   {
    "fieldname": "section_break_xacv",
@@ -312,13 +308,18 @@
    "fieldtype": "Int",
    "label": "Total",
    "read_only": 1
+  },
+  {
+   "fieldname": "regional_information_section",
+   "fieldtype": "Section Break",
+   "label": "Regional Information"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-04 11:30:57.756061",
- "modified_by": "Administrator",
+ "modified": "2026-05-17 21:46:09.760324",
+ "modified_by": "3r4cace@gmail.com",
  "module": "Mis 3R4Cace",
  "name": "Survivor Safe Investigation facility",
  "naming_rule": "Autoincrement",

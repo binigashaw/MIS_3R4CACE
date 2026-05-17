@@ -14,7 +14,12 @@
   "action_to_prevent_recurrence",
   "serious_incident_report",
   "staff_name",
-  "supervisor_name"
+  "supervisor_name",
+  "column_break_umsa",
+  "childcare_center",
+  "region",
+  "woreda",
+  "kebele"
  ],
  "fields": [
   {
@@ -71,17 +76,54 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Childcare Incident",
-   "options": "Childcare Center Incident"
+   "options": "Childcare Center Incident",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_umsa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "childcare_incident.child_care_center",
+   "fieldname": "childcare_center",
+   "fieldtype": "Link",
+   "label": "Childcare Center",
+   "options": "Child Care Center",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "childcare_incident.region",
+   "fieldname": "region",
+   "fieldtype": "Link",
+   "label": "Region",
+   "options": "Region",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "childcare_incident.woreda",
+   "fieldname": "woreda",
+   "fieldtype": "Link",
+   "label": "Woreda",
+   "options": "Woreda",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "childcare_incident.kebele",
+   "fieldname": "kebele",
+   "fieldtype": "Link",
+   "label": "Kebele",
+   "options": "Kebele",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-31 10:57:16.070362",
- "modified_by": "Administrator",
+ "modified": "2026-05-17 19:41:04.585861",
+ "modified_by": "3r4cace@gmail.com",
  "module": "Mis 3R4Cace",
  "name": "Incident Follow-Up",
- "naming_rule": "Expression",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {

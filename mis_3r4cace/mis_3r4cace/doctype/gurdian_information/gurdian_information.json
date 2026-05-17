@@ -34,13 +34,15 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Child",
-   "options": "Child Intake"
+   "options": "Child Intake",
+   "reqd": 1
   },
   {
    "fieldname": "guardianmother_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Guardian(mother) name"
+   "label": "Guardian(mother) name",
+   "reqd": 1
   },
   {
    "fieldname": "relation_to_child",
@@ -156,7 +158,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-05-07 18:51:12.557682",
+ "modified": "2026-05-17 19:31:48.999203",
  "modified_by": "3r4cace@gmail.com",
  "module": "Mis 3R4Cace",
  "name": "Gurdian Information",
@@ -178,7 +180,9 @@
  ],
  "row_format": "Dynamic",
  "rows_threshold_for_grid_search": 20,
+ "show_title_field_in_link": 1,
  "sort_field": "creation",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "guardianmother_name"
 }

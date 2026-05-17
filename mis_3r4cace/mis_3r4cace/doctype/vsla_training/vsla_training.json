@@ -6,6 +6,7 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "vsla_training_information_section",
   "vsla_group_name",
   "training_category",
   "title_of_the_training",
@@ -47,6 +48,7 @@
    "label": "Date Of Training"
   },
   {
+   "fetch_from": "vsla_group_name.region",
    "fieldname": "region",
    "fieldtype": "Link",
    "in_list_view": 1,
@@ -55,6 +57,7 @@
    "options": "Region"
   },
   {
+   "fetch_from": "vsla_group_name.woreda",
    "fieldname": "woreda",
    "fieldtype": "Link",
    "in_list_view": 1,
@@ -88,7 +91,8 @@
   },
   {
    "fieldname": "section_break_mlsn",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Training Participant"
   },
   {
    "fieldname": "table_gwsn",
@@ -119,12 +123,17 @@
    "label": "Training Category",
    "options": "Literacy training\nBusiness Skills training\nLife/Soft Skills training\nPersonal Initiative training\nVSLA membership training\nVocational Skills training",
    "reqd": 1
+  },
+  {
+   "fieldname": "vsla_training_information_section",
+   "fieldtype": "Section Break",
+   "label": "VSLA Training Information"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-05-07 19:18:45.413869",
+ "modified": "2026-05-17 21:38:33.452936",
  "modified_by": "3r4cace@gmail.com",
  "module": "Mis 3R4Cace",
  "name": "VSLA Training",
@@ -145,7 +154,9 @@
   }
  ],
  "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
  "sort_field": "creation",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "vsla_group_name"
 }

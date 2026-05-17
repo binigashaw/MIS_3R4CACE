@@ -10,6 +10,10 @@
   "child_care_center",
   "date_of_incident",
   "name_of_staff_reported",
+  "column_break_bzfi",
+  "region",
+  "woreda",
+  "kebele",
   "details_of_incident_section",
   "location_of_incident",
   "type_of_incident",
@@ -24,7 +28,8 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Child Care Center",
-   "options": "Child Care Center"
+   "options": "Child Care Center",
+   "reqd": 1
   },
   {
    "fieldname": "date_of_incident",
@@ -56,7 +61,8 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Type of Incident",
-   "options": "Fall\nInjury (Cut/Scrape)\nBite\nHit\nSudden Illness\nProtection Concern\nOther"
+   "options": "Fall\nInjury (Cut/Scrape)\nBite\nHit\nSudden Illness\nProtection Concern\nOther",
+   "reqd": 1
   },
   {
    "fieldname": "incident_detail",
@@ -77,6 +83,34 @@
    "fieldname": "incident_log_section",
    "fieldtype": "Section Break",
    "label": "Incident Log"
+  },
+  {
+   "fieldname": "column_break_bzfi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "child_care_center.region",
+   "fieldname": "region",
+   "fieldtype": "Link",
+   "label": "Region",
+   "options": "Region",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "child_care_center.woreda",
+   "fieldname": "woreda",
+   "fieldtype": "Link",
+   "label": "Woreda",
+   "options": "Woreda",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "child_care_center.kebele",
+   "fieldname": "kebele",
+   "fieldtype": "Link",
+   "label": "Kebele",
+   "options": "Kebele",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
@@ -88,11 +122,11 @@
    "link_fieldname": "childcare_incident"
   }
  ],
- "modified": "2026-03-31 10:55:08.416668",
- "modified_by": "Administrator",
+ "modified": "2026-05-17 19:42:00.466828",
+ "modified_by": "3r4cace@gmail.com",
  "module": "Mis 3R4Cace",
  "name": "Childcare Center Incident",
- "naming_rule": "Expression",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
@@ -110,7 +144,9 @@
  ],
  "row_format": "Dynamic",
  "rows_threshold_for_grid_search": 20,
+ "show_title_field_in_link": 1,
  "sort_field": "creation",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "child_care_center"
 }

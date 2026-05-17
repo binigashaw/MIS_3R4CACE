@@ -6,10 +6,11 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "region",
-  "woreda",
+  "member_profile_section",
   "vsla_group",
   "member_name",
+  "region",
+  "woreda",
   "column_break_eamg",
   "loan_return_amount",
   "date_of_return",
@@ -37,14 +38,14 @@
    "read_only": 1
   },
   {
-   "fetch_from": "member_name.vsla_group",
    "fieldname": "vsla_group",
    "fieldtype": "Link",
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "VSLA Group",
    "options": "VSLA Group",
-   "read_only": 1
+   "read_only": 1,
+   "reqd": 1
   },
   {
    "fieldname": "member_name",
@@ -75,13 +76,19 @@
    "fieldname": "loan_return_amount",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Loan Return Amount"
+   "label": "Loan Return Amount",
+   "reqd": 1
+  },
+  {
+   "fieldname": "member_profile_section",
+   "fieldtype": "Section Break",
+   "label": "Member Profile"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-05-07 19:11:06.360553",
+ "modified": "2026-05-17 21:29:34.360966",
  "modified_by": "3r4cace@gmail.com",
  "module": "Mis 3R4Cace",
  "name": "VSLA Loan Return",
@@ -102,7 +109,9 @@
   }
  ],
  "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
  "sort_field": "creation",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "member_name"
 }

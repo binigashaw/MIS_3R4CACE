@@ -6,6 +6,7 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "member_profile_section",
   "full_name",
   "share",
   "value_of_loans_outstanding",
@@ -15,6 +16,7 @@
   "vsla_member_role",
   "member_status",
   "saving",
+  "total_loan_return",
   "loan",
   "date_registered",
   "section_break_sbwo",
@@ -71,7 +73,7 @@
    "fieldname": "saving",
    "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Saving",
+   "label": "Total Saving",
    "read_only": 1
   },
   {
@@ -94,7 +96,8 @@
   },
   {
    "fieldname": "section_break_sbwo",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Regional Information"
   },
   {
    "fetch_from": "vsla_group.region",
@@ -131,8 +134,22 @@
   {
    "fieldname": "vsla_member_role",
    "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "VSLA Member Role",
    "options": "Member\nChair\nSecretary"
+  },
+  {
+   "fieldname": "total_loan_return",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total Loan Return",
+   "read_only": 1
+  },
+  {
+   "fieldname": "member_profile_section",
+   "fieldtype": "Section Break",
+   "label": "Member Profile"
   }
  ],
  "grid_page_length": 50,
@@ -149,7 +166,7 @@
    "link_fieldname": "member_name"
   }
  ],
- "modified": "2026-05-07 19:08:54.626515",
+ "modified": "2026-05-17 21:24:41.746825",
  "modified_by": "3r4cace@gmail.com",
  "module": "Mis 3R4Cace",
  "name": "VSLA Member",
@@ -170,6 +187,7 @@
   }
  ],
  "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
  "sort_field": "creation",
  "sort_order": "DESC",
  "states": [],

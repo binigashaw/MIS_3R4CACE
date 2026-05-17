@@ -1,18 +1,17 @@
 {
  "actions": [],
- "allow_rename": 1,
  "autoname": "autoincrement",
  "creation": "2026-01-12 06:52:51.326771",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "report_region_section",
   "report_region_and_woreda_column",
   "region",
   "woreda",
   "column_break_sedo",
   "month",
   "year",
-  "column_break_bflo",
   "section_break_xacv",
   "number_of_adult_survivor_column",
   "female",
@@ -68,7 +67,8 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Region",
-   "options": "Region"
+   "options": "Region",
+   "reqd": 1
   },
   {
    "fieldname": "woreda",
@@ -99,10 +99,6 @@
    "in_standard_filter": 1,
    "label": "Year",
    "options": "2025\n2026\n2027\n2028"
-  },
-  {
-   "fieldname": "column_break_bflo",
-   "fieldtype": "Column Break"
   },
   {
    "fieldname": "section_break_xacv",
@@ -313,13 +309,18 @@
    "fieldname": "medical_supplies_female",
    "fieldtype": "Int",
    "label": "Female"
+  },
+  {
+   "fieldname": "report_region_section",
+   "fieldtype": "Section Break",
+   "label": "Report Region"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-04 11:26:43.897136",
- "modified_by": "Administrator",
+ "modified": "2026-05-17 21:42:26.131603",
+ "modified_by": "3r4cace@gmail.com",
  "module": "Mis 3R4Cace",
  "name": "Safe House",
  "naming_rule": "Autoincrement",

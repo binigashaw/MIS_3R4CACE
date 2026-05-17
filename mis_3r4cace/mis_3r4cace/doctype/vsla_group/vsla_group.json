@@ -12,7 +12,13 @@
   "column_break_gqxu",
   "group_name",
   "group_formed_date",
-  "saving_rate"
+  "saving_rate",
+  "section_break_hfin",
+  "number_of_member",
+  "column_break_zoid",
+  "total_saving",
+  "column_break_phbl",
+  "total_loan"
  ],
  "fields": [
   {
@@ -67,6 +73,42 @@
   {
    "fieldname": "column_break_gqxu",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_hfin",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "number_of_member",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Number of Member",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_zoid",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_saving",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Total Saving"
+  },
+  {
+   "fieldname": "column_break_phbl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_loan",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Total Loan",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
@@ -88,7 +130,7 @@
    "link_fieldname": "vsla_group_name"
   }
  ],
- "modified": "2026-05-07 18:57:59.835375",
+ "modified": "2026-05-17 19:55:43.543988",
  "modified_by": "3r4cace@gmail.com",
  "module": "Mis 3R4Cace",
  "name": "VSLA Group",
@@ -109,6 +151,7 @@
   }
  ],
  "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
  "sort_field": "creation",
  "sort_order": "DESC",
  "states": [],

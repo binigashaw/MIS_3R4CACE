@@ -1,6 +1,5 @@
 {
  "actions": [],
- "allow_rename": 1,
  "autoname": "autoincrement",
  "creation": "2026-01-28 21:44:59.748380",
  "doctype": "DocType",
@@ -20,7 +19,13 @@
   "enrollment_by_status_section",
   "idp",
   "column_break_yphi",
-  "host_community"
+  "host_community",
+  "section_break_salo",
+  "region",
+  "column_break_ufyi",
+  "woreda",
+  "column_break_phzb",
+  "kebele"
  ],
  "fields": [
   {
@@ -67,6 +72,7 @@
   {
    "fieldname": "total_new_enrollments_this_month",
    "fieldtype": "Int",
+   "in_list_view": 1,
    "label": "Total new enrollments this month"
   },
   {
@@ -109,13 +115,51 @@
    "fieldname": "female_children_served",
    "fieldtype": "Int",
    "label": "Female children served"
+  },
+  {
+   "fieldname": "section_break_salo",
+   "fieldtype": "Section Break",
+   "label": "Regional Information"
+  },
+  {
+   "fetch_from": "childcare_center.region",
+   "fieldname": "region",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Region",
+   "options": "Region",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ufyi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "childcare_center.woreda",
+   "fieldname": "woreda",
+   "fieldtype": "Link",
+   "label": "Woreda",
+   "options": "Woreda",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_phzb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "childcare_center.kebele",
+   "fieldname": "kebele",
+   "fieldtype": "Link",
+   "label": "Kebele",
+   "options": "Kebele",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-04 11:29:41.852731",
- "modified_by": "Administrator",
+ "modified": "2026-05-17 19:49:36.150637",
+ "modified_by": "3r4cace@gmail.com",
  "module": "Mis 3R4Cace",
  "name": "Service Utilization",
  "naming_rule": "Autoincrement",
@@ -136,7 +180,9 @@
  ],
  "row_format": "Dynamic",
  "rows_threshold_for_grid_search": 20,
+ "show_title_field_in_link": 1,
  "sort_field": "creation",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "childcare_center"
 }

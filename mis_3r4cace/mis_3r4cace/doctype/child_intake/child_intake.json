@@ -43,13 +43,15 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Childcare Center",
-   "options": "Child Care Center"
+   "options": "Child Care Center",
+   "reqd": 1
   },
   {
    "fieldname": "child_code",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Child Code"
+   "label": "Child Code",
+   "reqd": 1
   },
   {
    "fieldname": "age_in_month",
@@ -159,9 +161,11 @@
    "fieldname": "region",
    "fieldtype": "Link",
    "label": "Region",
-   "options": "Region"
+   "options": "Region",
+   "read_only": 1
   },
   {
+   "fetch_from": "child_center.woreda",
    "fieldname": "woreda",
    "fieldtype": "Link",
    "label": "Woreda",
@@ -169,6 +173,7 @@
    "options": "Woreda"
   },
   {
+   "fetch_from": "child_center.kebele",
    "fieldname": "kebele",
    "fieldtype": "Link",
    "label": "Kebele",
@@ -185,7 +190,7 @@
    "link_fieldname": "child"
   }
  ],
- "modified": "2026-05-07 19:30:43.092176",
+ "modified": "2026-05-17 19:42:49.786860",
  "modified_by": "3r4cace@gmail.com",
  "module": "Mis 3R4Cace",
  "name": "Child Intake",
@@ -207,7 +212,9 @@
  ],
  "row_format": "Dynamic",
  "rows_threshold_for_grid_search": 20,
+ "show_title_field_in_link": 1,
  "sort_field": "creation",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "child_code"
 }

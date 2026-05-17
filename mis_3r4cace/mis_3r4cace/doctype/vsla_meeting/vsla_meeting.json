@@ -6,6 +6,7 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "meeting_details_section",
   "vsla_group_name",
   "title_of_the_training",
   "date_of_training",
@@ -16,6 +17,7 @@
   "woreda",
   "kebele",
   "place_of_training",
+  "meeting_remark",
   "section_break_mlsn",
   "table_gwsn",
   "section_break_nomf",
@@ -102,7 +104,8 @@
   },
   {
    "fieldname": "section_break_mlsn",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Meeting Attendance"
   },
   {
    "fieldname": "table_gwsn",
@@ -139,12 +142,22 @@
   {
    "fieldname": "column_break_vnln",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "meeting_details_section",
+   "fieldtype": "Section Break",
+   "label": "Meeting Details"
+  },
+  {
+   "fieldname": "meeting_remark",
+   "fieldtype": "Small Text",
+   "label": "Meeting Remark"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-05-07 19:19:58.237105",
+ "modified": "2026-05-17 21:35:12.315135",
  "modified_by": "3r4cace@gmail.com",
  "module": "Mis 3R4Cace",
  "name": "VSLA Meeting",
@@ -165,7 +178,9 @@
   }
  ],
  "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
  "sort_field": "creation",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "vsla_group_name"
 }

@@ -1,6 +1,5 @@
 {
  "actions": [],
- "allow_rename": 1,
  "autoname": "autoincrement",
  "creation": "2026-01-16 11:16:59.835674",
  "doctype": "DocType",
@@ -61,7 +60,8 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Region",
-   "options": "Region"
+   "options": "Region",
+   "reqd": 1
   },
   {
    "fieldname": "woreda",
@@ -245,8 +245,8 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-04 11:27:52.131419",
- "modified_by": "Administrator",
+ "modified": "2026-05-17 21:43:36.208057",
+ "modified_by": "3r4cace@gmail.com",
  "module": "Mis 3R4Cace",
  "name": "Hospital",
  "naming_rule": "Autoincrement",

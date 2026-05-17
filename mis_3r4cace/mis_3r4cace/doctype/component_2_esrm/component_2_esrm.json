@@ -1,11 +1,11 @@
 {
  "actions": [],
- "allow_rename": 1,
  "autoname": "autoincrement",
  "creation": "2026-02-16 11:51:55.355740",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "activity_information_section",
   "region",
   "woreda",
   "kebele",
@@ -221,7 +221,9 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Activity ID",
-   "options": "Activities"
+   "link_filters": "[[\"activity\",\"activity_category\",\"=\",\"eval: doc.activity_category\"]]",
+   "options": "Activities",
+   "reqd": 1
   },
   {
    "fieldname": "activity_name",
@@ -234,15 +236,22 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Activity Category",
+   "link_filters": "[[\"Activity Category\",\"category_name\",\"like\",\"%Works%\"]]",
    "options": "Activity Category",
-   "read_only": 1
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "activity_information_section",
+   "fieldtype": "Section Break",
+   "label": "Activity Information "
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-04 11:32:56.479111",
- "modified_by": "Administrator",
+ "modified": "2026-05-17 21:53:03.102807",
+ "modified_by": "3r4cace@gmail.com",
  "module": "Mis 3R4Cace",
  "name": "Component 2 ESRM",
  "naming_rule": "Autoincrement",
@@ -262,7 +271,9 @@
   }
  ],
  "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
  "sort_field": "creation",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "activity"
 }
