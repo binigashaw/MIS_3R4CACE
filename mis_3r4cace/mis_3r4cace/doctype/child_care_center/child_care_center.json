@@ -122,18 +122,22 @@
   {
    "fieldname": "allocated_budget",
    "fieldtype": "Float",
+   "in_list_view": 1,
    "label": "Allocated budget"
   },
   {
    "fieldname": "utilized",
    "fieldtype": "Float",
+   "hidden": 1,
+   "in_list_view": 1,
    "label": "Utilized"
   },
   {
    "fieldname": "balance",
    "fieldtype": "Float",
-   "label": "Balance",
-   "read_only": 1
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Balance"
   },
   {
    "fieldname": "total_child",
@@ -181,8 +185,8 @@
    "link_fieldname": "childcare_center"
   }
  ],
- "modified": "2026-05-17 19:27:54.804912",
- "modified_by": "3r4cace@gmail.com",
+ "modified": "2026-06-17 21:50:51.644709",
+ "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Child Care Center",
  "naming_rule": "Expression (old style)",
