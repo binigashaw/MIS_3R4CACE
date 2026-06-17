@@ -20,7 +20,8 @@
   "disaggregation",
   "objective_group",
   "unit",
-  "notes"
+  "notes",
+  "update_date"
  ],
  "fields": [
   {
@@ -107,12 +108,17 @@
    "fieldtype": "Select",
    "label": "Measurement",
    "options": "Number\nPercentage"
+  },
+  {
+   "fieldname": "update_date",
+   "fieldtype": "Date",
+   "label": "Update Date"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-05-19 12:10:56.088990",
+ "modified": "2026-06-17 19:24:56.746070",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "PDO Indicators",

@@ -1,7 +1,6 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "autoincrement",
  "creation": "2026-01-28 21:58:41.876648",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -30,7 +29,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-04 11:30:09.339862",
+ "modified": "2026-06-17 16:08:30.981855",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Document and Manual",

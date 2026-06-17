@@ -20,7 +20,8 @@
   "action_status",
   "indicator_group",
   "unit",
-  "note"
+  "note",
+  "update_date"
  ],
  "fields": [
   {
@@ -105,12 +106,17 @@
    "in_standard_filter": 1,
    "label": "Project Development Objective",
    "options": "Result Framework"
+  },
+  {
+   "fieldname": "update_date",
+   "fieldtype": "Date",
+   "label": "Update Date"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-05-19 12:14:00.860551",
+ "modified": "2026-06-17 19:00:33.821189",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Intermediate Indicators",

@@ -134,7 +134,7 @@
    "fieldname": "primary_language_spoken",
    "fieldtype": "Select",
    "label": "Primary Language Spoken",
-   "options": "Amharic\nTigrigna\nOromifa\nAf Afarigna\nOther"
+   "options": "Amharic\nTigrigna\nOromifa\nAfar Af\nOther"
   },
   {
    "fieldname": "programmatic_and_baseline_data_section",
@@ -190,8 +190,8 @@
    "link_fieldname": "child"
   }
  ],
- "modified": "2026-05-17 19:42:49.786860",
- "modified_by": "3r4cace@gmail.com",
+ "modified": "2026-06-17 17:11:34.177492",
+ "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Child Intake",
  "naming_rule": "Expression (old style)",
