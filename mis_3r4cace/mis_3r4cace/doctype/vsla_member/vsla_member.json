@@ -7,18 +7,38 @@
  "engine": "InnoDB",
  "field_order": [
   "member_profile_section",
+  "beneficiary_id",
   "full_name",
-  "share",
-  "value_of_loans_outstanding",
-  "loan_repayment_status",
-  "vsla_group",
-  "column_break_ygqt",
-  "vsla_member_role",
+  "sex",
+  "age",
+  "phone_number",
+  "column_break_wxkk",
+  "household_size",
+  "disability_status",
+  "disability_type",
   "member_status",
-  "saving",
+  "share",
   "total_loan_return",
+  "column_break_ygqt",
+  "vsla_group",
+  "vsla_member_role",
   "loan",
   "date_registered",
+  "saving",
+  "section_break_gyto",
+  "value_of_loans_outstanding",
+  "loan_repayment_status",
+  "iga_type",
+  "column_break_yzfp",
+  "startup_kit_category",
+  "startup_kit_received",
+  "startup_kit_distribution_date",
+  "startup_kit_value_etb",
+  "column_break_oppo",
+  "additional_grant_received",
+  "additional_grant_amount_etb",
+  "additional_grant_date",
+  "business_operating",
   "section_break_sbwo",
   "region",
   "column_break_nvnp",
@@ -46,7 +66,7 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Loan Repayment status",
-   "options": "\nActive\nPaid Ahead\nPaid Off\nPast Due"
+   "options": "No Loan\nOngoing\nFully Repaid\nOverdue\nDefaulted"
   },
   {
    "fieldname": "vsla_group",
@@ -63,7 +83,7 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Member Status",
-   "options": "Active\nDropout"
+   "options": "Active\nInactive\nGraduated\nDropped Out"
   },
   {
    "fieldname": "column_break_ygqt",
@@ -137,7 +157,7 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "VSLA Member Role",
-   "options": "Member\nChair\nSecretary"
+   "options": "Member\nChairperson\nSecretary\nTreasurer\nMoney Counter\nKey Holder"
   },
   {
    "fieldname": "total_loan_return",
@@ -150,6 +170,109 @@
    "fieldname": "member_profile_section",
    "fieldtype": "Section Break",
    "label": "Member Profile"
+  },
+  {
+   "fieldname": "beneficiary_id",
+   "fieldtype": "Data",
+   "label": "Beneficiary ID"
+  },
+  {
+   "fieldname": "sex",
+   "fieldtype": "Select",
+   "label": "Sex",
+   "options": "Female\nMale"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "label": "Age"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "disability_status",
+   "fieldtype": "Select",
+   "label": "Disability Status",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "disability_type",
+   "fieldtype": "Select",
+   "label": "Disability Type",
+   "options": "\nPhysical\nVisual\nHearing\nIntellectual\nMultiple\nOther"
+  },
+  {
+   "fieldname": "household_size",
+   "fieldtype": "Int",
+   "label": "Household Size"
+  },
+  {
+   "fieldname": "section_break_gyto",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "iga_type",
+   "fieldtype": "Select",
+   "label": "IGA Type",
+   "options": "\nBeekeeping\nLivestock\nSoap and Laundry Making\nFood Preparation\nGarment Production\nAgriculture"
+  },
+  {
+   "fieldname": "startup_kit_received",
+   "fieldtype": "Select",
+   "label": "Startup Kit Received",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "startup_kit_distribution_date",
+   "fieldtype": "Date",
+   "label": "Startup Kit Distribution Date"
+  },
+  {
+   "fieldname": "startup_kit_value_etb",
+   "fieldtype": "Float",
+   "label": "Startup Kit Value (ETB)"
+  },
+  {
+   "fieldname": "startup_kit_category",
+   "fieldtype": "Select",
+   "label": "Startup Kit Category",
+   "options": "\nBeekeeping\nLivestock\nSoap and Laundry Making\nFood Preparation\nGarment Production\nAgriculture"
+  },
+  {
+   "fieldname": "additional_grant_received",
+   "fieldtype": "Select",
+   "label": "Additional Grant Received"
+  },
+  {
+   "fieldname": "additional_grant_amount_etb",
+   "fieldtype": "Float",
+   "label": "Additional Grant Amount (ETB)"
+  },
+  {
+   "fieldname": "additional_grant_date",
+   "fieldtype": "Date",
+   "label": "Additional Grant Date"
+  },
+  {
+   "fieldname": "business_operating",
+   "fieldtype": "Select",
+   "label": "Business Operating",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "column_break_oppo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_wxkk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_yzfp",
+   "fieldtype": "Column Break"
   }
  ],
  "grid_page_length": 50,
@@ -166,8 +289,8 @@
    "link_fieldname": "member_name"
   }
  ],
- "modified": "2026-05-17 21:24:41.746825",
- "modified_by": "3r4cace@gmail.com",
+ "modified": "2026-06-19 13:38:24.420492",
+ "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "VSLA Member",
  "naming_rule": "Expression (old style)",
