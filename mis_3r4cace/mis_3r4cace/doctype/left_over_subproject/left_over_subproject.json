@@ -1,0 +1,552 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{region}-SubPro-{#####}",
+ "creation": "2026-06-19 11:27:02.392838",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "subproject_info_tab",
+  "subproject_name",
+  "region",
+  "woreda",
+  "kebele",
+  "column_break_ceeo",
+  "component",
+  "subcomponent",
+  "sector",
+  "cycle",
+  "budget",
+  "section_break_vera",
+  "description",
+  "location_tab",
+  "section_break_wqra",
+  "location",
+  "section_break_ljlw",
+  "latitude",
+  "longitude",
+  "column_break_krwb",
+  "address",
+  "image",
+  "table_hglb",
+  "image_zzqk",
+  "beneficiary_tab",
+  "section_break_lupj",
+  "kebele_population",
+  "column_break_eqxt",
+  "number_of_female_in_kebele",
+  "column_break_rdkj",
+  "number_of_idp_in_kebele",
+  "targeted_section",
+  "individual_targeted",
+  "boys_targeted",
+  "girls_idp_targeted",
+  "men_idp_targeted",
+  "column_break_hwin",
+  "idp_targeted",
+  "women_targeted",
+  "boys_idp_targeted",
+  "women_idp_targeted",
+  "column_break_jipj",
+  "disabled_targeted",
+  "girls_targeted",
+  "men_targeted",
+  "reached_section",
+  "individual_reached",
+  "girls_reached",
+  "men_reached",
+  "women_idp_reached",
+  "column_break_zctv",
+  "idp_reached",
+  "boys_reached",
+  "boys_idp_reached",
+  "men_idp_reached",
+  "column_break_ynwx",
+  "disabled_reached",
+  "women_reached",
+  "girls_idp_reached",
+  "status_tab",
+  "status",
+  "reason",
+  "completed_date",
+  "award_date",
+  "site_handover_date",
+  "column_break_xivz",
+  "progress_status",
+  "total_budget_utilized",
+  "expected_end_date",
+  "additional_information",
+  "section_break_dhiz",
+  "table_iqfy",
+  "subproject_budget_utilized"
+ ],
+ "fields": [
+  {
+   "fieldname": "subproject_info_tab",
+   "fieldtype": "Tab Break",
+   "label": "Subproject Info"
+  },
+  {
+   "fieldname": "subproject_name",
+   "fieldtype": "Data",
+   "label": "Subproject Name",
+   "permlevel": 1,
+   "placeholder": "Write subproject name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "region",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Region",
+   "options": "Region",
+   "permlevel": 1,
+   "placeholder": "Select Region",
+   "reqd": 1
+  },
+  {
+   "fieldname": "woreda",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Woreda",
+   "link_filters": "[[\"Woreda\",\"region\",\"=\",\"eval: doc.region\"]]",
+   "options": "Woreda",
+   "permlevel": 1,
+   "placeholder": "Select Woreda",
+   "reqd": 1
+  },
+  {
+   "fieldname": "kebele",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Kebele",
+   "link_filters": "[[\"Kebele\",\"woreda\",\"=\",\"eval: doc.woreda\"]]",
+   "options": "Kebele",
+   "permlevel": 1,
+   "placeholder": "Select Kebele",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_ceeo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "component",
+   "fieldtype": "Link",
+   "label": "Component",
+   "options": "Project Component",
+   "permlevel": 1,
+   "placeholder": "Select sub-project component"
+  },
+  {
+   "fieldname": "subcomponent",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Sub-Component",
+   "link_filters": "[[\"Subcomponent\",\"component\",\"=\",\"eval: doc.component\"]]",
+   "options": "Subcomponent",
+   "permlevel": 1,
+   "placeholder": "Select sub-project subcomponent"
+  },
+  {
+   "fieldname": "sector",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Sector",
+   "options": "Project Sector",
+   "permlevel": 1,
+   "placeholder": "Select Sector"
+  },
+  {
+   "fieldname": "cycle",
+   "fieldtype": "Select",
+   "label": "Cycle",
+   "options": "Cycle One\nCycle Two\nCycle Three",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "budget",
+   "fieldtype": "Float",
+   "label": "Budget (ETB)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "section_break_vera",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description",
+   "placeholder": "Please write any additional information about the subproject."
+  },
+  {
+   "fieldname": "location_tab",
+   "fieldtype": "Tab Break",
+   "hidden": 1,
+   "label": "Location Map"
+  },
+  {
+   "fieldname": "section_break_wqra",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Geolocation",
+   "hidden": 1,
+   "label": "Location"
+  },
+  {
+   "fieldname": "section_break_ljlw",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "latitude",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Latitude "
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Longitude"
+  },
+  {
+   "fieldname": "column_break_krwb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "Address "
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Tab Break",
+   "label": "Image"
+  },
+  {
+   "fieldname": "table_hglb",
+   "fieldtype": "Table",
+   "options": "Project Image"
+  },
+  {
+   "fieldname": "image_zzqk",
+   "fieldtype": "Image",
+   "hidden": 1,
+   "in_preview": 1,
+   "options": "Project Image\n"
+  },
+  {
+   "fieldname": "beneficiary_tab",
+   "fieldtype": "Tab Break",
+   "label": "Beneficiary"
+  },
+  {
+   "bold": 1,
+   "fieldname": "section_break_lupj",
+   "fieldtype": "Section Break",
+   "label": "Kebele Population Information ",
+   "print_hide": 1,
+   "read_only": 1,
+   "report_hide": 1
+  },
+  {
+   "fetch_from": "kebele.kebele_population",
+   "fieldname": "kebele_population",
+   "fieldtype": "Float",
+   "label": "Kebele Population ",
+   "precision": "0",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_eqxt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "kebele.number_of_female",
+   "fieldname": "number_of_female_in_kebele",
+   "fieldtype": "Float",
+   "label": "Number of Female in Kebele",
+   "precision": "0",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_rdkj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "kebele.number_of_idp",
+   "fieldname": "number_of_idp_in_kebele",
+   "fieldtype": "Float",
+   "label": "Number of IDP in kebele(Including Returnees)",
+   "precision": "0",
+   "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "targeted_section",
+   "fieldtype": "Section Break",
+   "label": "Targeted"
+  },
+  {
+   "default": "0",
+   "fieldname": "individual_targeted",
+   "fieldtype": "Float",
+   "label": "Individual Targeted",
+   "precision": "0"
+  },
+  {
+   "fieldname": "boys_targeted",
+   "fieldtype": "Float",
+   "label": "Boys Targeted",
+   "precision": "0"
+  },
+  {
+   "fieldname": "girls_idp_targeted",
+   "fieldtype": "Float",
+   "label": "Girls IDP Targeted(Including Returnees)",
+   "precision": "0"
+  },
+  {
+   "fieldname": "men_idp_targeted",
+   "fieldtype": "Float",
+   "label": "Men IDP Targeted(Including Returnees)",
+   "precision": "0"
+  },
+  {
+   "fieldname": "column_break_hwin",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "idp_targeted",
+   "fieldtype": "Float",
+   "label": "IDP Targeted(Including Returnees)",
+   "precision": "0"
+  },
+  {
+   "fieldname": "women_targeted",
+   "fieldtype": "Float",
+   "label": "Women Targeted",
+   "precision": "0"
+  },
+  {
+   "fieldname": "boys_idp_targeted",
+   "fieldtype": "Float",
+   "label": "Boys IDP Targeted(Including Returnees)",
+   "precision": "0"
+  },
+  {
+   "fieldname": "women_idp_targeted",
+   "fieldtype": "Float",
+   "label": "Women IDP Targeted(Including Returnees)",
+   "precision": "0"
+  },
+  {
+   "fieldname": "column_break_jipj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "disabled_targeted",
+   "fieldtype": "Float",
+   "label": "Disabled Targeted",
+   "precision": "0"
+  },
+  {
+   "fieldname": "girls_targeted",
+   "fieldtype": "Float",
+   "label": "Girls Targeted",
+   "precision": "0"
+  },
+  {
+   "fieldname": "men_targeted",
+   "fieldtype": "Float",
+   "label": "Men Targeted",
+   "precision": "0"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "reached_section",
+   "fieldtype": "Section Break",
+   "label": "Reached"
+  },
+  {
+   "default": "0",
+   "fieldname": "individual_reached",
+   "fieldtype": "Float",
+   "label": "Individual Reached",
+   "precision": "0"
+  },
+  {
+   "fieldname": "girls_reached",
+   "fieldtype": "Float",
+   "label": "Girls Reached",
+   "precision": "0"
+  },
+  {
+   "fieldname": "men_reached",
+   "fieldtype": "Float",
+   "label": "Men Reached",
+   "precision": "0"
+  },
+  {
+   "fieldname": "women_idp_reached",
+   "fieldtype": "Float",
+   "label": "Women IDP Reached(Including Returnees)",
+   "precision": "0"
+  },
+  {
+   "fieldname": "column_break_zctv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "idp_reached",
+   "fieldtype": "Float",
+   "label": "IDP Reached(Including Returnees)",
+   "precision": "0"
+  },
+  {
+   "fieldname": "boys_reached",
+   "fieldtype": "Float",
+   "label": "Boys Reached",
+   "precision": "0"
+  },
+  {
+   "fieldname": "boys_idp_reached",
+   "fieldtype": "Float",
+   "label": "Boys IDP Reached(Including Returnees)",
+   "precision": "0"
+  },
+  {
+   "fieldname": "men_idp_reached",
+   "fieldtype": "Float",
+   "label": "Men IDP Reached(Including Returnees)",
+   "precision": "0"
+  },
+  {
+   "fieldname": "column_break_ynwx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "disabled_reached",
+   "fieldtype": "Float",
+   "label": "Disabled Reached",
+   "precision": "0"
+  },
+  {
+   "fieldname": "women_reached",
+   "fieldtype": "Float",
+   "label": "Women Reached",
+   "precision": "0"
+  },
+  {
+   "fieldname": "girls_idp_reached",
+   "fieldtype": "Float",
+   "label": "Girls IDP Reached(Including Returnees)",
+   "precision": "0"
+  },
+  {
+   "fieldname": "status_tab",
+   "fieldtype": "Tab Break",
+   "label": "Status"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Pipeline\nBid Initiated\nBid completed\nOngoing -on track\nCompleted\nDropped"
+  },
+  {
+   "depends_on": "eval: doc.status === \"Ongoing -delayed\" || doc.status === \"Dropped\"",
+   "fieldname": "reason",
+   "fieldtype": "Select",
+   "label": "Reason",
+   "options": "\nFinancial/Procurement\nLegal\nWorkforce/legal\nSecurity\nNatural/human-induced disasters\nOthers",
+   "placeholder": "Select Reason"
+  },
+  {
+   "depends_on": "eval: doc.status === \"Completed\"",
+   "fieldname": "completed_date",
+   "fieldtype": "Date",
+   "label": "Completed Date"
+  },
+  {
+   "fieldname": "award_date",
+   "fieldtype": "Date",
+   "label": "Award Date"
+  },
+  {
+   "fieldname": "site_handover_date",
+   "fieldtype": "Date",
+   "label": "Site Handover Date"
+  },
+  {
+   "fieldname": "column_break_xivz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "progress_status",
+   "fieldtype": "Percent",
+   "label": "Progress Status"
+  },
+  {
+   "fieldname": "total_budget_utilized",
+   "fieldtype": "Float",
+   "label": "Total Budget utilized"
+  },
+  {
+   "fieldname": "expected_end_date",
+   "fieldtype": "Date",
+   "label": "Expected End Date"
+  },
+  {
+   "fieldname": "additional_information",
+   "fieldtype": "Small Text",
+   "label": "Additional Information"
+  },
+  {
+   "fieldname": "section_break_dhiz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_iqfy",
+   "fieldtype": "Table",
+   "options": "Subproject Progress"
+  },
+  {
+   "fieldname": "subproject_budget_utilized",
+   "fieldtype": "Table",
+   "label": "Subproject Budget Utilized",
+   "options": "Subproject Finance"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "group": "ESRM",
+   "link_doctype": "ESRM Data",
+   "link_fieldname": "subproject"
+  }
+ ],
+ "modified": "2026-06-19 11:27:02.392838",
+ "modified_by": "Administrator",
+ "module": "Mis 3R4Cace",
+ "name": "Left Over Subproject",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "subproject_name"
+}
