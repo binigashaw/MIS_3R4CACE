@@ -30,7 +30,8 @@
   "column_break_gkal",
   "disabled_reached",
   "women_reached",
-  "girls_idp_reached"
+  "girls_idp_reached",
+  "youth_reached"
  ],
  "fields": [
   {
@@ -178,16 +179,23 @@
    "fieldtype": "Int",
    "label": "Number of IDP(Including Returnees) ",
    "read_only": 1
+  },
+  {
+   "fieldname": "youth_reached",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Youth Reached",
+   "precision": "0"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-02-16 10:54:08.362425",
+ "modified": "2026-06-22 13:05:34.594564",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Subproject Beneficiary",
- "naming_rule": "Expression",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
