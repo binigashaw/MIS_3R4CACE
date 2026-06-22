@@ -21,7 +21,8 @@
   "objective_group",
   "unit",
   "notes",
-  "update_date"
+  "update_date",
+  "latest_value"
  ],
  "fields": [
   {
@@ -112,13 +113,22 @@
   {
    "fieldname": "update_date",
    "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Update Date"
+  },
+  {
+   "fieldname": "latest_value",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Latest Value",
+   "precision": "0"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-06-17 19:24:56.746070",
+ "modified": "2026-06-22 12:21:35.804410",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "PDO Indicators",
