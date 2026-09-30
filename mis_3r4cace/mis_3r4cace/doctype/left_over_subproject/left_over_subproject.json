@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "{region}.-LeftOver-.#####",
  "creation": "2026-06-19 11:44:07.670488",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -311,29 +312,34 @@
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "Pipeline\nBid Initiated\nBid completed\nOngoing -on track\nCompleted\nDropped"
+   "options": "Pipeline\nBid Initiated\nBid completed\nOngoing -on track\nCompleted\nDropped",
+   "permlevel": 1
   },
   {
    "fieldname": "reason",
    "fieldtype": "Select",
    "label": "Reason",
-   "options": "\nFinancial/Procurement\nLegal\nWorkforce/legal\nSecurity\nNatural/human-induced disasters\nOthers"
+   "options": "\nFinancial/Procurement\nLegal\nWorkforce/legal\nSecurity\nNatural/human-induced disasters\nOthers",
+   "permlevel": 1
   },
   {
    "depends_on": "eval: doc.status === \"Completed\"",
    "fieldname": "completed_date",
    "fieldtype": "Date",
-   "label": "Completed Date"
+   "label": "Completed Date",
+   "permlevel": 1
   },
   {
    "fieldname": "award_date",
    "fieldtype": "Date",
-   "label": "Award Date"
+   "label": "Award Date",
+   "permlevel": 1
   },
   {
    "fieldname": "site_handover_date",
    "fieldtype": "Date",
-   "label": "Site Handover Date"
+   "label": "Site Handover Date",
+   "permlevel": 1
   },
   {
    "fieldname": "column_break_civt",
@@ -342,31 +348,36 @@
   {
    "fieldname": "progress_status",
    "fieldtype": "Percent",
-   "label": "Progress Status"
+   "label": "Progress Status",
+   "permlevel": 1
   },
   {
    "fieldname": "total_budget_utilized",
    "fieldtype": "Float",
-   "label": "Total Budget utilized"
+   "label": "Total Budget utilized",
+   "permlevel": 1
   },
   {
    "fieldname": "expected_end_date",
    "fieldtype": "Date",
-   "label": "Expected End Date"
+   "label": "Expected End Date",
+   "permlevel": 1
   },
   {
    "fieldname": "additional_information",
    "fieldtype": "Small Text",
-   "label": "Additional Information"
+   "label": "Additional Information",
+   "permlevel": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-06-19 13:03:28.729209",
+ "modified": "2026-09-30 11:26:23.972910",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Left Over Subproject",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
