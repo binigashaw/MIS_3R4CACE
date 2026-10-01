@@ -31,6 +31,7 @@
    "fieldname": "woreda",
    "fieldtype": "Link",
    "label": "Woreda",
+   "link_filters": "[[\"Woreda\",\"region\",\"=\",\"eval: doc.region\"]]",
    "options": "Woreda"
   },
   {
@@ -41,6 +42,7 @@
    "fieldname": "subproject",
    "fieldtype": "Link",
    "label": "Subproject",
+   "link_filters": "[[\"subproject\",\"woreda\",\"=\",\"eval: doc.woreda\"]]",
    "options": "Sub-Project"
   },
   {
@@ -62,7 +64,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-09-30 12:09:07.612382",
+ "modified": "2026-09-30 12:44:40.431178",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "ESRM Compliance Report",
