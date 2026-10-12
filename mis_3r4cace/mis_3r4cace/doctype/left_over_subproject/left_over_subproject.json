@@ -71,6 +71,7 @@
    "fieldname": "subproject_name",
    "fieldtype": "Data",
    "label": "Subproject Name",
+   "permlevel": 1,
    "reqd": 1
   },
   {
@@ -100,6 +101,7 @@
    "in_standard_filter": 1,
    "label": "Region",
    "options": "Region",
+   "permlevel": 1,
    "reqd": 1
   },
   {
@@ -110,6 +112,7 @@
    "label": "Woreda",
    "link_filters": "[[\"Woreda\",\"region\",\"=\",\"eval: doc.region\"]]",
    "options": "Woreda",
+   "permlevel": 1,
    "reqd": 1
   },
   {
@@ -119,7 +122,8 @@
    "in_standard_filter": 1,
    "label": "Kebele",
    "link_filters": "[[\"Kebele\",\"woreda\",\"=\",\"eval: doc.woreda\"]]",
-   "options": "Kebele"
+   "options": "Kebele",
+   "permlevel": 1
   },
   {
    "fieldname": "column_break_gsdc",
@@ -129,7 +133,8 @@
    "fieldname": "component",
    "fieldtype": "Link",
    "label": "Component",
-   "options": "Project Component"
+   "options": "Project Component",
+   "permlevel": 1
   },
   {
    "fieldname": "sub_component",
@@ -137,7 +142,8 @@
    "in_list_view": 1,
    "label": "Sub Component",
    "link_filters": "[[\"Subcomponent\",\"component\",\"=\",\"eval: doc.component\"]]",
-   "options": "Subcomponent"
+   "options": "Subcomponent",
+   "permlevel": 1
   },
   {
    "fieldname": "sector",
@@ -145,18 +151,21 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Sector",
-   "options": "Project Sector"
+   "options": "Project Sector",
+   "permlevel": 1
   },
   {
    "fieldname": "cycle",
    "fieldtype": "Select",
    "label": "Cycle",
-   "options": "Cycle One\nCycle Two\nCycle Three"
+   "options": "Cycle One\nCycle Two\nCycle Three",
+   "permlevel": 1
   },
   {
    "fieldname": "budget_etb",
    "fieldtype": "Float",
    "label": "Budget (ETB)",
+   "permlevel": 1,
    "precision": "2"
   },
   {
@@ -312,34 +321,29 @@
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "Pipeline\nBid Initiated\nBid completed\nOngoing -on track\nCompleted\nDropped",
-   "permlevel": 1
+   "options": "Pipeline\nBid Initiated\nBid completed\nOngoing -on track\nCompleted\nDropped"
   },
   {
    "fieldname": "reason",
    "fieldtype": "Select",
    "label": "Reason",
-   "options": "\nFinancial/Procurement\nLegal\nWorkforce/legal\nSecurity\nNatural/human-induced disasters\nOthers",
-   "permlevel": 1
+   "options": "\nFinancial/Procurement\nLegal\nWorkforce/legal\nSecurity\nNatural/human-induced disasters\nOthers"
   },
   {
    "depends_on": "eval: doc.status === \"Completed\"",
    "fieldname": "completed_date",
    "fieldtype": "Date",
-   "label": "Completed Date",
-   "permlevel": 1
+   "label": "Completed Date"
   },
   {
    "fieldname": "award_date",
    "fieldtype": "Date",
-   "label": "Award Date",
-   "permlevel": 1
+   "label": "Award Date"
   },
   {
    "fieldname": "site_handover_date",
    "fieldtype": "Date",
-   "label": "Site Handover Date",
-   "permlevel": 1
+   "label": "Site Handover Date"
   },
   {
    "fieldname": "column_break_civt",
@@ -348,32 +352,28 @@
   {
    "fieldname": "progress_status",
    "fieldtype": "Percent",
-   "label": "Progress Status",
-   "permlevel": 1
+   "label": "Progress Status"
   },
   {
    "fieldname": "total_budget_utilized",
    "fieldtype": "Float",
-   "label": "Total Budget utilized",
-   "permlevel": 1
+   "label": "Total Budget utilized"
   },
   {
    "fieldname": "expected_end_date",
    "fieldtype": "Date",
-   "label": "Expected End Date",
-   "permlevel": 1
+   "label": "Expected End Date"
   },
   {
    "fieldname": "additional_information",
    "fieldtype": "Small Text",
-   "label": "Additional Information",
-   "permlevel": 1
+   "label": "Additional Information"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-09-30 11:26:23.972910",
+ "modified": "2026-10-12 16:33:31.003503",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Left Over Subproject",
