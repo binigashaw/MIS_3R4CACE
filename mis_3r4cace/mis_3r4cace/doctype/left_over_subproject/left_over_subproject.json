@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "{region}.-LeftOver-.#####",
  "creation": "2026-06-19 11:44:07.670488",
@@ -373,7 +374,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-10-12 16:33:31.003503",
+ "modified": "2026-10-12 16:59:26.531816",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "Left Over Subproject",

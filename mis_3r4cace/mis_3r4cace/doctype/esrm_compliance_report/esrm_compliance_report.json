@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "ESRM Compliance-.#####",
  "creation": "2026-09-30 11:30:35.021180",
@@ -64,7 +65,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-09-30 12:44:40.431178",
+ "modified": "2026-10-12 16:59:50.762376",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "ESRM Compliance Report",
