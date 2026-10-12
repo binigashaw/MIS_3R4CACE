@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestLeftOverSubproject(FrappeTestCase):
+class TestLeftover(FrappeTestCase):
 	pass

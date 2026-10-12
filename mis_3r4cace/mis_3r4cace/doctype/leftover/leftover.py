@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class LeftOverSubproject(Document):
+class Leftover(Document):
 	pass
