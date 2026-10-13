@@ -14,7 +14,8 @@
   "subproject",
   "report_document",
   "description_section",
-  "description"
+  "description",
+  "workflow_state"
  ],
  "fields": [
   {
@@ -60,12 +61,17 @@
    "fieldname": "description",
    "fieldtype": "Small Text",
    "label": "Description"
+  },
+  {
+   "fieldname": "workflow_state",
+   "fieldtype": "Data",
+   "label": "Workflow state"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-10-12 16:59:50.762376",
+ "modified": "2026-10-13 10:48:38.511285",
  "modified_by": "Administrator",
  "module": "Mis 3R4Cace",
  "name": "ESRM Compliance Report",
